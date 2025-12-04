@@ -1,5 +1,6 @@
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import PageHero from '../../components/PageHero';
 import Link from 'next/link';
 
 export const metadata = {
@@ -11,26 +12,12 @@ export default function RavalementFacade() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="relative py-32 px-4 bg-gradient-to-br from-primary to-primary">
-          <div className="max-w-7xl mx-auto">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                Ravalement de façade
-              </h1>
-              <p className="text-xl text-white/90 mb-8">
-                Rénovation complète de vos façades pour redonner éclat et protection à votre bâtiment.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block px-8 py-4 text-lg font-semibold text-primary bg-white rounded-full hover:bg-gray-100 transition-all duration-300"
-              >
-                Demander un devis gratuit
-              </Link>
-            </div>
-          </div>
-        </section>
+      <main>
+        <PageHero
+          title="Ravalement de façade"
+          subtitle="Rénovation complète de vos façades pour redonner éclat et protection à votre bâtiment"
+          backgroundImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070"
+        />
 
         {/* Introduction */}
         <section className="py-16 px-4 bg-white">

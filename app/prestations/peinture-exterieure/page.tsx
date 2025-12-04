@@ -1,5 +1,6 @@
 import Navigation from '../../components/Navigation';
 import Footer from '../../components/Footer';
+import PageHero from '../../components/PageHero';
 import Link from 'next/link';
 
 export const metadata = {
@@ -11,26 +12,12 @@ export default function PeintureExterieure() {
   return (
     <>
       <Navigation />
-      <main className="pt-20">
-        {/* Hero Section */}
-        <section className="relative py-32 px-4 bg-gradient-to-br from-primary to-primary">
-          <div className="max-w-7xl mx-auto">
-            <div className="max-w-3xl">
-              <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-                Peinture extérieure
-              </h1>
-              <p className="text-xl text-white/90 mb-8">
-                Protégez et embellissez vos façades avec nos peintures extérieures de haute qualité, résistantes aux intempéries.
-              </p>
-              <Link
-                href="/contact"
-                className="inline-block px-8 py-4 text-lg font-semibold text-primary bg-white rounded-full hover:bg-gray-100 transition-all duration-300"
-              >
-                Demander un devis gratuit
-              </Link>
-            </div>
-          </div>
-        </section>
+      <main>
+        <PageHero
+          title="Peinture extérieure"
+          subtitle="Protégez et embellissez vos façades avec nos peintures extérieures de haute qualité, résistantes aux intempéries"
+          backgroundImage="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?q=80&w=2070"
+        />
 
         {/* Services détaillés */}
         <section className="py-20 px-4 bg-white">

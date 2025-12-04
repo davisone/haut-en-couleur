@@ -8,24 +8,28 @@ const services = [
     title: 'Peinture intérieure',
     image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2070',
     description: 'Transformation et embellissement de vos espaces intérieurs',
+    borderColor: 'border-top-cameleon-turquoise',
   },
   {
     id: 'peinture-exterieure',
     title: 'Peinture extérieure',
     image: 'https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074',
     description: 'Protection et esthétique pour vos façades extérieures',
+    borderColor: 'border-top-cameleon-lime',
   },
   {
     id: 'ravalement-facade',
     title: 'Ravalement de façade',
     image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031',
     description: 'Rénovation complète de vos murs extérieurs',
+    borderColor: 'border-top-cameleon-cyan',
   },
   {
     id: 'enduits-decoratifs',
     title: 'Enduits décoratifs',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
     description: 'Finitions uniques et textures personnalisées',
+    borderColor: 'border-top-cameleon-yellow',
   },
 ];
 
@@ -49,7 +53,7 @@ export default function Services() {
             <Link
               key={service.id}
               href={`#${service.id}`}
-              className="group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
+              className={`group relative bg-white rounded-2xl overflow-hidden shadow-xl cameleon-shadow-hover transition-all duration-300 ${service.borderColor}`}
             >
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
