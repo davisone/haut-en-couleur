@@ -222,7 +222,7 @@ export default function PeintureExterieure() {
               </Link>
               <a
                 href="tel:+33612345678"
-                className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+                className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
                 06 12 34 56 78
               </a>
