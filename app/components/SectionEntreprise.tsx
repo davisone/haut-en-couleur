@@ -13,13 +13,13 @@ export default function OurCompany() {
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
               <p>
-                Basée à <strong>Montpellier</strong>, l'entreprise <strong>Haut en Couleur</strong> met son savoir-faire au service de vos projets de peinture et de rénovation.
+                Basée à <strong>Mordelles</strong>, l'entreprise <strong>Haut en Couleur</strong> met son savoir-faire au service de vos projets de peinture et de rénovation.
               </p>
               <p>
                 Spécialiste des travaux de <strong>peinture intérieure</strong> et <strong>peinture extérieure</strong>, nous intervenons avec professionnalisme sur tous types de chantiers, du particulier aux professionnels.
               </p>
               <p>
-                Notre rayon d'intervention s'étend sur <strong>35 km autour de Montpellier</strong>, nous permettant de répondre rapidement à vos besoins.
+                Notre rayon d'intervention s'étend sur <strong>35 km autour de Rennes</strong>, nous permettant de répondre rapidement à vos besoins.
               </p>
               <p>
                 Nous nous engageons à fournir un <strong>travail soigné</strong>, une <strong>écoute attentive</strong> de vos attentes, une <strong>réactivité exemplaire</strong> et une <strong>qualité irréprochable</strong> dans chacune de nos réalisations.
@@ -28,7 +28,7 @@ export default function OurCompany() {
             <div className="mt-8">
               <Link
                 href="#contact"
-                className="inline-block px-8 py-3 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:text-white transition-all duration-300"
+                className="inline-block px-8 py-3 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
                 CONTACTER
               </Link>

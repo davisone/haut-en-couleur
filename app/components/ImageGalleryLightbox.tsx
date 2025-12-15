@@ -16,6 +16,15 @@ interface ImageGalleryLightboxProps {
 
 export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxProps) {
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
+  const [selectedCategory, setSelectedCategory] = useState<string>('Tous');
+
+  // Extraire toutes les catégories uniques
+  const categories: string[] = ['Tous', ...Array.from(new Set(images.map(img => img.category).filter((cat): cat is string => Boolean(cat))))];
+
+  // Filtrer les images par catégorie
+  const filteredImages = selectedCategory === 'Tous'
+    ? images
+    : images.filter(img => img.category === selectedCategory);
 
   const openLightbox = (index: number) => {
     setSelectedImageIndex(index);
@@ -27,13 +36,13 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
 
   const goToPrevious = () => {
     if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex - 1 + images.length) % images.length);
+      setSelectedImageIndex((selectedImageIndex - 1 + filteredImages.length) % filteredImages.length);
     }
   };
 
   const goToNext = () => {
     if (selectedImageIndex !== null) {
-      setSelectedImageIndex((selectedImageIndex + 1) % images.length);
+      setSelectedImageIndex((selectedImageIndex + 1) % filteredImages.length);
     }
   };
 
@@ -45,9 +54,9 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
       if (e.key === 'Escape') {
         setSelectedImageIndex(null);
       } else if (e.key === 'ArrowLeft') {
-        setSelectedImageIndex((selectedImageIndex - 1 + images.length) % images.length);
+        setSelectedImageIndex((selectedImageIndex - 1 + filteredImages.length) % filteredImages.length);
       } else if (e.key === 'ArrowRight') {
-        setSelectedImageIndex((selectedImageIndex + 1) % images.length);
+        setSelectedImageIndex((selectedImageIndex + 1) % filteredImages.length);
       }
     };
 
@@ -61,13 +70,32 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
       window.removeEventListener('keydown', handleKeyDown);
       document.body.style.overflow = 'unset';
     };
-  }, [selectedImageIndex, images.length]);
+  }, [selectedImageIndex, filteredImages.length]);
 
   return (
     <>
+      {/* Category Filters */}
+      <div className="mb-8">
+        <div className="flex flex-wrap gap-3 justify-center">
+          {categories.map((category) => (
+            <button
+              key={category}
+              onClick={() => setSelectedCategory(category)}
+              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                selectedCategory === category
+                  ? 'bg-primary text-white shadow-lg'
+                  : 'bg-gray-100 text-gray-700 hover:bg-gray-200'
+              }`}
+            >
+              {category}
+            </button>
+          ))}
+        </div>
+      </div>
+
       {/* Gallery Grid */}
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-        {images.map((image, index) => (
+        {filteredImages.map((image, index) => (
           <div
             key={image.id}
             className="relative aspect-square overflow-hidden rounded-lg cursor-pointer group"
@@ -84,11 +112,6 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
                 </svg>
               </div>
             </div>
-            {image.category && (
-              <div className="absolute bottom-2 left-2 bg-primary/90 text-white px-3 py-1 rounded-full text-xs font-semibold">
-                {image.category}
-              </div>
-            )}
           </div>
         ))}
       </div>
@@ -138,8 +161,8 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
             onClick={(e) => e.stopPropagation()}
           >
             <img
-              src={images[selectedImageIndex].url}
-              alt={images[selectedImageIndex].title}
+              src={filteredImages[selectedImageIndex].url}
+              alt={filteredImages[selectedImageIndex].title}
               className="max-w-full max-h-full object-contain rounded-lg"
             />
           </div>
@@ -147,10 +170,10 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
           {/* Image Info */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white">
             <h3 className="text-xl font-semibold mb-2">
-              {images[selectedImageIndex].title}
+              {filteredImages[selectedImageIndex].title}
             </h3>
             <p className="text-sm text-gray-300">
-              {selectedImageIndex + 1} / {images.length}
+              {selectedImageIndex + 1} / {filteredImages.length}
             </p>
           </div>
         </div>

@@ -1,7 +1,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
-import BeforeAfterSlider from '../components/BeforeAfterSlider';
+import BeforeAfterSection from '../components/BeforeAfterSection';
 import ImageGalleryLightbox from '../components/ImageGalleryLightbox';
 
 export const metadata = {
@@ -133,48 +133,7 @@ export default function Realisations() {
         />
 
         {/* Before/After Section */}
-        <section className="py-20 px-4 bg-gray-50">
-          <div className="max-w-7xl mx-auto">
-            <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">
-                Nos transformations avant/après
-              </h2>
-              <p className="text-xl text-gray-600">
-                Découvrez l&apos;impact de notre travail en glissant le curseur
-              </p>
-            </div>
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {beforeAfterProjects.map((project) => (
-                <div key={project.id} className="bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300">
-                  {/* Before/After Slider */}
-                  <div className="relative">
-                    <BeforeAfterSlider
-                      beforeImage={project.beforeImage}
-                      afterImage={project.afterImage}
-                    />
-
-                    {/* Category Badge */}
-                    <div className="absolute top-4 left-1/2 -translate-x-1/2 z-10">
-                      <span className="bg-primary text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-                        {project.category}
-                      </span>
-                    </div>
-                  </div>
-
-                  {/* Content */}
-                  <div className="p-6">
-                    <h3 className="text-xl font-bold text-gray-800 mb-3">
-                      {project.title}
-                    </h3>
-                    <p className="text-gray-600">
-                      {project.description}
-                    </p>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-        </section>
+        <BeforeAfterSection projects={beforeAfterProjects} />
 
         {/* Image Gallery Section */}
         <section className="py-20 px-4 bg-white">
