@@ -1,10 +1,11 @@
+import { Metadata } from 'next';
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import BeforeAfterSection from '../components/BeforeAfterSection';
 import ImageGalleryLightbox from '../components/ImageGalleryLightbox';
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Nos réalisations - Haut en Couleur",
   description: "Découvrez nos dernières réalisations en peinture intérieure, extérieure et ravalement de façade à Rennes et ses environs.",
 };
