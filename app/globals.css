@@ -281,3 +281,20 @@ html {
   color: var(--cameleon-turquoise);
   filter: drop-shadow(0 0 10px var(--cameleon-turquoise));
 }
+
+/* ========================================
+   🗺️ LEAFLET MAP - Z-INDEX FIX
+   ======================================== */
+
+/* Force tous les éléments Leaflet à rester sous la navigation */
+.leaflet-container,
+.leaflet-pane,
+.leaflet-top,
+.leaflet-bottom,
+.leaflet-control,
+.leaflet-popup,
+.leaflet-tooltip {
+  z-index: 1 !important;
+}
+
+/* Navigation reste au-dessus avec z-50 (défini dans Navigation.tsx) */

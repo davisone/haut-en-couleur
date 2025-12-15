@@ -30,7 +30,7 @@ export default function ServiceArea() {
                 <strong>Haut en Couleur</strong> intervient dans toute la région de Rennes et ses environs.
               </p>
               <p>
-                Notre zone de couverture s'étend sur un rayon de <strong>35 kilomètres autour de Mordelles</strong>, incluant notamment :
+                Notre zone de couverture s&apos;étend sur un rayon de <strong>35 kilomètres autour de Mordelles</strong>, incluant notamment :
               </p>
               <ul className="list-disc list-inside space-y-2 ml-4">
                 <li>Chavagne</li>
@@ -38,12 +38,12 @@ export default function ServiceArea() {
                 <li>Le Rheu</li>
                 <li>Bruz</li>
                 <li>Cintré</li>
-                <li>L'Hermitage</li>
+                <li>L&apos;Hermitage</li>
                 <li>Saint Malo</li>
-                <li>Et bien d'autres communes</li>
+                <li>Et bien d&apos;autres communes</li>
               </ul>
               <p className="mt-6 p-4 bg-orange-50 border-l-4 border-primary rounded">
-                <strong>Besoin d'un devis ?</strong> Contactez-nous pour vérifier que votre localisation fait partie de notre zone d'intervention.
+                <strong>Besoin d&apos;un devis ?</strong> Contactez-nous pour vérifier que votre localisation fait partie de notre zone d&apos;intervention.
               </p>
             </div>
           </div>
