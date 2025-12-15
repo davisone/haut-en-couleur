@@ -3,10 +3,27 @@
 import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { usePathname } from 'next/navigation';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
+  const pathname = usePathname();
+
+  // Fonction pour vérifier si le lien est actif
+  const isActive = (path: string) => {
+    if (path === '/') {
+      return pathname === '/';
+    }
+    return pathname.startsWith(path);
+  };
+
+  // Classes pour les liens actifs
+  const getLinkClasses = (path: string) => {
+    return isActive(path)
+      ? 'text-primary font-semibold transition-colors'
+      : 'text-gray-700 hover:text-primary transition-colors font-medium';
+  };
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
@@ -26,13 +43,13 @@ export default function Navigation() {
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/" className={getLinkClasses('/')}>
               Accueil
             </Link>
-            <Link href="/qui-sommes-nous" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')}>
               Qui sommes-nous ?
             </Link>
-            <Link href="/realisations" className="text-gray-700 hover:text-primary transition-colors font-medium">
+            <Link href="/realisations" className={getLinkClasses('/realisations')}>
               Nos réalisations
             </Link>
 
@@ -42,7 +59,7 @@ export default function Navigation() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <Link href="/prestations" className="text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1">
+              <Link href="/prestations" className={`${getLinkClasses('/prestations')} flex items-center gap-1`}>
                 Nos prestations
                 <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
@@ -51,16 +68,44 @@ export default function Navigation() {
               {isServicesOpen && (
                 <div className="absolute top-full left-0 pt-2 w-56">
                   <div className="bg-white rounded-lg shadow-lg py-2 border border-gray-100">
-                    <Link href="/prestations/peinture-interieure" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/peinture-interieure"
+                      className={`block px-4 py-2 transition-colors ${
+                        isActive('/prestations/peinture-interieure')
+                          ? 'bg-orange-50 text-primary font-semibold'
+                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                      }`}
+                    >
                       Peinture intérieure
                     </Link>
-                    <Link href="/prestations/peinture-exterieure" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/peinture-exterieure"
+                      className={`block px-4 py-2 transition-colors ${
+                        isActive('/prestations/peinture-exterieure')
+                          ? 'bg-orange-50 text-primary font-semibold'
+                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                      }`}
+                    >
                       Peinture extérieure
                     </Link>
-                    <Link href="/prestations/ravalement-facade" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/ravalement-facade"
+                      className={`block px-4 py-2 transition-colors ${
+                        isActive('/prestations/ravalement-facade')
+                          ? 'bg-orange-50 text-primary font-semibold'
+                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                      }`}
+                    >
                       Ravalement de façade
                     </Link>
-                    <Link href="/prestations/enduits-decoratifs" className="block px-4 py-2 text-gray-700 hover:bg-orange-50 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/enduits-decoratifs"
+                      className={`block px-4 py-2 transition-colors ${
+                        isActive('/prestations/enduits-decoratifs')
+                          ? 'bg-orange-50 text-primary font-semibold'
+                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                      }`}
+                    >
                       Enduits décoratifs
                     </Link>
                   </div>
@@ -70,7 +115,7 @@ export default function Navigation() {
 
             <Link
               href="/contact"
-              className="px-6 py-2 border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors font-medium"
+              className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium bg-white text-primary hover:bg-primary hover:!text-white"
             >
               Nous contacter
             </Link>
@@ -97,19 +142,19 @@ export default function Navigation() {
         {isMenuOpen && (
           <div className="md:hidden pb-4">
             <div className="flex flex-col gap-4">
-              <Link href="/" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              <Link href="/" className={getLinkClasses('/')}>
                 Accueil
               </Link>
-              <Link href="/qui-sommes-nous" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')}>
                 Qui sommes-nous ?
               </Link>
-              <Link href="/realisations" className="text-gray-700 hover:text-primary transition-colors font-medium">
+              <Link href="/realisations" className={getLinkClasses('/realisations')}>
                 Nos réalisations
               </Link>
               <div>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className="text-gray-700 hover:text-primary transition-colors font-medium flex items-center gap-1"
+                  className={`${getLinkClasses('/prestations')} flex items-center gap-1`}
                 >
                   Nos prestations
                   <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
@@ -118,16 +163,44 @@ export default function Navigation() {
                 </button>
                 {isServicesOpen && (
                   <div className="ml-4 mt-2 flex flex-col gap-2">
-                    <Link href="/prestations/peinture-interieure" className="text-gray-600 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/peinture-interieure"
+                      className={`transition-colors ${
+                        isActive('/prestations/peinture-interieure')
+                          ? 'text-primary font-semibold'
+                          : 'text-gray-600 hover:text-primary'
+                      }`}
+                    >
                       Peinture intérieure
                     </Link>
-                    <Link href="/prestations/peinture-exterieure" className="text-gray-600 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/peinture-exterieure"
+                      className={`transition-colors ${
+                        isActive('/prestations/peinture-exterieure')
+                          ? 'text-primary font-semibold'
+                          : 'text-gray-600 hover:text-primary'
+                      }`}
+                    >
                       Peinture extérieure
                     </Link>
-                    <Link href="/prestations/ravalement-facade" className="text-gray-600 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/ravalement-facade"
+                      className={`transition-colors ${
+                        isActive('/prestations/ravalement-facade')
+                          ? 'text-primary font-semibold'
+                          : 'text-gray-600 hover:text-primary'
+                      }`}
+                    >
                       Ravalement de façade
                     </Link>
-                    <Link href="/prestations/enduits-decoratifs" className="text-gray-600 hover:text-primary transition-colors">
+                    <Link
+                      href="/prestations/enduits-decoratifs"
+                      className={`transition-colors ${
+                        isActive('/prestations/enduits-decoratifs')
+                          ? 'text-primary font-semibold'
+                          : 'text-gray-600 hover:text-primary'
+                      }`}
+                    >
                       Enduits décoratifs
                     </Link>
                   </div>
@@ -135,7 +208,7 @@ export default function Navigation() {
               </div>
               <Link
                 href="/contact"
-                className="px-6 py-2 border-2 border-primary text-primary rounded-full hover:bg-primary hover:text-white transition-colors font-medium text-center"
+                className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium text-center bg-white text-primary hover:bg-primary hover:!text-white"
               >
                 Nous contacter
               </Link>
