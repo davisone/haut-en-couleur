@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import StructuredData from "./components/StructuredData";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -13,13 +14,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Haut en Couleur - Peintre en bâtiment à Montpellier",
-  description: "Entreprise de peinture à Montpellier. Spécialiste en peinture intérieure et extérieure, ravalement de façade et enduits décoratifs. Intervention dans un rayon de 35 km.",
-  keywords: ["peintre", "peinture", "Montpellier", "bâtiment", "ravalement", "façade", "intérieur", "extérieur"],
+  title: "Haut en Couleur - Peintre en bâtiment à Rennes",
+  description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure et extérieure, ravalement de façade et enduits décoratifs. Intervention dans un rayon de 35 km.",
+  keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "ravalement", "façade", "intérieur", "extérieur"],
   authors: [{ name: "Haut en Couleur" }],
   openGraph: {
-    title: "Haut en Couleur - Peintre en bâtiment à Montpellier",
-    description: "Expertise et qualité pour vos projets de peinture",
+    title: "Haut en Couleur - Peintre en bâtiment à Rennes",
+    description: "Expertise et qualité pour vos projets de peinture à Mordelles et alentours",
     type: "website",
     locale: "fr_FR",
   },
@@ -32,6 +33,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr">
+      <head>
+        <StructuredData />
+      </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >

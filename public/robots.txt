@@ -1,0 +1,21 @@
+# Robots.txt pour Haut en Couleur
+# https://www.robotstxt.org/robotstxt.html
+
+User-agent: *
+Allow: /
+
+# Bloquer les ressources non pertinentes pour le SEO
+Disallow: /api/
+Disallow: /_next/
+Disallow: /static/
+
+# Autoriser explicitement les pages importantes
+Allow: /prestations/
+Allow: /realisations/
+Allow: /contact/
+Allow: /qui-sommes-nous/
+Allow: /mentions-legales/
+Allow: /politique-confidentialite/
+
+# Sitemap
+Sitemap: https://votre-domaine.fr/sitemap.xml
