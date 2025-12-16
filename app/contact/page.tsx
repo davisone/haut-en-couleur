@@ -3,6 +3,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
+import Map from '../components/Map';
 import { useState } from 'react';
 
 export default function Contact() {
@@ -35,7 +36,7 @@ export default function Contact() {
         <PageHero
           title="Nous contacter"
           subtitle="Une question ? Un projet ? N'hésitez pas à nous contacter"
-          backgroundImage="https://images.unsplash.com/photo-1516387938699-a93567ec168e?q=80&w=2071"
+          backgroundImage="/img/contact-hero.jpg"
         />
 
         {/* Contact Section */}
@@ -58,7 +59,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Adresse</h3>
-                      <p className="text-gray-600">Rennes, Ille-et-Vilaine</p>
+                      <p className="text-gray-600">Mordelles, Ille-et-Vilaine</p>
                       <p className="text-gray-600">France</p>
                     </div>
                   </div>
@@ -73,7 +74,7 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Téléphone</h3>
                       <a href="tel:+33612345678" className="text-primary hover:text-primary-light text-lg">
-                        06 12 34 56 78
+                        06 66 28 44 58
                       </a>
                     </div>
                   </div>
@@ -87,8 +88,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                      <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:text-primary-light">
-                        contact@haut-en-couleur.fr
+                      <a href="mailto:sandrinedavison@hotmail.fr" className="text-primary hover:text-primary-light">
+                          sandrinedavison@hotmail.fr
                       </a>
                     </div>
                   </div>
@@ -103,20 +104,14 @@ export default function Contact() {
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Horaires</h3>
                       <p className="text-gray-600">Lundi - Vendredi : 8h - 18h</p>
-                      <p className="text-gray-600">Samedi : 9h - 17h</p>
-                      <p className="text-gray-600">Dimanche : Fermé</p>
+                      <p className="text-gray-600">Samedi - Dimanche : Fermé</p>
                     </div>
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
-                <div className="mt-8 h-64 bg-gray-200 rounded-2xl flex items-center justify-center">
-                  <div className="text-center">
-                    <svg className="w-16 h-16 text-primary mx-auto mb-2" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
-                    </svg>
-                    <p className="text-gray-600">Carte à venir</p>
-                  </div>
+                {/* Map Interactive */}
+                <div className="mt-8 h-64 rounded-2xl overflow-hidden">
+                  <Map showAllCities={false} />
                 </div>
               </div>
 
