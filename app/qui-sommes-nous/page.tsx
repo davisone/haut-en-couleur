@@ -16,7 +16,7 @@ export default function QuiSommesNous() {
         <PageHero
           title="Qui sommes-nous ?"
           subtitle="Découvrez l'histoire et les valeurs de Haut en Couleur"
-          backgroundImage="https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=2070"
+          backgroundImage="/img/qui-sommes-nous-hero.jpg"
         />
         <SectionEntreprise />
 

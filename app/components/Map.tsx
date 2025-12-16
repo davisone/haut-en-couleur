@@ -1,6 +1,6 @@
 'use client';
 
-import { useEffect } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -31,8 +31,16 @@ const cities = [
   { name: "L'Hermitage", coords: [48.1500, -1.8333] as [number, number] }
 ];
 
-export default function Map() {
+interface MapProps {
+  showAllCities?: boolean;
+}
+
+export default function Map({ showAllCities = true }: MapProps) {
+  const [isClient, setIsClient] = useState(false);
+
   useEffect(() => {
+    setIsClient(true);
+
     // Fix pour l'icône par défaut de Leaflet
     delete (L.Icon.Default.prototype as any)._getIconUrl;
     L.Icon.Default.mergeOptions({
@@ -42,8 +50,17 @@ export default function Map() {
     });
   }, []);
 
+  if (!isClient) {
+    return (
+      <div className="w-full h-full flex items-center justify-center bg-gray-200 rounded-2xl">
+        <p className="text-gray-600">Chargement de la carte...</p>
+      </div>
+    );
+  }
+
   return (
     <MapContainer
+      key={`map-${showAllCities}`}
       center={RENNES_COORDS}
       zoom={10}
       scrollWheelZoom={false}
@@ -69,13 +86,23 @@ export default function Map() {
       />
 
       {/* Marqueurs pour les villes */}
-      {cities.map((city) => (
-        <Marker key={city.name} position={city.coords}>
+      {showAllCities ? (
+        cities.map((city) => (
+          <Marker key={city.name} position={city.coords}>
+            <Popup>
+              <strong>{city.name}</strong>
+            </Popup>
+          </Marker>
+        ))
+      ) : (
+        <Marker position={[48.0667, -1.8333]}>
           <Popup>
-            <strong>{city.name}</strong>
+            <strong>Mordelles</strong>
+            <br />
+            Siège social
           </Popup>
         </Marker>
-      ))}
+      )}
     </MapContainer>
   );
 }

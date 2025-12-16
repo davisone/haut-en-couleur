@@ -40,7 +40,7 @@ export default function OurCompany() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('https://images.unsplash.com/photo-1581244277943-fe4a9c777189?q=80&w=2070')",
+                backgroundImage: "url('/img/entreprise.jpg')",
               }}
             />
           </div>

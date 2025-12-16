@@ -8,7 +8,7 @@ interface PageHeroProps {
 export default function PageHero({
   title,
   subtitle,
-  backgroundImage = 'https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070',
+  backgroundImage = '/img/default-hero.jpg',
   overlay = true
 }: PageHeroProps) {
   return (

@@ -16,7 +16,7 @@ export default function RavalementFacade() {
         <PageHero
           title="Ravalement de façade"
           subtitle="Rénovation complète de vos façades pour redonner éclat et protection à votre bâtiment"
-          backgroundImage="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=2070"
+          backgroundImage="/img/ravalement-facade-hero.jpg"
         />
 
         {/* Introduction */}
@@ -237,10 +237,10 @@ export default function RavalementFacade() {
                 Demander un devis
               </Link>
               <a
-                href="tel:+33612345678"
+                href="tel:+33666284458"
                 className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
-                06 12 34 56 78
+                06 66 28 44 58
               </a>
             </div>
           </div>

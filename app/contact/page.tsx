@@ -3,8 +3,18 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
-import Map from '../components/Map';
 import { useState } from 'react';
+import dynamic from 'next/dynamic';
+
+// Charger la carte uniquement côté client
+const Map = dynamic(() => import('../components/Map'), {
+  ssr: false,
+  loading: () => (
+    <div className="w-full h-full flex items-center justify-center bg-gray-200">
+      <p className="text-gray-600">Chargement de la carte...</p>
+    </div>
+  ),
+});
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -73,7 +83,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Téléphone</h3>
-                      <a href="tel:+33612345678" className="text-primary hover:text-primary-light text-lg">
+                      <a href="tel:+33666284458" className="text-primary hover:text-primary-light text-lg">
                         06 66 28 44 58
                       </a>
                     </div>
@@ -169,7 +179,7 @@ export default function Contact() {
                       value={formData.telephone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="06 12 34 56 78"
+                      placeholder="06 00 00 00 00"
                     />
                   </div>
 

@@ -16,7 +16,7 @@ export default function EnduitsDecoratifs() {
         <PageHero
           title="Enduits décoratifs"
           subtitle="Créez des espaces uniques avec nos enduits décoratifs personnalisés. Du béton ciré au stucco vénitien, donnez du caractère à vos murs"
-          backgroundImage="https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2070"
+          backgroundImage="/img/enduits-decoratifs-hero.jpg"
         />
 
         {/* Types d'enduits */}
@@ -307,10 +307,10 @@ export default function EnduitsDecoratifs() {
                 Demander un devis
               </Link>
               <a
-                href="tel:+33612345678"
+                href="tel:+33666284458"
                 className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
-                06 12 34 56 78
+                06 66 28 44 58
               </a>
             </div>
           </div>

@@ -16,7 +16,7 @@ export default function PeintureExterieure() {
         <PageHero
           title="Peinture extérieure"
           subtitle="Protégez et embellissez vos façades avec nos peintures extérieures de haute qualité, résistantes aux intempéries"
-          backgroundImage="https://images.unsplash.com/photo-1513467535987-fd81bc7d62f8?q=80&w=2070"
+          backgroundImage="/img/peinture-exterieure-hero.jpg"
         />
 
         {/* Services détaillés */}
@@ -221,10 +221,10 @@ export default function PeintureExterieure() {
                 Demander un devis
               </Link>
               <a
-                href="tel:+33612345678"
+                href="tel:+33666284458"
                 className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
-                06 12 34 56 78
+                06 66 28 44 58
               </a>
             </div>
           </div>

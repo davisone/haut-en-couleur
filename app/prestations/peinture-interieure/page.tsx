@@ -16,7 +16,7 @@ export default function PeintureInterieure() {
         <PageHero
           title="Peinture intérieure"
           subtitle="Transformez vos espaces avec notre expertise en peinture décorative et finitions de qualité"
-          backgroundImage="https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2070"
+          backgroundImage="/img/peinture-interieure-hero.jpg"
         />
 
         {/* Services détaillés */}
@@ -221,10 +221,10 @@ export default function PeintureInterieure() {
                 Demander un devis
               </Link>
               <a
-                href="tel:+33612345678"
+                href="tel:+33666284458"
                 className="inline-block px-10 py-4 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
-                06 12 34 56 78
+                06 66 28 44 58
               </a>
             </div>
           </div>

@@ -87,7 +87,7 @@ export default function Prestations() {
         <PageHero
           title="Nos prestations"
           subtitle="Des services complets de peinture et rénovation pour tous vos projets"
-          backgroundImage="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070"
+          backgroundImage="/img/prestations-hero.jpg"
         />
 
         {/* Services Grid */}

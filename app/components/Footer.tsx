@@ -17,7 +17,7 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="font-semibold">Adresse</p>
-                  <p className="text-white/90">Montpellier, Hérault</p>
+                  <p className="text-white/90">Mordelles, Ille-et-Vilaine</p>
                   <p className="text-white/90">France</p>
                 </div>
               </div>
@@ -27,8 +27,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="font-semibold">Téléphone</p>
-                  <a href="tel:+33612345678" className="text-white/90 hover:text-white transition-colors">
-                    06 12 34 56 78
+                  <a href="tel:+33666284458" className="text-white/90 hover:text-white transition-colors">
+                    06 66 28 44 58
                   </a>
                 </div>
               </div>
@@ -38,8 +38,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <a href="mailto:contact@haut-en-couleur.fr" className="text-white/90 hover:text-white transition-colors">
-                    contact@haut-en-couleur.fr
+                  <a href="mailto:sandrinedavison@hotmail.fr" className="text-white/90 hover:text-white transition-colors">
+                    sandrinedavison@hotmail.fr
                   </a>
                 </div>
               </div>
@@ -101,11 +101,27 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Copyright */}
-        <div className="border-t border-white/20 mt-12 pt-8 text-center">
-          <p className="text-white/80">
-            © {currentYear} Haut en Couleur. Tous droits réservés.
-          </p>
+        {/* Copyright & Legal Links */}
+        <div className="border-t border-white/20 mt-12 pt-8">
+          <div className="flex flex-col md:flex-row justify-between items-center gap-4">
+            <p className="text-white/80 text-center md:text-left">
+              © {currentYear} Haut en Couleur. Tous droits réservés.
+            </p>
+            <div className="flex flex-wrap justify-center gap-4 md:gap-6">
+              <Link
+                href="/mentions-legales"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
+                Mentions légales
+              </Link>
+              <Link
+                href="/politique-confidentialite"
+                className="text-white/80 hover:text-white transition-colors text-sm"
+              >
+                Politique de confidentialité
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
     </footer>

@@ -130,7 +130,7 @@ export default function Realisations() {
         <PageHero
           title="Nos réalisations"
           subtitle="Découvrez quelques-uns de nos projets récents qui reflètent notre engagement envers la qualité"
-          backgroundImage="https://images.unsplash.com/photo-1589939705384-5185137a7f0f?q=80&w=2070"
+          backgroundImage="/img/realisations-hero.jpg"
         />
 
         {/* Before/After Section */}
