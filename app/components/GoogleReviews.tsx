@@ -130,7 +130,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
   }
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-blue-50">
       <div className="max-w-7xl mx-auto">
         {/* Header avec note globale */}
         <div className="text-center mb-12">
@@ -163,7 +163,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
           {reviews.slice(0, 4).map((review, index) => (
             <div
               key={index}
-              className="bg-gray-50 p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
+              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
             >
               {/* En-tête de l'avis */}
               <div className="flex items-start gap-4 mb-4">

@@ -1,5 +1,26 @@
 @import "tailwindcss";
 
+/* Styles personnalisés pour la carte Leaflet */
+.custom-marker {
+  background: transparent !important;
+  border: none !important;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 12px !important;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15) !important;
+  border: 1px solid #f3f4f6 !important;
+}
+
+.leaflet-popup-content {
+  margin: 0 !important;
+  min-width: 150px !important;
+}
+
+.leaflet-popup-tip {
+  box-shadow: 0 3px 14px rgba(0, 0, 0, 0.15) !important;
+}
+
 :root {
   /* ========================================
      🎨 IDENTITÉ VISUELLE HAUT EN COULEUR
@@ -298,3 +319,22 @@ html {
 }
 
 /* Navigation reste au-dessus avec z-50 (défini dans Navigation.tsx) */
+
+/* ========================================
+   🍪 COOKIE BANNER ANIMATION
+   ======================================== */
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}

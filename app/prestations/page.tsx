@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import Link from 'next/link';
+import SeoContentPrestations from '../components/SeoContentPrestations';
 
 export const metadata = {
   title: "Nos prestations - Haut en Couleur",
@@ -91,7 +92,7 @@ export default function Prestations() {
         />
 
         {/* Services Grid */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto space-y-20">
             {prestations.map((prestation, index) => (
               <div
@@ -140,6 +141,9 @@ export default function Prestations() {
             ))}
           </div>
         </section>
+
+        {/* Contenu SEO */}
+        <SeoContentPrestations />
       </main>
       <Footer />
     </>

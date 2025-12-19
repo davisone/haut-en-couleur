@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import BeforeAfterSection from '../components/BeforeAfterSection';
 import ImageGalleryLightbox from '../components/ImageGalleryLightbox';
+import SeoContentRealisations from '../components/SeoContentRealisations';
+import GoogleReviews from '../components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: "Nos réalisations - Haut en Couleur",
@@ -50,73 +52,61 @@ const beforeAfterProjects = [
 const galleryImages = [
   {
     id: 1,
-    title: "Salon moderne",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1556912173-46c336c7fd55?q=80&w=2070",
   },
   {
     id: 2,
-    title: "Bureau professionnel",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069",
   },
   {
     id: 3,
-    title: "Maison de ville",
     category: "Peinture extérieure",
     url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070",
   },
   {
     id: 4,
-    title: "Chambre parentale",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057",
   },
   {
     id: 5,
-    title: "Façade commerciale",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
   },
   {
     id: 6,
-    title: "Entrée avec effet texture",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1502672260066-6bc35f0af07e?q=80&w=2080",
   },
   {
     id: 7,
-    title: "Cuisine contemporaine",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068",
   },
   {
     id: 8,
-    title: "Façade rénovée",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
   },
   {
     id: 9,
-    title: "Salon avec enduit",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070",
   },
   {
     id: 10,
-    title: "Extérieur maison",
     category: "Peinture extérieure",
     url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070",
   },
   {
     id: 11,
-    title: "Intérieur élégant",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2070",
   },
   {
     id: 12,
-    title: "Immeuble rénové",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
   },
@@ -137,7 +127,7 @@ export default function Realisations() {
         <BeforeAfterSection projects={beforeAfterProjects} />
 
         {/* Image Gallery Section */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -150,6 +140,9 @@ export default function Realisations() {
             <ImageGalleryLightbox images={galleryImages} />
           </div>
         </section>
+
+        {/* Google Reviews */}
+        <GoogleReviews />
 
         {/* CTA Section */}
         <section className="py-20 px-4 bg-gray-50">
@@ -168,6 +161,10 @@ export default function Realisations() {
             </a>
           </div>
         </section>
+
+        {/* Contenu SEO */}
+        <SeoContentRealisations />
+
       </main>
       <Footer />
     </>
