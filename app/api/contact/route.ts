@@ -1,6 +1,7 @@
 import { Resend } from 'resend';
 import { NextResponse } from 'next/server';
 import { z } from 'zod';
+import { checkRateLimit } from '@/app/lib/rateLimit';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -32,6 +33,34 @@ async function verifyCaptcha(token: string): Promise<boolean> {
 
 export async function POST(request: Request) {
   try {
+    // Extraire l'IP du client pour le rate limiting
+    const forwarded = request.headers.get('x-forwarded-for');
+    const ip = forwarded ? forwarded.split(',')[0] : request.headers.get('x-real-ip') || 'unknown';
+
+    // Vérifier le rate limiting
+    const rateLimitResult = checkRateLimit(ip);
+
+    if (!rateLimitResult.success) {
+      const resetDate = new Date(rateLimitResult.reset);
+      const minutesUntilReset = Math.ceil((rateLimitResult.reset - Date.now()) / 1000 / 60);
+
+      return NextResponse.json(
+        {
+          error: `Trop de tentatives. Veuillez réessayer dans ${minutesUntilReset} minute${minutesUntilReset > 1 ? 's' : ''}.`,
+          retryAfter: resetDate.toISOString()
+        },
+        {
+          status: 429,
+          headers: {
+            'X-RateLimit-Limit': rateLimitResult.limit.toString(),
+            'X-RateLimit-Remaining': rateLimitResult.remaining.toString(),
+            'X-RateLimit-Reset': rateLimitResult.reset.toString(),
+            'Retry-After': Math.ceil((rateLimitResult.reset - Date.now()) / 1000).toString(),
+          }
+        }
+      );
+    }
+
     const body = await request.json();
 
     // Validation des données
