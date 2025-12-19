@@ -14,12 +14,15 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Haut en Couleur - Peintre en bâtiment à Rennes",
+  title: {
+    template: "%s - Haut en Couleur",
+    default: "Haut en Couleur - Peintre à Rennes"
+  },
   description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure et extérieure, ravalement de façade et enduits décoratifs. Intervention dans un rayon de 35 km.",
   keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "ravalement", "façade", "intérieur", "extérieur"],
   authors: [{ name: "Haut en Couleur" }],
   openGraph: {
-    title: "Haut en Couleur - Peintre en bâtiment à Rennes",
+    title: "Haut en Couleur - Peintre à Rennes",
     description: "Expertise et qualité pour vos projets de peinture à Mordelles et alentours",
     type: "website",
     locale: "fr_FR",

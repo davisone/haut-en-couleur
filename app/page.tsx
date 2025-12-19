@@ -2,7 +2,6 @@ import Navigation from './components/Navigation';
 import SectionHero from './components/SectionHero';
 import SectionEntreprise from './components/SectionEntreprise';
 import SectionServices from './components/SectionServices';
-import SectionTemoignages from './components/SectionTemoignages';
 import GoogleReviews from './components/GoogleReviews';
 import SectionZoneIntervention from './components/SectionZoneIntervention';
 import SectionReseauxSociaux from './components/SectionReseauxSociaux';
@@ -16,7 +15,6 @@ export default function Home() {
         <SectionHero />
         <SectionEntreprise />
         <SectionServices />
-        <SectionTemoignages />
         <GoogleReviews />
         <SectionZoneIntervention />
         <SectionReseauxSociaux />

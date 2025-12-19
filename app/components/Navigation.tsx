@@ -31,12 +31,14 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-2">
-              <div className="w-12 h-12 rounded-lg flex items-center justify-center" style={{backgroundColor: '#d86a0c'}}>
-                <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
-                </svg>
-              </div>
+            <Link href="/" className="flex items-center gap-3">
+              <Image
+                src="/img/logo.png"
+                alt="Haut en Couleur"
+                width={80}
+                height={80}
+                className="w-20 h-20 object-contain"
+              />
               <span className="text-2xl font-bold text-gray-800">Haut en Couleur</span>
             </Link>
           </div>

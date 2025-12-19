@@ -35,14 +35,14 @@ const services = [
 
 export default function Services() {
   return (
-    <section id="prestations" className="py-20 px-4 bg-gradient-to-br from-primary to-primary">
+    <section id="prestations" className="py-20 px-4 bg-gradient-to-br from-gray-50 to-white">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
             NOS SERVICES
           </h2>
-          <p className="text-xl text-white/90">
+          <p className="text-xl text-gray-600">
             Découvrez notre expertise dans différents domaines
           </p>
         </div>
@@ -72,7 +72,7 @@ export default function Services() {
                 <p className="text-gray-600 text-sm mb-4">
                   {service.description}
                 </p>
-                <div className="flex items-center text-primary font-semibold group-hover:text-primary-light transition-colors">
+                <div className="flex items-center text-cameleon-blue font-semibold group-hover:text-cameleon-cyan transition-colors">
                   En savoir plus
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />

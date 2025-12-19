@@ -2,6 +2,7 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import SectionEntreprise from '../components/SectionEntreprise';
+import Timeline from '../components/Timeline';
 
 export const metadata = {
   title: "Qui sommes-nous ? - Haut en Couleur",
@@ -19,6 +20,9 @@ export default function QuiSommesNous() {
           backgroundImage="/img/qui-sommes-nous-hero.jpg"
         />
         <SectionEntreprise />
+
+        {/* Timeline - Notre histoire */}
+        <Timeline />
 
         {/* Section supplémentaire - Notre équipe */}
         <section className="py-20 px-4 bg-white">

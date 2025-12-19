@@ -4,7 +4,7 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   return (
-    <footer id="contact" className="bg-gradient-to-br from-primary to-primary-light text-white">
+    <footer id="contact" className="bg-gradient-to-br from-gray-800 to-gray-900 text-white">
       <div className="max-w-7xl mx-auto px-4 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
           {/* Contact Information */}
@@ -53,16 +53,16 @@ export default function Footer() {
               <Link href="/" className="text-white/90 hover:text-white transition-colors">
                 Accueil
               </Link>
-              <Link href="#qui-sommes-nous" className="text-white/90 hover:text-white transition-colors">
+              <Link href="/qui-sommes-nous" className="text-white/90 hover:text-white transition-colors">
                 Qui sommes-nous ?
               </Link>
-              <Link href="#realisations" className="text-white/90 hover:text-white transition-colors">
+              <Link href="/realisations" className="text-white/90 hover:text-white transition-colors">
                 Nos réalisations
               </Link>
-              <Link href="#prestations" className="text-white/90 hover:text-white transition-colors">
+              <Link href="/prestations" className="text-white/90 hover:text-white transition-colors">
                 Nos prestations
               </Link>
-              <Link href="#contact" className="text-white/90 hover:text-white transition-colors">
+              <Link href="/contact" className="text-white/90 hover:text-white transition-colors">
                 Nous contacter
               </Link>
             </nav>
