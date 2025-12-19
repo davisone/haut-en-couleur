@@ -5,16 +5,32 @@ import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
 
-// Fix pour les icônes Leaflet avec Next.js
-const icon = L.icon({
-  iconUrl: '/marker-icon.png',
-  iconRetinaUrl: '/marker-icon-2x.png',
-  shadowUrl: '/marker-shadow.png',
-  iconSize: [25, 41],
-  iconAnchor: [12, 41],
-  popupAnchor: [1, -34],
-  shadowSize: [41, 41]
-});
+// Icône personnalisée orange moderne
+const createCustomIcon = (isMain = false) => {
+  const svgIcon = `
+    <svg width="40" height="50" viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+          <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+        </filter>
+      </defs>
+      <path
+        d="M20 0C11.716 0 5 6.716 5 15c0 10 15 35 15 35s15-25 15-35c0-8.284-6.716-15-15-15z"
+        fill="${isMain ? '#ec6e4c' : '#f97316'}"
+        filter="url(#shadow)"
+      />
+      <circle cx="20" cy="15" r="6" fill="white"/>
+    </svg>
+  `;
+
+  return L.divIcon({
+    html: svgIcon,
+    className: 'custom-marker',
+    iconSize: [40, 50],
+    iconAnchor: [20, 50],
+    popupAnchor: [0, -50]
+  });
+};
 
 // Coordonnées de Rennes
 const RENNES_COORDS: [number, number] = [48.1113, -1.6800];
@@ -68,9 +84,10 @@ export default function Map({ showAllCities = true }: MapProps) {
       style={{ height: '100%', width: '100%', zIndex: 1 }}
       zoomControl={true}
     >
+      {/* Style de carte moderne Carto Positron (clair et épuré) */}
       <TileLayer
-        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
-        url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+        attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
       />
 
       {/* Cercle de 35 km autour de Mordelles */}
@@ -88,18 +105,31 @@ export default function Map({ showAllCities = true }: MapProps) {
       {/* Marqueurs pour les villes */}
       {showAllCities ? (
         cities.map((city) => (
-          <Marker key={city.name} position={city.coords}>
-            <Popup>
-              <strong>{city.name}</strong>
+          <Marker
+            key={city.name}
+            position={city.coords}
+            icon={createCustomIcon(city.name === 'Mordelles')}
+          >
+            <Popup className="custom-popup">
+              <div className="p-2">
+                <p className="font-bold text-gray-800 text-base">{city.name}</p>
+                {city.name === 'Mordelles' && (
+                  <p className="text-sm text-primary mt-1">📍 Siège social</p>
+                )}
+              </div>
             </Popup>
           </Marker>
         ))
       ) : (
-        <Marker position={[48.0667, -1.8333]}>
-          <Popup>
-            <strong>Mordelles</strong>
-            <br />
-            Siège social
+        <Marker
+          position={[48.0667, -1.8333]}
+          icon={createCustomIcon(true)}
+        >
+          <Popup className="custom-popup">
+            <div className="p-2">
+              <p className="font-bold text-gray-800 text-base">Mordelles</p>
+              <p className="text-sm text-primary mt-1">📍 Siège social</p>
+            </div>
           </Popup>
         </Marker>
       )}

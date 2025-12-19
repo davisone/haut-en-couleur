@@ -4,6 +4,8 @@ import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import BeforeAfterSection from '../components/BeforeAfterSection';
 import ImageGalleryLightbox from '../components/ImageGalleryLightbox';
+import SeoContentRealisations from '../components/SeoContentRealisations';
+import GoogleReviews from '../components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: "Nos réalisations - Haut en Couleur",
@@ -151,8 +153,11 @@ export default function Realisations() {
           </div>
         </section>
 
+        {/* Google Reviews */}
+        <GoogleReviews />
+
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
               Un projet en tête ?
@@ -168,6 +173,10 @@ export default function Realisations() {
             </a>
           </div>
         </section>
+
+        {/* Contenu SEO */}
+        <SeoContentRealisations />
+
       </main>
       <Footer />
     </>

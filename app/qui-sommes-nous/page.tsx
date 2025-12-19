@@ -3,6 +3,7 @@ import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import SectionEntreprise from '../components/SectionEntreprise';
 import Timeline from '../components/Timeline';
+import SeoContentQuiSommesNous from '../components/SeoContentQuiSommesNous';
 
 export const metadata = {
   title: "Qui sommes-nous ? - Haut en Couleur",
@@ -92,6 +93,9 @@ export default function QuiSommesNous() {
             </div>
           </div>
         </section>
+
+        {/* Contenu SEO */}
+        <SeoContentQuiSommesNous />
       </main>
       <Footer />
     </>

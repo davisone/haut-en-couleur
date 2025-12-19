@@ -3,6 +3,7 @@
 import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
+import FAQ from '../components/FAQ';
 import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
@@ -236,6 +237,9 @@ export default function Contact() {
             </div>
           </div>
         </section>
+
+        {/* FAQ Section */}
+        <FAQ />
       </main>
       <Footer />
     </>
