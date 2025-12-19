@@ -139,7 +139,7 @@ export default function Realisations() {
         <BeforeAfterSection projects={beforeAfterProjects} />
 
         {/* Image Gallery Section */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
               <h2 className="text-4xl font-bold text-gray-800 mb-4">
@@ -157,7 +157,7 @@ export default function Realisations() {
         <GoogleReviews />
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
               Un projet en tête ?

@@ -50,6 +50,9 @@ export default function Contact() {
           backgroundImage="/img/contact-hero.jpg"
         />
 
+        {/* FAQ Section */}
+        <FAQ />
+
         {/* Contact Section */}
         <section className="py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
@@ -237,9 +240,6 @@ export default function Contact() {
             </div>
           </div>
         </section>
-
-        {/* FAQ Section */}
-        <FAQ />
       </main>
       <Footer />
     </>

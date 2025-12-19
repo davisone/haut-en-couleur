@@ -7,17 +7,14 @@ import 'leaflet/dist/leaflet.css';
 
 // Icône personnalisée orange moderne
 const createCustomIcon = (isMain = false) => {
+  const color = isMain ? '#ec6e4c' : '#f97316';
   const svgIcon = `
     <svg width="40" height="50" viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg">
-      <defs>
-        <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
-          <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
-        </filter>
-      </defs>
       <path
         d="M20 0C11.716 0 5 6.716 5 15c0 10 15 35 15 35s15-25 15-35c0-8.284-6.716-15-15-15z"
-        fill="${isMain ? '#ec6e4c' : '#f97316'}"
-        filter="url(#shadow)"
+        fill="${color}"
+        stroke="rgba(0,0,0,0.2)"
+        stroke-width="1"
       />
       <circle cx="20" cy="15" r="6" fill="white"/>
     </svg>

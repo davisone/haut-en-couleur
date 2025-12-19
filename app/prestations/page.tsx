@@ -92,7 +92,7 @@ export default function Prestations() {
         />
 
         {/* Services Grid */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto space-y-20">
             {prestations.map((prestation, index) => (
               <div

@@ -26,7 +26,7 @@ export default function QuiSommesNous() {
         <Timeline />
 
         {/* Section supplémentaire - Notre équipe */}
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-gray-50">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-8 text-center">
               Notre équipe
@@ -46,7 +46,7 @@ export default function QuiSommesNous() {
         </section>
 
         {/* Section - Nos valeurs */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-12 text-center">
               Nos valeurs
