@@ -4,8 +4,9 @@ import Navigation from '../components/Navigation';
 import Footer from '../components/Footer';
 import PageHero from '../components/PageHero';
 import FAQ from '../components/FAQ';
-import { useState } from 'react';
+import { useState, useRef } from 'react';
 import dynamic from 'next/dynamic';
+import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 // Charger la carte uniquement côté client
 const Map = dynamic(() => import('../components/Map'), {
@@ -29,9 +30,19 @@ export default function Contact() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitStatus, setSubmitStatus] = useState<'idle' | 'success' | 'error'>('idle');
   const [errorMessage, setErrorMessage] = useState('');
+  const [captchaToken, setCaptchaToken] = useState<string | null>(null);
+  const captchaRef = useRef<HCaptcha>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
+
+    // Vérifier que le CAPTCHA est validé
+    if (!captchaToken) {
+      setSubmitStatus('error');
+      setErrorMessage('Veuillez compléter le CAPTCHA');
+      return;
+    }
+
     setIsSubmitting(true);
     setSubmitStatus('idle');
     setErrorMessage('');
@@ -42,7 +53,10 @@ export default function Contact() {
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify({
+          ...formData,
+          captchaToken,
+        }),
       });
 
       const data = await response.json();
@@ -52,7 +66,7 @@ export default function Contact() {
       }
 
       setSubmitStatus('success');
-      // Réinitialiser le formulaire
+      // Réinitialiser le formulaire et le CAPTCHA
       setFormData({
         nom: '',
         email: '',
@@ -60,6 +74,8 @@ export default function Contact() {
         sujet: '',
         message: '',
       });
+      setCaptchaToken(null);
+      captchaRef.current?.resetCaptcha();
 
       // Masquer le message de succès après 5 secondes
       setTimeout(() => {
@@ -291,6 +307,17 @@ export default function Contact() {
                       rows={6}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
                       placeholder="Décrivez votre projet..."
+                    />
+                  </div>
+
+                  {/* hCaptcha */}
+                  <div className="flex justify-center">
+                    <HCaptcha
+                      sitekey={process.env.NEXT_PUBLIC_HCAPTCHA_SITE_KEY || ''}
+                      onVerify={(token) => setCaptchaToken(token)}
+                      onExpire={() => setCaptchaToken(null)}
+                      onError={() => setCaptchaToken(null)}
+                      ref={captchaRef}
                     />
                   </div>
 

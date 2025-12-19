@@ -11,7 +11,24 @@ const contactSchema = z.object({
   telephone: z.string().regex(/^(?:(?:\+|00)33|0)\s*[1-9](?:[\s.-]*\d{2}){4}$/, 'Numéro de téléphone invalide'),
   sujet: z.string().min(1, 'Veuillez sélectionner un sujet'),
   message: z.string().min(10, 'Le message doit contenir au moins 10 caractères'),
+  captchaToken: z.string().min(1, 'Le CAPTCHA est requis'),
 });
+
+// Fonction pour vérifier le token hCaptcha
+async function verifyCaptcha(token: string): Promise<boolean> {
+  const verifyUrl = 'https://hcaptcha.com/siteverify';
+
+  const response = await fetch(verifyUrl, {
+    method: 'POST',
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+    },
+    body: `response=${token}&secret=${process.env.HCAPTCHA_SECRET_KEY}`,
+  });
+
+  const data = await response.json();
+  return data.success === true;
+}
 
 export async function POST(request: Request) {
   try {
@@ -19,6 +36,15 @@ export async function POST(request: Request) {
 
     // Validation des données
     const validatedData = contactSchema.parse(body);
+
+    // Vérifier le CAPTCHA
+    const isCaptchaValid = await verifyCaptcha(validatedData.captchaToken);
+    if (!isCaptchaValid) {
+      return NextResponse.json(
+        { error: 'Échec de la vérification CAPTCHA. Veuillez réessayer.' },
+        { status: 400 }
+      );
+    }
 
     // Mapping des sujets
     const sujetLabels: Record<string, string> = {

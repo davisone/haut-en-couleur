@@ -319,3 +319,22 @@ html {
 }
 
 /* Navigation reste au-dessus avec z-50 (défini dans Navigation.tsx) */
+
+/* ========================================
+   🍪 COOKIE BANNER ANIMATION
+   ======================================== */
+
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.5s ease-out forwards;
+}
