@@ -8,7 +8,7 @@ export default function StructuredData() {
     "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure, ravalement de façade et enduits décoratifs.",
     "url": "https://votre-domaine.fr",
     "telephone": "+33666284458",
-    "email": "sandrinedavison@hotmail.fr",
+    "email": "contact@haut-en-couleur.fr",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Mordelles",

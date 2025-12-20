@@ -150,7 +150,7 @@ export default function CookiesPage() {
                   vous pouvez nous contacter :
                 </p>
                 <div className="space-y-2 text-gray-700">
-                  <p><strong>Email :</strong> <a href="mailto:sandrinedavison@hotmail.fr" className="text-primary hover:underline">sandrinedavison@hotmail.fr</a></p>
+                  <p><strong>Email :</strong> <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:underline">contact@haut-en-couleur.fr</a></p>
                   <p><strong>Téléphone :</strong> <a href="tel:+33666284458" className="text-primary hover:underline">06 66 28 44 58</a></p>
                   <p><strong>Adresse :</strong> Mordelles, Ille-et-Vilaine, France</p>
                 </div>

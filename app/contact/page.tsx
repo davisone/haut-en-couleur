@@ -158,8 +158,8 @@ export default function Contact() {
                     </div>
                     <div>
                       <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
-                      <a href="mailto:sandrinedavison@hotmail.fr" className="text-primary hover:text-primary-light">
-                          sandrinedavison@hotmail.fr
+                      <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:text-primary-light">
+                          contact@haut-en-couleur.fr
                       </a>
                     </div>
                   </div>

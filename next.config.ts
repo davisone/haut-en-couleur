@@ -33,7 +33,7 @@ const nextConfig: NextConfig = {
             value: [
               "default-src 'self'",
               "script-src 'self' 'unsafe-inline' 'unsafe-eval' https://hcaptcha.com https://*.hcaptcha.com https://unpkg.com", // hCaptcha + Leaflet
-              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com", // Tailwind inline + Google Fonts + Leaflet
+              "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com https://unpkg.com https://cdn.jsdelivr.net", // Tailwind inline + Google Fonts + Leaflet
               "img-src 'self' data: https: blob:", // Images (Unsplash temporaire, maps, etc.)
               "font-src 'self' https://fonts.gstatic.com data:",
               "connect-src 'self' https://hcaptcha.com https://*.hcaptcha.com https://*.tile.openstreetmap.org", // API calls + hCaptcha + Leaflet tiles

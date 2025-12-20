@@ -42,7 +42,7 @@ export default function PolitiqueConfidentialite() {
                 <strong>Adresse :</strong> Mordelles, Ille-et-Vilaine, France
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Email :</strong> sandrinedavison@hotmail.fr
+                <strong>Email :</strong> contact@haut-en-couleur.fr
               </p>
               <p className="text-gray-600 mb-2">
                 <strong>Téléphone :</strong> 06 66 28 44 58
@@ -164,7 +164,7 @@ export default function PolitiqueConfidentialite() {
                 Pour exercer vos droits, vous pouvez nous contacter :
               </p>
               <ul className="list-disc pl-6 text-gray-600 mb-6">
-                <li>Par email : sandrinedavison@hotmail.fr</li>
+                <li>Par email : contact@haut-en-couleur.fr</li>
                 <li>Par téléphone : 06 66 28 44 58</li>
                 <li>Par courrier : Haut en Couleur, Mordelles, Ille-et-Vilaine, France</li>
               </ul>
@@ -252,8 +252,8 @@ export default function PolitiqueConfidentialite() {
               <div className="space-y-2">
                 <p className="text-gray-600">
                   <strong>Email :</strong>{' '}
-                  <a href="mailto:sandrinedavison@hotmail.fr" className="text-primary hover:underline">
-                    sandrinedavison@hotmail.fr
+                  <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:underline">
+                    contact@haut-en-couleur.fr
                   </a>
                 </p>
                 <p className="text-gray-600">

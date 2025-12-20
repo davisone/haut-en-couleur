@@ -89,7 +89,7 @@ export async function POST(request: Request) {
     // Envoi de l'email
     const { data, error } = await resend.emails.send({
       from: 'Haut en Couleur <onboarding@resend.dev>', // Adresse par défaut Resend pour les tests
-      to: ['evandavison@outlook.fr'], // Email temporaire pour les tests (changer après vérification du domaine)
+      to: ['contact@haut-en-couleur.fr'], // Email professionnel (redirigé par OVH vers sandrinedavison@hotmail.fr)
       replyTo: validatedData.email,
       subject: `[Site Web] ${sujetLabels[validatedData.sujet] || validatedData.sujet}`,
       html: `

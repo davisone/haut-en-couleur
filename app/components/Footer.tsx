@@ -38,8 +38,8 @@ export default function Footer() {
                 </svg>
                 <div>
                   <p className="font-semibold">Email</p>
-                  <a href="mailto:sandrinedavison@hotmail.fr" className="text-white/90 hover:text-white transition-colors">
-                    sandrinedavison@hotmail.fr
+                  <a href="mailto:contact@haut-en-couleur.fr" className="text-white/90 hover:text-white transition-colors">
+                    contact@haut-en-couleur.fr
                   </a>
                 </div>
               </div>
