@@ -26,7 +26,7 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" aria-label="Navigation principale">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -61,14 +61,20 @@ export default function Navigation() {
               onMouseEnter={() => setIsServicesOpen(true)}
               onMouseLeave={() => setIsServicesOpen(false)}
             >
-              <Link href="/prestations" className={`${getLinkClasses('/prestations')} flex items-center gap-1`}>
+              <button
+                onClick={() => setIsServicesOpen(!isServicesOpen)}
+                className={`${getLinkClasses('/prestations')} flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded px-2 py-1`}
+                aria-expanded={isServicesOpen}
+                aria-haspopup="true"
+                aria-controls="desktop-services-menu"
+              >
                 Nos prestations
-                <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
+                <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
                 </svg>
-              </Link>
+              </button>
               {isServicesOpen && (
-                <div className="absolute top-full left-0 pt-2 w-56">
+                <div id="desktop-services-menu" className="absolute top-full left-0 pt-2 w-56" role="menu">
                   <div className="bg-white rounded-lg shadow-lg py-2 border border-gray-100">
                     <Link
                       href="/prestations/peinture-interieure"
@@ -77,6 +83,7 @@ export default function Navigation() {
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Peinture intérieure
                     </Link>
@@ -87,6 +94,7 @@ export default function Navigation() {
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Peinture extérieure
                     </Link>
@@ -97,6 +105,7 @@ export default function Navigation() {
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Ravalement de façade
                     </Link>
@@ -107,6 +116,7 @@ export default function Navigation() {
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Enduits décoratifs
                     </Link>
@@ -127,9 +137,12 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary focus:outline-none"
+              className="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2"
+              aria-expanded={isMenuOpen}
+              aria-controls="mobile-menu"
+              aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
             >
-              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 {isMenuOpen ? (
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 ) : (
@@ -142,29 +155,31 @@ export default function Navigation() {
 
         {/* Mobile Menu */}
         {isMenuOpen && (
-          <div className="md:hidden pb-4">
-            <div className="flex flex-col gap-4">
-              <Link href="/" className={getLinkClasses('/')}>
+          <div id="mobile-menu" className="md:hidden pb-4">
+            <div className="flex flex-col gap-4" role="menu">
+              <Link href="/" className={getLinkClasses('/')} role="menuitem">
                 Accueil
               </Link>
-              <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')}>
+              <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')} role="menuitem">
                 Qui sommes-nous ?
               </Link>
-              <Link href="/realisations" className={getLinkClasses('/realisations')}>
+              <Link href="/realisations" className={getLinkClasses('/realisations')} role="menuitem">
                 Nos réalisations
               </Link>
               <div>
                 <button
                   onClick={() => setIsServicesOpen(!isServicesOpen)}
-                  className={`${getLinkClasses('/prestations')} flex items-center gap-1`}
+                  className={`${getLinkClasses('/prestations')} flex items-center gap-1 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded px-2 py-1`}
+                  aria-expanded={isServicesOpen}
+                  aria-controls="mobile-services-menu"
                 >
                   Nos prestations
-                  <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20">
+                  <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
                 </button>
                 {isServicesOpen && (
-                  <div className="ml-4 mt-2 flex flex-col gap-2">
+                  <div id="mobile-services-menu" className="ml-4 mt-2 flex flex-col gap-2" role="menu">
                     <Link
                       href="/prestations/peinture-interieure"
                       className={`transition-colors ${
@@ -172,6 +187,7 @@ export default function Navigation() {
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Peinture intérieure
                     </Link>
@@ -182,6 +198,7 @@ export default function Navigation() {
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Peinture extérieure
                     </Link>
@@ -192,6 +209,7 @@ export default function Navigation() {
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Ravalement de façade
                     </Link>
@@ -202,6 +220,7 @@ export default function Navigation() {
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
+                      role="menuitem"
                     >
                       Enduits décoratifs
                     </Link>
@@ -211,6 +230,7 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium text-center bg-white text-primary hover:bg-primary hover:!text-white"
+                role="menuitem"
               >
                 Nous contacter
               </Link>
