@@ -18,4 +18,4 @@ Allow: /mentions-legales/
 Allow: /politique-confidentialite/
 
 # Sitemap
-Sitemap: https://votre-domaine.fr/sitemap.xml
+Sitemap: https://haut-en-couleur.fr/sitemap.xml

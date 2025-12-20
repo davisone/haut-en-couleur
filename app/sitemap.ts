@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = 'https://votre-domaine.fr'; // À remplacer par votre vrai domaine
+  const baseUrl = 'https://haut-en-couleur.fr';
 
   return [
     {

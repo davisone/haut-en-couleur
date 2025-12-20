@@ -2,11 +2,11 @@ export default function StructuredData() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    "@id": "https://votre-domaine.fr/#organization",
+    "@id": "https://haut-en-couleur.fr/#organization",
     "name": "Haut en Couleur",
-    "image": "https://votre-domaine.fr/img/logo.jpg",
+    "image": "https://haut-en-couleur.fr/img/logo.jpg",
     "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure, ravalement de façade et enduits décoratifs.",
-    "url": "https://votre-domaine.fr",
+    "url": "https://haut-en-couleur.fr",
     "telephone": "+33666284458",
     "email": "contact@haut-en-couleur.fr",
     "address": {

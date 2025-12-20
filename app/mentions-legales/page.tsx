@@ -26,13 +26,16 @@ export default function MentionsLegales() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">1. Éditeur du site</h2>
               <p className="text-gray-600 mb-2">
-                <strong>Raison sociale :</strong> Haut en Couleur
+                <strong>Raison sociale :</strong> DAVISON SANDRINE (HAUT EN COULEUR)
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Forme juridique :</strong> [À compléter - Ex: Auto-entrepreneur, SARL, SAS, etc.]
+                <strong>Nom commercial :</strong> Haut en Couleur
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Adresse :</strong> Mordelles, Ille-et-Vilaine, France
+                <strong>Forme juridique :</strong> Entreprise individuelle (EI)
+              </p>
+              <p className="text-gray-600 mb-2">
+                <strong>Adresse :</strong> 22 Le Domaine, 35310 Mordelles, France
               </p>
               <p className="text-gray-600 mb-2">
                 <strong>Téléphone :</strong> 06 66 28 44 58
@@ -41,13 +44,19 @@ export default function MentionsLegales() {
                 <strong>Email :</strong> contact@haut-en-couleur.fr
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>SIRET :</strong> [À compléter]
+                <strong>Code APE :</strong> 43.34Z (Travaux de peinture et vitrerie)
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>TVA intracommunautaire :</strong> [À compléter si applicable]
+                <strong>SIRET :</strong> 823 682 745 00026
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Responsable de publication :</strong> [Nom du gérant]
+                <strong>TVA intracommunautaire :</strong> Non assujettie à la TVA
+              </p>
+              <p className="text-gray-600 mb-2">
+                <strong>Responsable de publication :</strong> Sandrine Davison
+              </p>
+              <p className="text-gray-600 mb-2">
+                <strong>Date de création :</strong> 4 juin 2014
               </p>
             </div>
 
@@ -55,13 +64,13 @@ export default function MentionsLegales() {
             <div className="mb-12">
               <h2 className="text-3xl font-bold text-gray-800 mb-4">2. Hébergeur du site</h2>
               <p className="text-gray-600 mb-2">
-                <strong>Nom :</strong> [À compléter - Ex: Vercel, OVH, etc.]
+                <strong>Nom :</strong> OVH SAS
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Adresse :</strong> [À compléter]
+                <strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Téléphone :</strong> [À compléter]
+                <strong>Site web :</strong> <a href="https://www.ovh.com" target="_blank" rel="noopener noreferrer" className="text-primary hover:underline">www.ovh.com</a>
               </p>
             </div>
 
@@ -91,7 +100,7 @@ export default function MentionsLegales() {
               <ul className="list-disc pl-6 text-gray-600 mb-4">
                 <li>Par email : contact@haut-en-couleur.fr</li>
                 <li>Par téléphone : 06 66 28 44 58</li>
-                <li>Par courrier : Haut en Couleur, Mordelles, Ille-et-Vilaine, France</li>
+                <li>Par courrier : Haut en Couleur, 22 Le Domaine, 35310 Mordelles, France</li>
               </ul>
               <p className="text-gray-600">
                 Pour plus d'informations sur la gestion de vos données personnelles, consultez notre{' '}
