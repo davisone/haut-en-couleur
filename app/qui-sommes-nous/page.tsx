@@ -33,7 +33,7 @@ export default function QuiSommesNous() {
             </h2>
             <div className="max-w-3xl mx-auto text-lg text-gray-700 leading-relaxed space-y-4">
               <p>
-                Notre équipe est composée de <strong>D'un peintre professionnel qualifiés</strong> et passionnés par son métier.
+                Notre équipe est composée d'<strong>un peintre professionnel qualifié</strong> et passionné par son métier.
               </p>
               <p>
                 Chaque membre de notre équipe possède plusieurs années d'expérience dans le domaine de la peinture en bâtiment et suit régulièrement des formations pour rester à jour avec les dernières techniques et innovations du secteur.

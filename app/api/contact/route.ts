@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     const ip = forwarded ? forwarded.split(',')[0] : request.headers.get('x-real-ip') || 'unknown';
 
     // Vérifier le rate limiting
-    const rateLimitResult = checkRateLimit(ip);
+    const rateLimitResult = await checkRateLimit(ip);
 
     if (!rateLimitResult.success) {
       const resetDate = new Date(rateLimitResult.reset);
@@ -88,7 +88,7 @@ export async function POST(request: Request) {
 
     // Envoi de l'email
     const { data, error } = await resend.emails.send({
-      from: 'Haut en Couleur <onboarding@resend.dev>', // Adresse par défaut Resend pour les tests
+      from: 'Haut en Couleur <contact@haut-en-couleur.fr>',
       to: ['contact@haut-en-couleur.fr'], // Email professionnel (redirigé par OVH vers sandrinedavison@hotmail.fr)
       replyTo: validatedData.email,
       subject: `[Site Web] ${sujetLabels[validatedData.sujet] || validatedData.sujet}`,
