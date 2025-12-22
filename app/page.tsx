@@ -4,7 +4,7 @@ import SectionEntreprise from './components/SectionEntreprise';
 import SectionServices from './components/SectionServices';
 import GoogleReviews from './components/GoogleReviews';
 import SectionZoneIntervention from './components/SectionZoneIntervention';
-import SectionReseauxSociaux from './components/SectionReseauxSociaux';
+// import SectionReseauxSociaux from './components/SectionReseauxSociaux'; // DÉSACTIVÉ - À réactiver quand vous aurez vos pages sociales
 import SeoContent from './components/SeoContent';
 import Footer from './components/Footer';
 
@@ -18,7 +18,8 @@ export default function Home() {
         <SectionServices />
         <GoogleReviews />
         <SectionZoneIntervention />
-        <SectionReseauxSociaux />
+        {/* SECTION RÉSEAUX SOCIAUX DÉSACTIVÉE - Décommentez quand vous aurez créé vos pages */}
+        {/* <SectionReseauxSociaux /> */}
         <SeoContent />
       </main>
       <Footer />

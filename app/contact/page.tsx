@@ -271,7 +271,8 @@ export default function Contact() {
 
                   {/* Sujet */}
                   <div>
-                    <label htmlFor="sujet" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="sujet" className="block
+                     font-medium text-gray-700 mb-2">
                       Sujet *
                     </label>
                     <select

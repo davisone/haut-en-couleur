@@ -39,7 +39,7 @@ export default function PolitiqueConfidentialite() {
                 <strong>Raison sociale :</strong> Haut en Couleur
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Adresse :</strong> Mordelles, Ille-et-Vilaine, France
+                <strong>Localisation :</strong> Mordelles, 35310, France
               </p>
               <p className="text-gray-600 mb-2">
                 <strong>Email :</strong> contact@haut-en-couleur.fr
@@ -166,7 +166,7 @@ export default function PolitiqueConfidentialite() {
               <ul className="list-disc pl-6 text-gray-600 mb-6">
                 <li>Par email : contact@haut-en-couleur.fr</li>
                 <li>Par téléphone : 06 66 28 44 58</li>
-                <li>Par courrier : Haut en Couleur, Mordelles, Ille-et-Vilaine, France</li>
+                <li>Par courrier : Haut en Couleur, Mordelles, 35310, France</li>
               </ul>
               <p className="text-gray-600 mb-4">
                 Nous nous engageons à répondre à votre demande dans un délai d'un mois.

@@ -206,7 +206,7 @@ export async function POST(request: Request) {
       return NextResponse.json(
         {
           error: 'Données invalides',
-          details: error.errors.map(e => ({ field: e.path.join('.'), message: e.message }))
+          details: error.issues.map(e => ({ field: e.path.join('.'), message: e.message }))
         },
         { status: 400 }
       );

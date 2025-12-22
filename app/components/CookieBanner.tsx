@@ -22,8 +22,22 @@ export default function CookieBanner() {
     localStorage.setItem('cookie_consent_date', new Date().toISOString());
     setShowBanner(false);
 
-    // Ici vous pourrez initialiser Google Analytics si accepté
-    // initializeAnalytics();
+    // Mettre à jour le consentement Google Analytics
+    if (typeof window !== 'undefined' && window.gtag) {
+      window.gtag('consent', 'update', {
+        analytics_storage: 'granted',
+        ad_storage: 'denied',
+      });
+
+      // Recharger GA avec la config
+      const gaId = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
+      if (gaId) {
+        window.gtag('config', gaId, {
+          anonymize_ip: true,
+          cookie_flags: 'SameSite=None;Secure',
+        });
+      }
+    }
   };
 
   const handleDecline = () => {

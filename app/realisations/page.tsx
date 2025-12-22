@@ -52,61 +52,73 @@ const beforeAfterProjects = [
 const galleryImages = [
   {
     id: 1,
+    title: "Peinture intérieure salon",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1556912173-46c336c7fd55?q=80&w=2070",
   },
   {
     id: 2,
+    title: "Peinture intérieure chambre",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069",
   },
   {
     id: 3,
+    title: "Peinture extérieure maison",
     category: "Peinture extérieure",
     url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070",
   },
   {
     id: 4,
+    title: "Peinture intérieure cuisine",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057",
   },
   {
     id: 5,
+    title: "Ravalement façade immeuble",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
   },
   {
     id: 6,
+    title: "Enduit décoratif salon",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1502672260066-6bc35f0af07e?q=80&w=2080",
   },
   {
     id: 7,
+    title: "Peinture intérieure bureau",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068",
   },
   {
     id: 8,
+    title: "Ravalement façade maison",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
   },
   {
     id: 9,
+    title: "Enduit décoratif chambre",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070",
   },
   {
     id: 10,
+    title: "Peinture extérieure villa",
     category: "Peinture extérieure",
     url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070",
   },
   {
     id: 11,
+    title: "Peinture intérieure séjour",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2070",
   },
   {
     id: 12,
+    title: "Ravalement façade bâtiment",
     category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
   },

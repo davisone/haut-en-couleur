@@ -4,7 +4,7 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     "@id": "https://haut-en-couleur.fr/#organization",
     "name": "Haut en Couleur",
-    "image": "https://haut-en-couleur.fr/img/logo.jpg",
+    "image": "https://haut-en-couleur.fr/img/logo.png",
     "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure, ravalement de façade et enduits décoratifs.",
     "url": "https://haut-en-couleur.fr",
     "telephone": "+33666284458",
@@ -94,10 +94,18 @@ export default function StructuredData() {
     },
     // Note: Les données aggregateRating seront automatiquement récupérées par Google
     // depuis vos avis Google Business Profile. Pas besoin de les mettre ici en dur.
+
+    // ========================================
+    // RÉSEAUX SOCIAUX - À ACTIVER PLUS TARD
+    // ========================================
+    // Décommentez la section ci-dessous quand vous aurez créé vos pages sociales
+    // et remplacez les URLs par vos vraies pages :
+    /*
     "sameAs": [
-      "https://www.facebook.com/votre-page",
-      "https://www.instagram.com/votre-compte"
+      "https://www.facebook.com/VOTRE_PAGE_FACEBOOK",
+      // "https://www.instagram.com/VOTRE_COMPTE_INSTAGRAM"  // Si vous créez un compte Instagram
     ]
+    */
   };
 
   return (
