@@ -154,7 +154,7 @@ export default function Realisations() {
         </section>
 
         {/* Google Reviews */}
-        <GoogleReviews />
+        <GoogleReviews placeId={process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID} />
 
         {/* CTA Section */}
         <section className="py-20 px-4 bg-gray-50">

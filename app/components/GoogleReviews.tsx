@@ -12,8 +12,8 @@ interface Review {
 }
 
 interface GoogleReviewsProps {
-  placeId?: string; // Votre Place ID Google
-  apiKey?: string;  // Votre clé API Google Places
+  placeId?: string;
+  apiKey?: string;
 }
 
 export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
@@ -24,59 +24,14 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // Si pas de Place ID ou API Key, utiliser des avis de démonstration
-    if (!placeId || !apiKey) {
-      // Avis de démonstration (à remplacer par les vrais avis Google)
-      const demoReviews: Review[] = [
-        {
-          author_name: "Marie Dupont",
-          rating: 5,
-          text: "Excellent travail ! L'équipe est très professionnelle et soignée. Notre salon a été transformé et le résultat dépasse nos attentes. Je recommande vivement !",
-          time: Date.now(),
-          profile_photo_url: "",
-          relative_time_description: "il y a 2 semaines"
-        },
-        {
-          author_name: "Jean Martin",
-          rating: 5,
-          text: "Très satisfait du ravalement de façade. Travail minutieux, respect des délais et tarifs compétitifs. Une équipe à l'écoute et de bon conseil.",
-          time: Date.now(),
-          profile_photo_url: "",
-          relative_time_description: "il y a 1 mois"
-        },
-        {
-          author_name: "Sophie Bernard",
-          rating: 5,
-          text: "Prestation de qualité pour la peinture de notre maison. Finitions impeccables et chantier propre. Nous sommes ravis du résultat !",
-          time: Date.now(),
-          profile_photo_url: "",
-          relative_time_description: "il y a 3 semaines"
-        },
-        {
-          author_name: "Pierre Lefebvre",
-          rating: 4,
-          text: "Bon travail dans l'ensemble. L'équipe est ponctuelle et efficace. Quelques petits ajustements ont été nécessaires mais le résultat final est satisfaisant.",
-          time: Date.now(),
-          profile_photo_url: "",
-          relative_time_description: "il y a 1 semaine"
-        }
-      ];
-
-      setReviews(demoReviews);
-      setAverageRating(4.8);
-      setTotalReviews(127);
+    if (!placeId) {
       setLoading(false);
       return;
     }
 
-    // Récupération réelle des avis Google (nécessite un backend pour sécuriser la clé API)
     const fetchGoogleReviews = async () => {
       try {
-        // IMPORTANT : Ne jamais exposer votre clé API côté client en production
-        // Créez plutôt une API route Next.js pour faire l'appel depuis le serveur
-        const response = await fetch(
-          `/api/google-reviews?placeId=${placeId}`
-        );
+        const response = await fetch(`/api/google-reviews?placeId=${placeId}`);
 
         if (!response.ok) {
           throw new Error('Erreur lors de la récupération des avis');
@@ -88,6 +43,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
         setTotalReviews(data.user_ratings_total || 0);
         setLoading(false);
       } catch (err) {
+        console.error('Erreur avis:', err);
         setError('Impossible de charger les avis Google');
         setLoading(false);
       }
@@ -158,42 +114,56 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
           </a>
         </div>
 
-        {/* Grille des avis */}
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-          {reviews.slice(0, 4).map((review, index) => (
-            <div
-              key={index}
-              className="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition-shadow"
-            >
-              {/* En-tête de l'avis */}
-              <div className="flex items-start gap-4 mb-4">
-                {review.profile_photo_url ? (
-                  <img
-                    src={review.profile_photo_url}
-                    alt={review.author_name}
-                    className="w-12 h-12 rounded-full"
-                  />
-                ) : (
-                  <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl">
-                    {review.author_name.charAt(0)}
+        {/* Grille d'avis responsive */}
+        {reviews.length > 0 && (
+          <div className={`grid gap-6 ${
+            reviews.length === 1
+              ? 'max-w-2xl mx-auto'
+              : reviews.length === 2
+              ? 'md:grid-cols-2 max-w-4xl mx-auto'
+              : reviews.length === 3
+              ? 'md:grid-cols-2 lg:grid-cols-3'
+              : 'md:grid-cols-2 lg:grid-cols-4'
+          }`}>
+            {reviews.map((review, index) => (
+              <div
+                key={index}
+                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+              >
+                {/* En-tête de l'avis */}
+                <div className="flex items-start gap-4 mb-4">
+                  {review.profile_photo_url ? (
+                    <img
+                      src={review.profile_photo_url}
+                      alt={review.author_name}
+                      className="w-12 h-12 rounded-full flex-shrink-0"
+                    />
+                  ) : (
+                    <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
+                      {review.author_name.charAt(0)}
+                    </div>
+                  )}
+                  <div className="flex-1 min-w-0">
+                    <h3 className="font-semibold text-gray-800 truncate">
+                      {review.author_name}
+                    </h3>
+                    <div className="flex gap-1 mb-1">
+                      {renderStars(review.rating)}
+                    </div>
+                    <p className="text-xs text-gray-500">
+                      {review.relative_time_description}
+                    </p>
                   </div>
-                )}
-                <div className="flex-1">
-                  <h3 className="font-semibold text-gray-800">{review.author_name}</h3>
-                  <div className="flex gap-1 mb-1">
-                    {renderStars(review.rating)}
-                  </div>
-                  <p className="text-xs text-gray-500">{review.relative_time_description}</p>
                 </div>
-              </div>
 
-              {/* Texte de l'avis */}
-              <p className="text-gray-600 text-sm line-clamp-4">
-                {review.text}
-              </p>
-            </div>
-          ))}
-        </div>
+                {/* Texte de l'avis */}
+                <p className="text-gray-600 text-sm line-clamp-4">
+                  &ldquo;{review.text}&rdquo;
+                </p>
+              </div>
+            ))}
+          </div>
+        )}
 
         {/* Logo Google */}
         <div className="text-center mt-8">

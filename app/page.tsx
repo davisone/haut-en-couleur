@@ -18,7 +18,7 @@ export default function Home() {
         <SectionEntreprise />
         <CounterStats />
         <SectionServices />
-        <GoogleReviews />
+        <GoogleReviews placeId={process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID} />
         <SectionZoneIntervention />
         {/* SECTION RÉSEAUX SOCIAUX DÉSACTIVÉE - Décommentez quand vous aurez créé vos pages */}
         {/* <SectionReseauxSociaux /> */}
