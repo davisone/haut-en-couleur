@@ -363,7 +363,7 @@ export async function POST(request: Request) {
     }
 
     return NextResponse.json(
-      { success: true, message: 'Email envoyé avec succès', data },
+      { success: true, message: 'Email envoyé avec succès', data: emailToCompany.data },
       { status: 200 }
     );
   } catch (error) {
