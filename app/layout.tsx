@@ -4,6 +4,7 @@ import "./globals.css";
 import StructuredData from "./components/StructuredData";
 import CookieBanner from "./components/CookieBanner";
 import GoogleAnalytics from "./components/GoogleAnalytics";
+import ScrollToTop from "./components/ScrollToTop";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -70,6 +71,7 @@ export default function RootLayout({
         </a>
         {children}
         <CookieBanner />
+        <ScrollToTop />
       </body>
     </html>
   );
