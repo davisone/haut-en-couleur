@@ -1,6 +1,7 @@
 import Navigation from './components/Navigation';
 import SectionHero from './components/SectionHero';
 import SectionEntreprise from './components/SectionEntreprise';
+import CounterStats from './components/CounterStats';
 import SectionServices from './components/SectionServices';
 import GoogleReviews from './components/GoogleReviews';
 import SectionZoneIntervention from './components/SectionZoneIntervention';
@@ -15,6 +16,7 @@ export default function Home() {
       <main id="main-content">
         <SectionHero />
         <SectionEntreprise />
+        <CounterStats />
         <SectionServices />
         <GoogleReviews />
         <SectionZoneIntervention />
