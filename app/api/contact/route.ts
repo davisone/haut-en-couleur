@@ -86,112 +86,280 @@ export async function POST(request: Request) {
       autre: 'Autre',
     };
 
-    // Envoi de l'email
-    const { data, error } = await resend.emails.send({
-      from: 'Haut en Couleur <contact@haut-en-couleur.fr>',
-      to: ['contact@haut-en-couleur.fr'], // Email professionnel (redirigé par OVH vers sandrinedavison@hotmail.fr)
-      replyTo: validatedData.email,
-      subject: `[Site Web] ${sujetLabels[validatedData.sujet] || validatedData.sujet}`,
-      html: `
-        <!DOCTYPE html>
-        <html>
-          <head>
-            <meta charset="utf-8">
-            <style>
-              body {
-                font-family: Arial, sans-serif;
-                line-height: 1.6;
-                color: #333;
-              }
-              .container {
-                max-width: 600px;
-                margin: 0 auto;
-                padding: 20px;
-              }
-              .header {
-                background-color: #f97316;
-                color: white;
-                padding: 20px;
-                text-align: center;
-                border-radius: 8px 8px 0 0;
-              }
-              .content {
-                background-color: #f9fafb;
-                padding: 30px;
-                border-radius: 0 0 8px 8px;
-              }
-              .field {
-                margin-bottom: 20px;
-                padding: 15px;
-                background-color: white;
-                border-radius: 6px;
-                border-left: 4px solid #f97316;
-              }
-              .label {
-                font-weight: bold;
-                color: #f97316;
-                margin-bottom: 5px;
-              }
-              .value {
-                color: #333;
-              }
-              .footer {
-                margin-top: 20px;
-                padding-top: 20px;
-                border-top: 1px solid #e5e7eb;
-                font-size: 12px;
-                color: #6b7280;
-                text-align: center;
-              }
-            </style>
-          </head>
-          <body>
-            <div class="container">
-              <div class="header">
-                <h1 style="margin: 0;">Nouveau message depuis le site web</h1>
+    // Envoi de 2 emails en parallèle : un à l'entreprise, un de confirmation au client
+    const [emailToCompany, emailToClient] = await Promise.all([
+      // Email 1 : Notification à l'entreprise
+      resend.emails.send({
+        from: 'Haut en Couleur <contact@haut-en-couleur.fr>',
+        to: ['contact@haut-en-couleur.fr'], // Email professionnel (redirigé par OVH vers sandrinedavison@hotmail.fr)
+        replyTo: validatedData.email,
+        subject: `[Site Web] ${sujetLabels[validatedData.sujet] || validatedData.sujet}`,
+        html: `
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  color: #333;
+                }
+                .container {
+                  max-width: 600px;
+                  margin: 0 auto;
+                  padding: 20px;
+                }
+                .header {
+                  background-color: #f97316;
+                  color: white;
+                  padding: 20px;
+                  text-align: center;
+                  border-radius: 8px 8px 0 0;
+                }
+                .content {
+                  background-color: #f9fafb;
+                  padding: 30px;
+                  border-radius: 0 0 8px 8px;
+                }
+                .field {
+                  margin-bottom: 20px;
+                  padding: 15px;
+                  background-color: white;
+                  border-radius: 6px;
+                  border-left: 4px solid #f97316;
+                }
+                .label {
+                  font-weight: bold;
+                  color: #f97316;
+                  margin-bottom: 5px;
+                }
+                .value {
+                  color: #333;
+                }
+                .footer {
+                  margin-top: 20px;
+                  padding-top: 20px;
+                  border-top: 1px solid #e5e7eb;
+                  font-size: 12px;
+                  color: #6b7280;
+                  text-align: center;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <h1 style="margin: 0;">Nouveau message depuis le site web</h1>
+                </div>
+                <div class="content">
+                  <div class="field">
+                    <div class="label">Sujet :</div>
+                    <div class="value">${sujetLabels[validatedData.sujet] || validatedData.sujet}</div>
+                  </div>
+
+                  <div class="field">
+                    <div class="label">Nom :</div>
+                    <div class="value">${validatedData.nom}</div>
+                  </div>
+
+                  <div class="field">
+                    <div class="label">Email :</div>
+                    <div class="value"><a href="mailto:${validatedData.email}">${validatedData.email}</a></div>
+                  </div>
+
+                  <div class="field">
+                    <div class="label">Téléphone :</div>
+                    <div class="value"><a href="tel:${validatedData.telephone.replace(/\s/g, '')}">${validatedData.telephone}</a></div>
+                  </div>
+
+                  <div class="field">
+                    <div class="label">Message :</div>
+                    <div class="value" style="white-space: pre-wrap;">${validatedData.message}</div>
+                  </div>
+
+                  <div class="footer">
+                    Ce message a été envoyé depuis le formulaire de contact de votre site web Haut en Couleur.
+                  </div>
+                </div>
               </div>
-              <div class="content">
-                <div class="field">
-                  <div class="label">Sujet :</div>
-                  <div class="value">${sujetLabels[validatedData.sujet] || validatedData.sujet}</div>
-                </div>
+            </body>
+          </html>
+        `,
+      }),
 
-                <div class="field">
-                  <div class="label">Nom :</div>
-                  <div class="value">${validatedData.nom}</div>
+      // Email 2 : Confirmation au client
+      resend.emails.send({
+        from: 'Haut en Couleur <contact@haut-en-couleur.fr>',
+        to: [validatedData.email],
+        subject: 'Confirmation de votre demande - Haut en Couleur',
+        html: `
+          <!DOCTYPE html>
+          <html>
+            <head>
+              <meta charset="utf-8">
+              <style>
+                body {
+                  font-family: Arial, sans-serif;
+                  line-height: 1.6;
+                  color: #333;
+                }
+                .container {
+                  max-width: 600px;
+                  margin: 0 auto;
+                  padding: 20px;
+                }
+                .header {
+                  background-color: #f97316;
+                  color: white;
+                  padding: 20px;
+                  text-align: center;
+                  border-radius: 8px 8px 0 0;
+                }
+                .content {
+                  background-color: #f9fafb;
+                  padding: 30px;
+                  border-radius: 0 0 8px 8px;
+                }
+                .message-box {
+                  background-color: white;
+                  padding: 20px;
+                  border-radius: 6px;
+                  margin: 20px 0;
+                  border-left: 4px solid #f97316;
+                }
+                .info-box {
+                  background-color: #fef3c7;
+                  padding: 15px;
+                  border-radius: 6px;
+                  margin: 20px 0;
+                  border-left: 4px solid #f59e0b;
+                }
+                .field {
+                  margin-bottom: 15px;
+                }
+                .label {
+                  font-weight: bold;
+                  color: #f97316;
+                  font-size: 14px;
+                }
+                .value {
+                  color: #333;
+                  margin-top: 5px;
+                }
+                .footer {
+                  margin-top: 20px;
+                  padding-top: 20px;
+                  border-top: 1px solid #e5e7eb;
+                  font-size: 12px;
+                  color: #6b7280;
+                  text-align: center;
+                }
+                .contact-info {
+                  text-align: center;
+                  margin-top: 20px;
+                  font-size: 14px;
+                }
+                .contact-info a {
+                  color: #f97316;
+                  text-decoration: none;
+                }
+              </style>
+            </head>
+            <body>
+              <div class="container">
+                <div class="header">
+                  <h1 style="margin: 0;">Merci pour votre demande !</h1>
                 </div>
+                <div class="content">
+                  <p style="font-size: 16px; color: #374151;">
+                    Bonjour <strong>${validatedData.nom}</strong>,
+                  </p>
 
-                <div class="field">
-                  <div class="label">Email :</div>
-                  <div class="value"><a href="mailto:${validatedData.email}">${validatedData.email}</a></div>
-                </div>
+                  <p style="color: #374151;">
+                    Nous avons bien reçu votre demande concernant <strong>${sujetLabels[validatedData.sujet] || validatedData.sujet}</strong>.
+                    Notre équipe vous répondra dans les plus brefs délais.
+                  </p>
 
-                <div class="field">
-                  <div class="label">Téléphone :</div>
-                  <div class="value"><a href="tel:${validatedData.telephone.replace(/\s/g, '')}">${validatedData.telephone}</a></div>
-                </div>
+                  <div class="info-box">
+                    <p style="margin: 0; font-size: 14px;">
+                      <strong>⏱️ Délai de réponse :</strong> Nous nous engageons à vous répondre sous 24 à 48 heures ouvrées.
+                    </p>
+                  </div>
 
-                <div class="field">
-                  <div class="label">Message :</div>
-                  <div class="value" style="white-space: pre-wrap;">${validatedData.message}</div>
-                </div>
+                  <h2 style="color: #f97316; font-size: 18px; margin-top: 30px;">Récapitulatif de votre demande</h2>
 
-                <div class="footer">
-                  Ce message a été envoyé depuis le formulaire de contact de votre site web Haut en Couleur.
+                  <div class="message-box">
+                    <div class="field">
+                      <div class="label">Sujet :</div>
+                      <div class="value">${sujetLabels[validatedData.sujet] || validatedData.sujet}</div>
+                    </div>
+
+                    <div class="field">
+                      <div class="label">Nom :</div>
+                      <div class="value">${validatedData.nom}</div>
+                    </div>
+
+                    <div class="field">
+                      <div class="label">Email :</div>
+                      <div class="value">${validatedData.email}</div>
+                    </div>
+
+                    <div class="field">
+                      <div class="label">Téléphone :</div>
+                      <div class="value">${validatedData.telephone}</div>
+                    </div>
+
+                    <div class="field">
+                      <div class="label">Votre message :</div>
+                      <div class="value" style="white-space: pre-wrap; font-style: italic; color: #6b7280;">${validatedData.message}</div>
+                    </div>
+                  </div>
+
+                  <p style="color: #374151; margin-top: 20px;">
+                    Si vous avez des questions urgentes, n'hésitez pas à nous contacter directement.
+                  </p>
+
+                  <div class="contact-info">
+                    <p style="margin: 5px 0;">
+                      📞 <strong>Téléphone :</strong> <a href="tel:0666284458">06 66 28 44 58</a>
+                    </p>
+                    <p style="margin: 5px 0;">
+                      ✉️ <strong>Email :</strong> <a href="mailto:contact@haut-en-couleur.fr">contact@haut-en-couleur.fr</a>
+                    </p>
+                    <p style="margin: 5px 0;">
+                      🌐 <strong>Site web :</strong> <a href="https://haut-en-couleur.fr">haut-en-couleur.fr</a>
+                    </p>
+                  </div>
+
+                  <div class="footer">
+                    <p style="margin: 5px 0;">Haut en Couleur - Peinture et ravalement</p>
+                    <p style="margin: 5px 0;">Mordelles, 35310</p>
+                    <p style="margin: 5px 0; color: #9ca3af;">
+                      Ceci est un email automatique, merci de ne pas y répondre directement.
+                    </p>
+                  </div>
                 </div>
               </div>
-            </div>
-          </body>
-        </html>
-      `,
-    });
+            </body>
+          </html>
+        `,
+      })
+    ]);
 
-    if (error) {
-      console.error('Erreur Resend:', error);
+    // Vérifier les erreurs
+    if (emailToCompany.error) {
+      console.error('Erreur envoi email entreprise:', emailToCompany.error);
       return NextResponse.json(
-        { error: 'Erreur lors de l\'envoi de l\'email' },
+        { error: 'Erreur lors de l\'envoi de l\'email à l\'entreprise' },
         { status: 500 }
       );
+    }
+
+    if (emailToClient.error) {
+      console.error('Erreur envoi email confirmation client:', emailToClient.error);
+      // On continue quand même car l'email principal à l'entreprise est passé
+      // Mais on log l'erreur pour investigation
     }
 
     return NextResponse.json(
