@@ -32,6 +32,18 @@ export const metadata: Metadata = {
     description: "Expertise et qualité pour vos projets de peinture à Mordelles et alentours",
     type: "website",
     locale: "fr_FR",
+    images: [
+      {
+        url: '/img/logo.png',
+        width: 1200,
+        height: 630,
+        alt: 'Haut en Couleur - Logo',
+      },
+    ],
+  },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
   },
 };
 
