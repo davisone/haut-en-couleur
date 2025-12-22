@@ -119,7 +119,7 @@ const galleryImages = [
   {
     id: 12,
     title: "Ravalement façade bâtiment",
-    category: "Ravalement de façade",
+      category: "Ravalement de façade",
     url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
   },
 ];
