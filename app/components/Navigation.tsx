@@ -99,17 +99,6 @@ export default function Navigation() {
                       Peinture extérieure
                     </Link>
                     <Link
-                      href="/prestations/ravalement-facade"
-                      className={`block px-4 py-2 transition-colors ${
-                        isActive('/prestations/ravalement-facade')
-                          ? 'bg-orange-50 text-primary font-semibold'
-                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
-                      }`}
-                      role="menuitem"
-                    >
-                      Ravalement de façade
-                    </Link>
-                    <Link
                       href="/prestations/enduits-decoratifs"
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/enduits-decoratifs')
@@ -201,17 +190,6 @@ export default function Navigation() {
                       role="menuitem"
                     >
                       Peinture extérieure
-                    </Link>
-                    <Link
-                      href="/prestations/ravalement-facade"
-                      className={`transition-colors ${
-                        isActive('/prestations/ravalement-facade')
-                          ? 'text-primary font-semibold'
-                          : 'text-gray-600 hover:text-primary'
-                      }`}
-                      role="menuitem"
-                    >
-                      Ravalement de façade
                     </Link>
                     <Link
                       href="/prestations/enduits-decoratifs"

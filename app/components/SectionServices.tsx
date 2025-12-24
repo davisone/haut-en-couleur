@@ -18,13 +18,6 @@ const services = [
     borderColor: 'border-top-cameleon-lime',
   },
   {
-    id: 'ravalement-facade',
-    title: 'Ravalement de façade',
-    image: 'https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031',
-    description: 'Rénovation complète de vos murs extérieurs',
-    borderColor: 'border-top-cameleon-cyan',
-  },
-  {
     id: 'enduits-decoratifs',
     title: 'Enduits décoratifs',
     image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
@@ -48,7 +41,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {services.map((service) => (
             <Link
               key={service.id}
