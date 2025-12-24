@@ -52,7 +52,7 @@ export default function Services() {
           {services.map((service) => (
             <Link
               key={service.id}
-              href={`#${service.id}`}
+              href={`/prestations/${service.id}`}
               className={`group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${service.borderColor}`}
             >
               {/* Effet de brillance au survol */}
@@ -73,7 +73,6 @@ export default function Services() {
                   Découvrir
                 </div>
               </div>
-
               {/* Content */}
               <div className="p-6 relative">
                 <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300">

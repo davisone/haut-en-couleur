@@ -61,7 +61,7 @@ export default function Hero() {
 
         {/* CTA Button */}
         <Link
-          href="#contact"
+          href="/contact"
           className="inline-block px-10 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105 animate-fade-in"
           style={{ animationDelay: '0.6s' }}
         >

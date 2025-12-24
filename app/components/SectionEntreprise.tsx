@@ -27,7 +27,7 @@ export default function OurCompany() {
             </div>
             <div className="mt-8">
               <Link
-                href="#contact"
+                href="/contact"
                 className="inline-block px-8 py-3 text-lg font-semibold text-primary border-2 border-primary rounded-full hover:bg-primary hover:!text-white transition-all duration-300"
               >
                 CONTACTER
