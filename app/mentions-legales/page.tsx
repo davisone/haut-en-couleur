@@ -32,7 +32,7 @@ export default function MentionsLegales() {
                 <strong>Forme juridique :</strong> Entreprise individuelle
               </p>
               <p className="text-gray-600 mb-2">
-                <strong>Localisation :</strong> Mordelles, 35310, France
+                <strong>Adresse :</strong> 22 Le Domaine, 35310 Mordelles, France
               </p>
               <p className="text-gray-600 mb-2">
                 <strong>SIRET :</strong> 823 682 745 00026
@@ -88,7 +88,7 @@ export default function MentionsLegales() {
               <ul className="list-disc pl-6 text-gray-600 mb-4">
                 <li>Par email : contact@haut-en-couleur.fr</li>
                 <li>Par téléphone : 06 66 28 44 58</li>
-                <li>Par courrier : Haut en Couleur, Mordelles, 35310, France</li>
+                <li>Par courrier : Haut en Couleur, 22 Le Domaine, 35310 Mordelles, France</li>
               </ul>
               <p className="text-gray-600">
                 Pour plus d'informations sur la gestion de vos données personnelles, consultez notre{' '}

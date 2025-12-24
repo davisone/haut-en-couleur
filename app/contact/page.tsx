@@ -287,7 +287,6 @@ export default function Contact() {
                       <option value="devis">Demande de devis</option>
                       <option value="interieur">Peinture intérieure</option>
                       <option value="exterieur">Peinture extérieure</option>
-                      <option value="ravalement">Ravalement de façade</option>
                       <option value="enduits">Enduits décoratifs</option>
                       <option value="urgence">Dépannage d'urgence</option>
                       <option value="autre">Autre</option>

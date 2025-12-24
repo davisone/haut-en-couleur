@@ -33,7 +33,7 @@ export default function Navigation() {
           <div className="flex-shrink-0">
             <Link href="/" className="flex items-center gap-3">
               <Image
-                src="/img/logo.png"
+                src="/img/logo2.png"
                 alt="Haut en Couleur"
                 width={80}
                 height={80}

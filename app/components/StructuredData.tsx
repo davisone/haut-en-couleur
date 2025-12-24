@@ -4,8 +4,8 @@ export default function StructuredData() {
     "@type": "LocalBusiness",
     "@id": "https://haut-en-couleur.fr/#organization",
     "name": "Haut en Couleur",
-    "image": "https://haut-en-couleur.fr/img/logo.png",
-    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure, ravalement de façade et enduits décoratifs.",
+    "image": "https://haut-en-couleur.fr/img/logo2.png",
+    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure et enduits décoratifs.",
     "url": "https://haut-en-couleur.fr",
     "telephone": "+33666284458",
     "email": "contact@haut-en-couleur.fr",
@@ -49,7 +49,6 @@ export default function StructuredData() {
     "serviceType": [
       "Peinture intérieure",
       "Peinture extérieure",
-      "Ravalement de façade",
       "Enduits décoratifs",
       "Peinture de boiseries",
       "Finitions décoratives"
@@ -72,14 +71,6 @@ export default function StructuredData() {
             "@type": "Service",
             "name": "Peinture extérieure",
             "description": "Protection et embellissement de vos façades avec des peintures résistantes aux intempéries."
-          }
-        },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Ravalement de façade",
-            "description": "Rénovation complète de vos façades : nettoyage, réparation, enduit et peinture."
           }
         },
         {

@@ -20,7 +20,7 @@ export default function SeoContentQuiSommesNous() {
             </p>
             <p className="text-gray-600 leading-relaxed">
               Que ce soit pour des <strong>travaux de peinture intérieure</strong>, de <strong>peinture extérieure</strong>,
-              de <strong>ravalement de façade</strong> ou la pose d&apos;<strong>enduits décoratifs</strong>,
+              ou la pose d&apos;<strong>enduits décoratifs</strong>,
               nous mettons tout notre savoir-faire à votre service.
             </p>
           </div>

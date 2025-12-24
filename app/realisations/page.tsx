@@ -9,7 +9,7 @@ import GoogleReviews from '../components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: "Nos réalisations - Haut en Couleur",
-  description: "Découvrez nos dernières réalisations en peinture intérieure, extérieure et ravalement de façade à Rennes et ses environs.",
+  description: "Découvrez nos dernières réalisations en peinture intérieure, extérieure et enduits décoratifs à Rennes et ses environs.",
 };
 
 // Projets avec avant/après
@@ -32,14 +32,6 @@ const beforeAfterProjects = [
   },
   {
     id: 3,
-    title: "Ravalement immeuble centre-ville",
-    category: "Ravalement de façade",
-    beforeImage: "https://images.unsplash.com/photo-1582268611958-ebfd161ef9cf?q=80&w=2070",
-    afterImage: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
-    description: "Ravalement complet d'un immeuble de 3 étages en centre-ville de Rennes.",
-  },
-  {
-    id: 4,
     title: "Chambre avec enduit décoratif",
     category: "Enduits décoratifs",
     beforeImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070",
@@ -76,51 +68,33 @@ const galleryImages = [
   },
   {
     id: 5,
-    title: "Ravalement façade immeuble",
-    category: "Ravalement de façade",
-    url: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070",
-  },
-  {
-    id: 6,
     title: "Enduit décoratif salon",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1502672260066-6bc35f0af07e?q=80&w=2080",
   },
   {
-    id: 7,
+    id: 6,
     title: "Peinture intérieure bureau",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1556911220-bff31c812dba?q=80&w=2068",
   },
   {
-    id: 8,
-    title: "Ravalement façade maison",
-    category: "Ravalement de façade",
-    url: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
-  },
-  {
-    id: 9,
+    id: 7,
     title: "Enduit décoratif chambre",
     category: "Enduits décoratifs",
     url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070",
   },
   {
-    id: 10,
+    id: 8,
     title: "Peinture extérieure villa",
     category: "Peinture extérieure",
     url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070",
   },
   {
-    id: 11,
+    id: 9,
     title: "Peinture intérieure séjour",
     category: "Peinture intérieure",
     url: "https://images.unsplash.com/photo-1615873968403-89e068629265?q=80&w=2070",
-  },
-  {
-    id: 12,
-    title: "Ravalement façade bâtiment",
-    category: "Ravalement de façade",
-    url: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
   },
 ];
 

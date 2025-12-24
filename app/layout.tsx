@@ -25,8 +25,8 @@ export const metadata: Metadata = {
     template: "%s - Haut en Couleur",
     default: "Haut en Couleur - Peintre à Rennes"
   },
-  description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure et extérieure, ravalement de façade et enduits décoratifs. Intervention dans un rayon de 35 km.",
-  keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "ravalement", "façade", "intérieur", "extérieur"],
+  description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure et extérieure et enduits décoratifs. Intervention dans un rayon de 35 km.",
+  keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "intérieur", "extérieur", "enduits décoratifs"],
   authors: [{ name: "Haut en Couleur" }],
   openGraph: {
     title: "Haut en Couleur - Peintre à Rennes",
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     locale: "fr_FR",
     images: [
       {
-        url: '/img/logo.png',
+        url: '/img/logo2.png',
         width: 1200,
         height: 630,
         alt: 'Haut en Couleur - Logo',

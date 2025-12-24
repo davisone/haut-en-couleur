@@ -6,7 +6,7 @@ import SeoContentPrestations from '../components/SeoContentPrestations';
 
 export const metadata = {
   title: "Nos prestations - Haut en Couleur",
-  description: "Découvrez tous nos services : peinture intérieure, extérieure, ravalement de façade et enduits décoratifs à Rennes.",
+  description: "Découvrez tous nos services : peinture intérieure, extérieure et enduits décoratifs à Rennes.",
 };
 
 const prestations = [
@@ -43,23 +43,6 @@ const prestations = [
       "Protection longue durée"
     ],
     image: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
-  },
-  {
-    id: 'ravalement-facade',
-    title: 'Ravalement de façade',
-    icon: (
-      <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M7 21h10V9l-5-4.5L7 9v12zM19 19h2v2h-2v-2zM3 19h2v2H3v-2zM11 13h2v2h-2v-2zm-4 0h2v2H7v-2zm8 0h2v2h-2v-2zm-4 4h2v2h-2v-2zm-4 0h2v2H7v-2zm8 0h2v2h-2v-2z"/>
-      </svg>
-    ),
-    description: "Rénovation complète de vos façades pour redonner de l'éclat à votre bâtiment.",
-    services: [
-      "Nettoyage de façade",
-      "Réparation des fissures",
-      "Enduit de façade",
-      "Peinture de finition"
-    ],
-    image: "https://images.unsplash.com/photo-1503387762-592deb58ef4e?q=80&w=2031",
   },
   {
     id: 'enduits-decoratifs',

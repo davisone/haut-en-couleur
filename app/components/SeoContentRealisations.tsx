@@ -14,7 +14,7 @@ export default function SeoContentRealisations() {
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Que ce soit pour la <strong>rénovation d&apos;une maison</strong>, la <strong>peinture d&apos;un appartement</strong>,
-              le <strong>ravalement d&apos;une façade</strong> ou la <strong>décoration de bureaux professionnels</strong>,
+              ou la <strong>décoration de bureaux professionnels</strong>,
               nous apportons le même soin et la même attention aux détails.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -37,7 +37,7 @@ export default function SeoContentRealisations() {
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg shadow-sm">
-                <h3 className="font-bold text-gray-800 mb-2">Ravalement de façades</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Peinture extérieure</h3>
                 <p className="text-gray-600 text-sm">
                   Protection et embellissement de vos murs extérieurs avec des techniques professionnelles
                 </p>

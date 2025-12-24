@@ -80,7 +80,6 @@ export async function POST(request: Request) {
       devis: 'Demande de devis',
       interieur: 'Peinture intérieure',
       exterieur: 'Peinture extérieure',
-      ravalement: 'Ravalement de façade',
       enduits: 'Enduits décoratifs',
       urgence: 'Dépannage d\'urgence',
       autre: 'Autre',
@@ -333,7 +332,7 @@ export async function POST(request: Request) {
                   </div>
 
                   <div class="footer">
-                    <p style="margin: 5px 0;">Haut en Couleur - Peinture et ravalement</p>
+                    <p style="margin: 5px 0;">Haut en Couleur - Peinture en bâtiment</p>
                     <p style="margin: 5px 0;">Mordelles, 35310</p>
                     <p style="margin: 5px 0; color: #9ca3af;">
                       Ceci est un email automatique, merci de ne pas y répondre directement.

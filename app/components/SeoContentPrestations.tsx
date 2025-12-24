@@ -10,8 +10,8 @@ export default function SeoContentPrestations() {
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               <strong>Haut en Couleur</strong> est votre <strong>entreprise de peinture à Rennes</strong> pour
-              tous vos projets de <strong>peinture intérieure</strong>, <strong>peinture extérieure</strong>,
-              <strong> ravalement de façade</strong> et <strong>enduits décoratifs</strong>.
+              tous vos projets de <strong>peinture intérieure</strong>, <strong>peinture extérieure</strong>
+              et <strong>enduits décoratifs</strong>.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
               Que vous souhaitiez <strong>rafraîchir votre intérieur</strong>, <strong>rénover votre façade</strong>
@@ -43,13 +43,6 @@ export default function SeoContentPrestations() {
                 <p className="text-gray-600 text-sm">
                   Protection durable de vos façades contre les intempéries bretonnes.
                   Peintures adaptées au climat et longue durée de vie.
-                </p>
-              </div>
-              <div className="p-4 bg-gray-50 rounded-lg border-l-4 border-cameleon-turquoise">
-                <h3 className="font-bold text-gray-800 mb-2">Ravalement de façade près de Rennes</h3>
-                <p className="text-gray-600 text-sm">
-                  Nettoyage, traitement et rénovation complète de vos murs extérieurs.
-                  Devis gratuit et diagnostic professionnel.
                 </p>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg border-l-4 border-cameleon-emerald">
