@@ -18,7 +18,8 @@ export default function SeoContentRealisations() {
               nous apportons le même soin et la même attention aux détails.
             </p>
             <p className="text-gray-600 leading-relaxed">
-              Nos travaux de <strong>peinture intérieure et extérieure</strong> témoignent de notre expertise
+              Nos travaux de <strong>peinture intérieure</strong>, <strong>pose de papier peint</strong>
+              et <strong>revêtement de sol</strong> témoignent de notre expertise
               et de notre engagement à offrir des finitions parfaites. Parcourez notre galerie pour vous
               inspirer et imaginer ce que nous pourrions réaliser pour vous.
             </p>
@@ -37,21 +38,21 @@ export default function SeoContentRealisations() {
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg shadow-sm">
-                <h3 className="font-bold text-gray-800 mb-2">Peinture extérieure</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Enduit</h3>
                 <p className="text-gray-600 text-sm">
-                  Protection et embellissement de vos murs extérieurs avec des techniques professionnelles
+                  Application d&apos;enduit de lissage et rebouchage pour une finition parfaite
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg shadow-sm">
-                <h3 className="font-bold text-gray-800 mb-2">Locaux professionnels</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Pose de papier peint</h3>
                 <p className="text-gray-600 text-sm">
-                  Bureaux, commerces, restaurants - Des réalisations adaptées à votre activité
+                  Papier peint intissé, vinyle, panoramique - Pose professionnelle avec raccords parfaits
                 </p>
               </div>
               <div className="p-4 bg-white rounded-lg shadow-sm">
-                <h3 className="font-bold text-gray-800 mb-2">Enduits décoratifs</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Revêtement de sol</h3>
                 <p className="text-gray-600 text-sm">
-                  Créations de textures et finitions personnalisées pour un rendu unique
+                  Pose de lino, PVC, moquette pour tous vos espaces avec finitions soignées
                 </p>
               </div>
             </div>

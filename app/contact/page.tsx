@@ -286,8 +286,9 @@ export default function Contact() {
                       <option value="">Sélectionnez un sujet</option>
                       <option value="devis">Demande de devis</option>
                       <option value="interieur">Peinture intérieure</option>
-                      <option value="exterieur">Peinture extérieure</option>
-                      <option value="enduits">Enduits décoratifs</option>
+                      <option value="enduit">Enduit</option>
+                      <option value="papier">Pose de papier peint</option>
+                      <option value="sol">Revêtement de sol</option>
                       <option value="urgence">Dépannage d'urgence</option>
                       <option value="autre">Autre</option>
                     </select>

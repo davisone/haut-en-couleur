@@ -11,8 +11,8 @@ export default function SeoContent() {
             <p className="text-gray-600 leading-relaxed mb-4">
               <strong>Haut en Couleur</strong> est votre entreprise de peinture de confiance basée à Mordelles,
               intervenant dans toute la région de Rennes et l&apos;Ille-et-Vilaine. Spécialisés dans la
-              <strong> peinture intérieure</strong>, la <strong>peinture extérieure</strong>,
-              et les <strong>enduits décoratifs</strong>,
+              <strong> peinture intérieure</strong>, l&apos;<strong>enduit</strong>,
+              la <strong>pose de papier peint</strong> et le <strong>revêtement de sol</strong>,
               nous mettons notre expertise au service de vos projets de rénovation et de décoration.
             </p>
             <p className="text-gray-600 leading-relaxed">

@@ -5,7 +5,7 @@ export default function StructuredData() {
     "@id": "https://haut-en-couleur.fr/#organization",
     "name": "Haut en Couleur",
     "image": "https://haut-en-couleur.fr/img/logo2.png",
-    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, extérieure et enduits décoratifs.",
+    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, enduit, pose de papier peint et revêtement de sol.",
     "url": "https://haut-en-couleur.fr",
     "telephone": "+33666284458",
     "email": "contact@haut-en-couleur.fr",
@@ -48,8 +48,9 @@ export default function StructuredData() {
     "priceRange": "€€",
     "serviceType": [
       "Peinture intérieure",
-      "Peinture extérieure",
-      "Enduits décoratifs",
+      "Enduit",
+      "Pose de papier peint",
+      "Revêtement de sol",
       "Peinture de boiseries",
       "Finitions décoratives"
     ],
@@ -69,16 +70,24 @@ export default function StructuredData() {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Peinture extérieure",
-            "description": "Protection et embellissement de vos façades avec des peintures résistantes aux intempéries."
+            "name": "Enduit",
+            "description": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture."
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Enduits décoratifs",
-            "description": "Béton ciré, stucco vénitien, tadelakt et enduits à la chaux pour des finitions uniques."
+            "name": "Pose de papier peint",
+            "description": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Préparation des murs et raccords parfaits."
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Revêtement de sol",
+            "description": "Pose de revêtements de sol : lino, PVC, moquette. Préparation du support et finitions impeccables."
           }
         }
       ]

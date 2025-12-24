@@ -9,7 +9,7 @@ import GoogleReviews from '../components/GoogleReviews';
 
 export const metadata: Metadata = {
   title: "Nos réalisations - Haut en Couleur",
-  description: "Découvrez nos dernières réalisations en peinture intérieure, extérieure et enduits décoratifs à Rennes et ses environs.",
+  description: "Découvrez nos dernières réalisations en peinture intérieure, enduit, papier peint et revêtement de sol à Rennes et ses environs.",
 };
 
 // Projets avec avant/après
@@ -24,19 +24,19 @@ const beforeAfterProjects = [
   },
   {
     id: 2,
-    title: "Façade maison individuelle",
-    category: "Peinture extérieure",
-    beforeImage: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070",
-    afterImage: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
-    description: "Peinture complète de la façade d'une maison avec préparation des surfaces.",
+    title: "Pose de papier peint salon",
+    category: "Papier peint",
+    beforeImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070",
+    afterImage: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069",
+    description: "Pose de papier peint panoramique dans un salon moderne avec raccords parfaits.",
   },
   {
     id: 3,
-    title: "Chambre avec enduit décoratif",
-    category: "Enduits décoratifs",
-    beforeImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&w=2070",
-    afterImage: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070",
-    description: "Application d'enduit décoratif effet béton ciré dans une chambre moderne.",
+    title: "Revêtement de sol PVC",
+    category: "Revêtement de sol",
+    beforeImage: "https://images.unsplash.com/photo-1581858726788-75bc0f6a952d?q=80&w=2070",
+    afterImage: "https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070",
+    description: "Pose de sol PVC imitation parquet dans une pièce de vie.",
   },
 ];
 
@@ -56,9 +56,9 @@ const galleryImages = [
   },
   {
     id: 3,
-    title: "Peinture extérieure maison",
-    category: "Peinture extérieure",
-    url: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2070",
+    title: "Pose de papier peint",
+    category: "Papier peint",
+    url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069",
   },
   {
     id: 4,
@@ -68,9 +68,9 @@ const galleryImages = [
   },
   {
     id: 5,
-    title: "Enduit décoratif salon",
-    category: "Enduits décoratifs",
-    url: "https://images.unsplash.com/photo-1502672260066-6bc35f0af07e?q=80&w=2080",
+    title: "Enduit de lissage",
+    category: "Enduit",
+    url: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000",
   },
   {
     id: 6,
@@ -80,15 +80,15 @@ const galleryImages = [
   },
   {
     id: 7,
-    title: "Enduit décoratif chambre",
-    category: "Enduits décoratifs",
-    url: "https://images.unsplash.com/photo-1616486338812-3dadae4b4ace?q=80&w=2070",
+    title: "Revêtement de sol lino",
+    category: "Revêtement de sol",
+    url: "https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070",
   },
   {
     id: 8,
-    title: "Peinture extérieure villa",
-    category: "Peinture extérieure",
-    url: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2070",
+    title: "Pose papier peint chambre",
+    category: "Papier peint",
+    url: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069",
   },
   {
     id: 9,

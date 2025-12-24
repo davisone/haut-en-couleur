@@ -88,26 +88,37 @@ export default function Navigation() {
                       Peinture intérieure
                     </Link>
                     <Link
-                      href="/prestations/peinture-exterieure"
+                      href="/prestations/enduit"
                       className={`block px-4 py-2 transition-colors ${
-                        isActive('/prestations/peinture-exterieure')
+                        isActive('/prestations/enduit')
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
-                      Peinture extérieure
+                      Enduit
                     </Link>
                     <Link
-                      href="/prestations/enduits-decoratifs"
+                      href="/prestations/papier-peint"
                       className={`block px-4 py-2 transition-colors ${
-                        isActive('/prestations/enduits-decoratifs')
+                        isActive('/prestations/papier-peint')
                           ? 'bg-orange-50 text-primary font-semibold'
                           : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
-                      Enduits décoratifs
+                      Pose de papier peint
+                    </Link>
+                    <Link
+                      href="/prestations/revetement-sol"
+                      className={`block px-4 py-2 transition-colors ${
+                        isActive('/prestations/revetement-sol')
+                          ? 'bg-orange-50 text-primary font-semibold'
+                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                      }`}
+                      role="menuitem"
+                    >
+                      Revêtement de sol
                     </Link>
                   </div>
                 </div>
@@ -181,26 +192,37 @@ export default function Navigation() {
                       Peinture intérieure
                     </Link>
                     <Link
-                      href="/prestations/peinture-exterieure"
+                      href="/prestations/enduit"
                       className={`transition-colors ${
-                        isActive('/prestations/peinture-exterieure')
+                        isActive('/prestations/enduit')
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
-                      Peinture extérieure
+                      Enduit
                     </Link>
                     <Link
-                      href="/prestations/enduits-decoratifs"
+                      href="/prestations/papier-peint"
                       className={`transition-colors ${
-                        isActive('/prestations/enduits-decoratifs')
+                        isActive('/prestations/papier-peint')
                           ? 'text-primary font-semibold'
                           : 'text-gray-600 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
-                      Enduits décoratifs
+                      Pose de papier peint
+                    </Link>
+                    <Link
+                      href="/prestations/revetement-sol"
+                      className={`transition-colors ${
+                        isActive('/prestations/revetement-sol')
+                          ? 'text-primary font-semibold'
+                          : 'text-gray-600 hover:text-primary'
+                      }`}
+                      role="menuitem"
+                    >
+                      Revêtement de sol
                     </Link>
                   </div>
                 )}

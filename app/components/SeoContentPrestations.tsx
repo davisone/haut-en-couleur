@@ -10,12 +10,12 @@ export default function SeoContentPrestations() {
             </h2>
             <p className="text-gray-600 leading-relaxed mb-4">
               <strong>Haut en Couleur</strong> est votre <strong>entreprise de peinture à Rennes</strong> pour
-              tous vos projets de <strong>peinture intérieure</strong>, <strong>peinture extérieure</strong>
-              et <strong>enduits décoratifs</strong>.
+              tous vos projets de <strong>peinture intérieure</strong>, <strong>enduit</strong>,
+              <strong>pose de papier peint</strong> et <strong>revêtement de sol</strong>.
             </p>
             <p className="text-gray-600 leading-relaxed mb-4">
-              Que vous souhaitiez <strong>rafraîchir votre intérieur</strong>, <strong>rénover votre façade</strong>
-              ou créer une <strong>ambiance unique avec des enduits décoratifs</strong>, notre peintre professionnel
+              Que vous souhaitiez <strong>rafraîchir votre intérieur</strong>, <strong>poser du papier peint</strong>
+              ou <strong>rénover votre sol</strong>, notre peintre professionnel
               met son expertise à votre service.
             </p>
             <p className="text-gray-600 leading-relaxed">
@@ -39,17 +39,24 @@ export default function SeoContentPrestations() {
                 </p>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg border-l-4 border-cameleon-blue">
-                <h3 className="font-bold text-gray-800 mb-2">Peinture extérieure en Ille-et-Vilaine</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Enduit à Rennes</h3>
                 <p className="text-gray-600 text-sm">
-                  Protection durable de vos façades contre les intempéries bretonnes.
-                  Peintures adaptées au climat et longue durée de vie.
+                  Application d'enduit de lissage, rebouchage et préparation des surfaces.
+                  Pour une finition parfaite avant peinture.
                 </p>
               </div>
               <div className="p-4 bg-gray-50 rounded-lg border-l-4 border-cameleon-emerald">
-                <h3 className="font-bold text-gray-800 mb-2">Enduits décoratifs personnalisés</h3>
+                <h3 className="font-bold text-gray-800 mb-2">Pose de papier peint</h3>
                 <p className="text-gray-600 text-sm">
-                  Créations sur mesure : béton ciré, stuc, chaux, effets matières.
-                  Pour un rendu unique et élégant.
+                  Pose professionnelle de papier peint intissé, vinyle et panoramique.
+                  Raccords parfaits et finitions soignées.
+                </p>
+              </div>
+              <div className="p-4 bg-gray-50 rounded-lg border-l-4 border-cameleon-yellow">
+                <h3 className="font-bold text-gray-800 mb-2">Revêtement de sol</h3>
+                <p className="text-gray-600 text-sm">
+                  Pose de lino, PVC, moquette pour tous vos espaces.
+                  Préparation du support et pose professionnelle.
                 </p>
               </div>
             </div>

@@ -11,18 +11,25 @@ const services = [
     borderColor: 'border-top-cameleon-turquoise',
   },
   {
-    id: 'peinture-exterieure',
-    title: 'Peinture extérieure',
-    image: 'https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074',
-    description: 'Protection et esthétique pour vos façades extérieures',
+    id: 'enduit',
+    title: 'Enduit',
+    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
+    description: 'Application d\'enduit pour vos murs et plafonds',
     borderColor: 'border-top-cameleon-lime',
   },
   {
-    id: 'enduits-decoratifs',
-    title: 'Enduits décoratifs',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
-    description: 'Finitions uniques et textures personnalisées',
+    id: 'papier-peint',
+    title: 'Pose de papier peint',
+    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069',
+    description: 'Pose professionnelle pour personnaliser vos intérieurs',
     borderColor: 'border-top-cameleon-yellow',
+  },
+  {
+    id: 'revetement-sol',
+    title: 'Revêtement de sol',
+    image: 'https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070',
+    description: 'Pose de revêtements de sol pour tous vos espaces',
+    borderColor: 'border-top-cameleon-blue',
   },
 ];
 
@@ -41,7 +48,7 @@ export default function Services() {
         </div>
 
         {/* Services Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => (
             <Link
               key={service.id}

@@ -4,66 +4,117 @@ import PageHero from '../../components/PageHero';
 import Link from 'next/link';
 
 export const metadata = {
-  title: "Peinture extérieure - Haut en Couleur",
-  description: "Services de peinture extérieure à Rennes : façades, volets, portes. Protection durable contre les intempéries.",
+  title: "Enduit - Haut en Couleur",
+  description: "Application d'enduit à Rennes : enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture.",
 };
 
-export default function PeintureExterieure() {
+export default function Enduit() {
   return (
     <>
       <Navigation />
       <main>
         <PageHero
-          title="Peinture extérieure"
-          subtitle="Protégez et embellissez vos façades avec nos peintures extérieures de haute qualité, résistantes aux intempéries"
-          backgroundImage="/img/peinture-exterieure-hero.jpg"
+          title="Enduit"
+          subtitle="Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture"
+          backgroundImage="/img/enduit-hero.jpg"
         />
 
         {/* Services détaillés */}
         <section className="py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <h2 className="text-4xl font-bold text-gray-800 mb-12 text-center">
-              Nos services de peinture extérieure
+              Nos services d'enduit
             </h2>
 
             <div className="grid md:grid-cols-2 gap-12 mb-16">
+              {/* Service 1 */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Peinture de façades</h3>
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Enduit de lissage</h3>
                 <p className="text-gray-600 mb-4">
-                  Application de peinture sur tous types de façades pour une protection optimale.
+                  Application d'enduit de lissage pour obtenir des surfaces parfaitement lisses avant peinture.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Nettoyage haute pression
+                    Surface parfaitement lisse
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Traitement anti-mousse
+                    Préparation optimale pour la peinture
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Peintures microporeuses
+                    Application sur murs et plafonds
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Garantie longue durée
+                    Finition professionnelle garantie
                   </li>
                 </ul>
               </div>
 
+              {/* Service 2 */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Volets et portes</h3>
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M19 19h-1V5h1m-4 0h-1v14h1M2 5h1v14H2m3 0h1V5H5m3 0v14h1V5m2 0h1v14h-1"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Rebouchage et réparation</h3>
                 <p className="text-gray-600 mb-4">
-                  Rénovation et peinture de vos menuiseries extérieures.
+                  Rebouchage de trous, fissures et imperfections pour une surface impeccable.
+                </p>
+                <ul className="space-y-2 text-gray-600">
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    Réparation des fissures
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    Rebouchage de trous et impacts
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    Correction des imperfections
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    Résultat invisible après peinture
+                  </li>
+                </ul>
+              </div>
+
+              {/* Service 3 */}
+              <div className="bg-gray-50 p-8 rounded-2xl">
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Préparation des surfaces</h3>
+                <p className="text-gray-600 mb-4">
+                  Préparation complète des murs et plafonds avant application de peinture.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
@@ -76,85 +127,58 @@ export default function PeintureExterieure() {
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Peinture spéciale bois extérieur
+                    Traitement des anciennes peintures
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Protection UV et intempéries
+                    Application de primaire d'accrochage
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Large choix de couleurs
+                    Support prêt pour la finition
                   </li>
                 </ul>
               </div>
 
+              {/* Service 4 */}
               <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Traitement anti-humidité</h3>
+                <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6">
+                  <svg className="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20 6h-2.18c.11-.31.18-.65.18-1 0-1.66-1.34-3-3-3-1.05 0-1.96.54-2.5 1.35l-.5.67-.5-.68C10.96 2.54 10.05 2 9 2 7.34 2 6 3.34 6 5c0 .35.07.69.18 1H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-5-2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zM9 4c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm11 15H4v-2h16v2zm0-5H4V8h5.08L7 10.83 8.62 12 11 8.76l1-1.36 1 1.36L15.38 12 17 10.83 14.92 8H20v6z"/>
+                  </svg>
+                </div>
+                <h3 className="text-2xl font-bold text-gray-800 mb-4">Rénovation complète</h3>
                 <p className="text-gray-600 mb-4">
-                  Protection contre les infiltrations et l'humidité.
+                  Remise en état complète de vos murs et plafonds pour une rénovation totale.
                 </p>
                 <ul className="space-y-2 text-gray-600">
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Diagnostic humidité
+                    Diagnostic de l'état des supports
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Hydrofuge de surface
+                    Réparation et préparation complète
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Peinture respirante
+                    Application d'enduit multi-couches
                   </li>
                   <li className="flex items-start gap-2">
                     <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
                       <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                     </svg>
-                    Prévention durable
-                  </li>
-                </ul>
-              </div>
-
-              <div className="bg-gray-50 p-8 rounded-2xl">
-                <h3 className="text-2xl font-bold text-gray-800 mb-4">Autres surfaces extérieures</h3>
-                <p className="text-gray-600 mb-4">
-                  Peinture de tous éléments extérieurs de votre maison.
-                </p>
-                <ul className="space-y-2 text-gray-600">
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                    Balcons et terrasses
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                    Garde-corps et rambardes
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                    Portails et clôtures
-                  </li>
-                  <li className="flex items-start gap-2">
-                    <svg className="w-5 h-5 text-primary flex-shrink-0 mt-0.5" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-                    </svg>
-                    Abris de jardin
+                    Finition parfaite prête à peindre
                   </li>
                 </ul>
               </div>
@@ -163,40 +187,40 @@ export default function PeintureExterieure() {
             {/* Avantages */}
             <div className="bg-orange-50 p-8 md:p-12 rounded-2xl">
               <h3 className="text-3xl font-bold text-gray-800 mb-8 text-center">
-                Nos garanties
+                Pourquoi choisir Haut en Couleur ?
               </h3>
               <div className="grid md:grid-cols-3 gap-8">
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
                     </svg>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-800 mb-2">Durabilité</h4>
+                  <h4 className="text-xl font-bold text-gray-800 mb-2">Expertise</h4>
                   <p className="text-gray-600">
-                    Peintures garanties 10 ans minimum
+                    Maîtrise parfaite des techniques d'application d'enduit
                   </p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z"/>
+                      <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
                     </svg>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-800 mb-2">Performance</h4>
+                  <h4 className="text-xl font-bold text-gray-800 mb-2">Rapidité</h4>
                   <p className="text-gray-600">
-                    Résistance maximale aux UV et intempéries
+                    Travail soigné réalisé dans les délais convenus
                   </p>
                 </div>
                 <div className="text-center">
                   <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
                     <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                      <path d="M19.43 12.98c.04-.32.07-.64.07-.98s-.03-.66-.07-.98l2.11-1.65c.19-.15.24-.42.12-.64l-2-3.46c-.12-.22-.39-.3-.61-.22l-2.49 1c-.52-.4-1.08-.73-1.69-.98l-.38-2.65C14.46 2.18 14.25 2 14 2h-4c-.25 0-.46.18-.49.42l-.38 2.65c-.61.25-1.17.59-1.69.98l-2.49-1c-.23-.09-.49 0-.61.22l-2 3.46c-.13.22-.07.49.12.64l2.11 1.65c-.04.32-.07.65-.07.98s.03.66.07.98l-2.11 1.65c-.19.15-.24.42-.12.64l2 3.46c.12.22.39.3.61.22l2.49-1c.52.4 1.08.73 1.69.98l.38 2.65c.03.24.24.42.49.42h4c.25 0 .46-.18.49-.42l.38-2.65c.61-.25 1.17-.59 1.69-.98l2.49 1c.23.09.49 0 .61-.22l2-3.46c.12-.22.07-.49-.12-.64l-2.11-1.65zM12 15.5c-1.93 0-3.5-1.57-3.5-3.5s1.57-3.5 3.5-3.5 3.5 1.57 3.5 3.5-1.57 3.5-3.5 3.5z"/>
+                      <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z"/>
                     </svg>
                   </div>
-                  <h4 className="text-xl font-bold text-gray-800 mb-2">Professionnalisme</h4>
+                  <h4 className="text-xl font-bold text-gray-800 mb-2">Qualité</h4>
                   <p className="text-gray-600">
-                    Matériel professionnel et techniques éprouvées
+                    Matériaux professionnels et finitions impeccables
                   </p>
                 </div>
               </div>
@@ -208,10 +232,10 @@ export default function PeintureExterieure() {
         <section className="py-20 px-4 bg-white">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-4xl font-bold text-gray-800 mb-6">
-              Protégez votre façade durablement
+              Besoin d'application d'enduit ?
             </h2>
             <p className="text-xl text-gray-600 mb-8">
-              Obtenez un devis gratuit pour votre projet de peinture extérieure.
+              Contactez-nous pour un devis gratuit et personnalisé.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link

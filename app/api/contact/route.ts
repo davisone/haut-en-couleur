@@ -79,8 +79,9 @@ export async function POST(request: Request) {
     const sujetLabels: Record<string, string> = {
       devis: 'Demande de devis',
       interieur: 'Peinture intérieure',
-      exterieur: 'Peinture extérieure',
-      enduits: 'Enduits décoratifs',
+      enduit: 'Enduit',
+      papier: 'Pose de papier peint',
+      sol: 'Revêtement de sol',
       urgence: 'Dépannage d\'urgence',
       autre: 'Autre',
     };

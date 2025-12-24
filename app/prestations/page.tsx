@@ -6,7 +6,7 @@ import SeoContentPrestations from '../components/SeoContentPrestations';
 
 export const metadata = {
   title: "Nos prestations - Haut en Couleur",
-  description: "Découvrez tous nos services : peinture intérieure, extérieure et enduits décoratifs à Rennes.",
+  description: "Découvrez tous nos services : peinture intérieure, enduit, papier peint et revêtement de sol à Rennes.",
 };
 
 const prestations = [
@@ -28,38 +28,55 @@ const prestations = [
     image: "https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2070",
   },
   {
-    id: 'peinture-exterieure',
-    title: 'Peinture extérieure',
+    id: 'enduit',
+    title: 'Enduit',
     icon: (
       <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M19 9.3V4h-3v2.6L12 3 2 12h3v8h5v-6h4v6h5v-8h3l-3-2.7zM10 10c0-1.1.9-2 2-2s2 .9 2 2h-4z"/>
+        <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
       </svg>
     ),
-    description: "Protection et embellissement de vos façades avec des peintures résistantes aux intempéries.",
+    description: "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite.",
     services: [
-      "Peinture de façades",
-      "Traitement anti-humidité",
-      "Peinture de volets et portes",
-      "Protection longue durée"
-    ],
-    image: "https://images.unsplash.com/photo-1598228723793-52759bba239c?q=80&w=2074",
-  },
-  {
-    id: 'enduits-decoratifs',
-    title: 'Enduits décoratifs',
-    icon: (
-      <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
-        <path d="M12 2l-5.5 9h11L12 2zm0 3.84L13.93 9h-3.87L12 5.84zM17.5 13c-2.49 0-4.5 2.01-4.5 4.5s2.01 4.5 4.5 4.5 4.5-2.01 4.5-4.5-2.01-4.5-4.5-4.5zm0 7c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5zM3 21.5h8v-8H3v8zm2-6h4v4H5v-4z"/>
-      </svg>
-    ),
-    description: "Créez des ambiances uniques avec nos enduits décoratifs et textures personnalisées.",
-    services: [
-      "Enduit béton ciré",
-      "Stucco vénitien",
-      "Enduit à la chaux",
-      "Textures personnalisées"
+      "Enduit de lissage",
+      "Rebouchage et réparation",
+      "Préparation des surfaces",
+      "Finitions impeccables"
     ],
     image: "https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000",
+  },
+  {
+    id: 'papier-peint',
+    title: 'Pose de papier peint',
+    icon: (
+      <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M21 3H3c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h18c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H3V5h18v14z"/>
+      </svg>
+    ),
+    description: "Pose professionnelle de papier peint pour personnaliser vos intérieurs avec style.",
+    services: [
+      "Papier peint intissé",
+      "Papier peint vinyle",
+      "Papier peint panoramique",
+      "Préparation des murs"
+    ],
+    image: "https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069",
+  },
+  {
+    id: 'revetement-sol',
+    title: 'Revêtement de sol',
+    icon: (
+      <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">
+        <path d="M3 3h18v18H3z"/>
+      </svg>
+    ),
+    description: "Pose de revêtements de sol pour tous vos espaces : lino, PVC, moquette.",
+    services: [
+      "Lino et linoléum",
+      "Sol PVC",
+      "Moquette",
+      "Préparation du support"
+    ],
+    image: "https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070",
   },
 ];
 

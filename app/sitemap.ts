@@ -29,13 +29,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/prestations/peinture-exterieure`,
+      url: `${baseUrl}/prestations/enduit`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
     },
     {
-      url: `${baseUrl}/prestations/enduits-decoratifs`,
+      url: `${baseUrl}/prestations/papier-peint`,
+      lastModified: new Date(),
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
+      url: `${baseUrl}/prestations/revetement-sol`,
       lastModified: new Date(),
       changeFrequency: 'monthly',
       priority: 0.8,
