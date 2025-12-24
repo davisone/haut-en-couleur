@@ -8,34 +8,24 @@ interface TimelineEvent {
 
 const events: TimelineEvent[] = [
   {
-    year: "2010",
-    title: "Création de l'entreprise",
-    description: "Haut en Couleur voit le jour à Rennes, avec la passion de transformer les espaces par la couleur et l'expertise en peinture.",
-  },
-  {
-    year: "2013",
-    title: "Expansion de l'équipe",
-    description: "L'entreprise grandit et recrute de nouveaux peintres qualifiés pour répondre à une demande croissante.",
-  },
-  {
     year: "2016",
-    title: "Spécialisation écologique",
-    description: "Adoption de peintures écologiques et de techniques respectueuses de l'environnement.",
+    title: "Création de l'entreprise",
+    description: "HAUT EN COULEUR, SARL, est créée le 24 octobre 2016 à Mordelles, spécialisée dans les travaux de peinture et vitrerie.",
   },
   {
     year: "2019",
-    title: "100+ projets réalisés",
-    description: "Franchissement du cap des 100 projets de rénovation et décoration réussis dans la région rennaise.",
+    title: "Développement local",
+    description: "Consolidation de notre présence dans la région rennaise avec une expertise reconnue en peinture intérieure et extérieure.",
   },
   {
-    year: "2022",
-    title: "Innovation technologique",
-    description: "Intégration de nouvelles technologies de simulation 3D pour visualiser les projets avant leur réalisation.",
+    year: "2023",
+    title: "Reconnaissance PME",
+    description: "L'entreprise est catégorisée Petite ou Moyenne Entreprise, témoignant de son développement et de sa solidité.",
   },
   {
-    year: "2024",
+    year: "2025",
     title: "Aujourd'hui",
-    description: "Une entreprise reconnue pour son excellence, son savoir-faire et sa proximité avec ses clients.",
+    description: "9 ans d'expérience au service des particuliers et professionnels. Une entreprise à taille humaine reconnue pour son savoir-faire et sa proximité avec ses clients.",
   },
 ];
 
@@ -47,7 +37,7 @@ export default function Timeline() {
           Notre histoire
         </h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            Plus de 10 ans d'expérience au service de vos projets
+            9 ans d&apos;expérience au service de vos projets
         </p>
 
         <div className="relative">
@@ -96,7 +86,7 @@ export default function Timeline() {
         <div className="mt-16 text-center">
           <div className="inline-block bg-white px-8 py-6 rounded-2xl shadow-lg">
             <p className="text-xl text-gray-700 font-medium">
-              Et l'aventure continue...
+              Et l&apos;aventure continue...
             </p>
             <div className="mt-4 w-16 h-1 bg-primary mx-auto rounded-full"></div>
           </div>
