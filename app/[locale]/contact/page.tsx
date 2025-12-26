@@ -7,18 +7,20 @@ import FAQ from '@/app/components/FAQ';
 import { useState, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
+import { useTranslations } from 'next-intl';
 
-// Charger la carte uniquement côté client
 const Map = dynamic(() => import('@/app/components/Map'), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full flex items-center justify-center bg-gray-200">
-      <p className="text-gray-600">Chargement de la carte...</p>
+      <p className="text-gray-600">Loading map...</p>
     </div>
   ),
 });
 
 export default function Contact() {
+  const t = useTranslations('Contact');
+
   const [formData, setFormData] = useState({
     nom: '',
     email: '',
@@ -36,10 +38,9 @@ export default function Contact() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    // Vérifier que le CAPTCHA est validé
     if (!captchaToken) {
       setSubmitStatus('error');
-      setErrorMessage('Veuillez compléter le CAPTCHA');
+      setErrorMessage(t('captchaRequired'));
       return;
     }
 
@@ -62,11 +63,10 @@ export default function Contact() {
       const data = await response.json();
 
       if (!response.ok) {
-        throw new Error(data.error || 'Erreur lors de l\'envoi du message');
+        throw new Error(data.error || t('sendError'));
       }
 
       setSubmitStatus('success');
-      // Réinitialiser le formulaire et le CAPTCHA
       setFormData({
         nom: '',
         email: '',
@@ -77,13 +77,12 @@ export default function Contact() {
       setCaptchaToken(null);
       captchaRef.current?.resetCaptcha();
 
-      // Masquer le message de succès après 5 secondes
       setTimeout(() => {
         setSubmitStatus('idle');
       }, 5000);
     } catch (error) {
       setSubmitStatus('error');
-      setErrorMessage(error instanceof Error ? error.message : 'Une erreur est survenue');
+      setErrorMessage(error instanceof Error ? error.message : t('genericError'));
     } finally {
       setIsSubmitting(false);
     }
@@ -101,22 +100,20 @@ export default function Contact() {
       <Navigation />
       <main id="main-content">
         <PageHero
-          title="Nous contacter"
-          subtitle="Une question ? Un projet ? N'hésitez pas à nous contacter"
+          title={t('heroTitle')}
+          subtitle={t('heroSubtitle')}
           backgroundImage="/img/contact-hero.jpg"
         />
 
-        {/* FAQ Section */}
         <FAQ />
 
-        {/* Contact Section */}
         <section className="py-20 px-4 bg-white">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Info */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-8">
-                  Nos coordonnées
+                  {t('infoTitle')}
                 </h2>
 
                 <div className="space-y-6">
@@ -128,9 +125,9 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Adresse</h3>
-                      <p className="text-gray-600">Mordelles, Ille-et-Vilaine</p>
-                      <p className="text-gray-600">France</p>
+                      <h3 className="font-semibold text-gray-800 mb-1">{t('address')}</h3>
+                      <p className="text-gray-600">{t('addressLine1')}</p>
+                      <p className="text-gray-600">{t('addressLine2')}</p>
                     </div>
                   </div>
 
@@ -142,7 +139,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Téléphone</h3>
+                      <h3 className="font-semibold text-gray-800 mb-1">{t('phone')}</h3>
                       <a href="tel:+33666284458" className="text-primary hover:text-primary-light text-lg">
                         06 66 28 44 58
                       </a>
@@ -157,7 +154,7 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Email</h3>
+                      <h3 className="font-semibold text-gray-800 mb-1">{t('email')}</h3>
                       <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:text-primary-light">
                           contact@haut-en-couleur.fr
                       </a>
@@ -172,9 +169,9 @@ export default function Contact() {
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">Horaires</h3>
-                      <p className="text-gray-600">Lundi - Vendredi : 8h - 18h</p>
-                      <p className="text-gray-600">Samedi - Dimanche : Fermé</p>
+                      <h3 className="font-semibold text-gray-800 mb-1">{t('hours')}</h3>
+                      <p className="text-gray-600">{t('hoursWeekday')}</p>
+                      <p className="text-gray-600">{t('hoursWeekend')}</p>
                     </div>
                   </div>
                 </div>
@@ -188,7 +185,7 @@ export default function Contact() {
               {/* Contact Form */}
               <div>
                 <h2 className="text-3xl font-bold text-gray-800 mb-8">
-                  Envoyez-nous un message
+                  {t('formTitle')}
                 </h2>
 
                 <form onSubmit={handleSubmit} className="space-y-6">
@@ -199,8 +196,8 @@ export default function Contact() {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <h3 className="font-semibold text-green-800">Message envoyé avec succès !</h3>
-                        <p className="text-sm text-green-700 mt-1">Merci pour votre message. Nous vous répondrons dans les plus brefs délais.</p>
+                        <h3 className="font-semibold text-green-800">{t('successTitle')}</h3>
+                        <p className="text-sm text-green-700 mt-1">{t('successMessage')}</p>
                       </div>
                     </div>
                   )}
@@ -212,7 +209,7 @@ export default function Contact() {
                         <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM8.707 7.293a1 1 0 00-1.414 1.414L8.586 10l-1.293 1.293a1 1 0 101.414 1.414L10 11.414l1.293 1.293a1 1 0 001.414-1.414L11.414 10l1.293-1.293a1 1 0 00-1.414-1.414L10 8.586 8.707 7.293z" clipRule="evenodd" />
                       </svg>
                       <div>
-                        <h3 className="font-semibold text-red-800">Erreur lors de l'envoi</h3>
+                        <h3 className="font-semibold text-red-800">{t('errorTitle')}</h3>
                         <p className="text-sm text-red-700 mt-1">{errorMessage}</p>
                       </div>
                     </div>
@@ -221,7 +218,7 @@ export default function Contact() {
                   {/* Nom */}
                   <div>
                     <label htmlFor="nom" className="block text-sm font-medium text-gray-700 mb-2">
-                      Nom complet *
+                      {t('nameLabel')}
                     </label>
                     <input
                       type="text"
@@ -231,14 +228,14 @@ export default function Contact() {
                       value={formData.nom}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="Votre nom"
+                      placeholder={t('namePlaceholder')}
                     />
                   </div>
 
                   {/* Email */}
                   <div>
                     <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
-                      Email *
+                      {t('emailLabel')}
                     </label>
                     <input
                       type="email"
@@ -248,14 +245,14 @@ export default function Contact() {
                       value={formData.email}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="votre@email.com"
+                      placeholder={t('emailPlaceholder')}
                     />
                   </div>
 
                   {/* Téléphone */}
                   <div>
                     <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-2">
-                      Téléphone *
+                      {t('phoneLabel')}
                     </label>
                     <input
                       type="tel"
@@ -265,15 +262,14 @@ export default function Contact() {
                       value={formData.telephone}
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
-                      placeholder="06 00 00 00 00"
+                      placeholder={t('phonePlaceholder')}
                     />
                   </div>
 
                   {/* Sujet */}
                   <div>
-                    <label htmlFor="sujet" className="block
-                     font-medium text-gray-700 mb-2">
-                      Sujet *
+                    <label htmlFor="sujet" className="block text-sm font-medium text-gray-700 mb-2">
+                      {t('subjectLabel')}
                     </label>
                     <select
                       id="sujet"
@@ -283,21 +279,21 @@ export default function Contact() {
                       onChange={handleChange}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                     >
-                      <option value="">Sélectionnez un sujet</option>
-                      <option value="devis">Demande de devis</option>
-                      <option value="interieur">Peinture intérieure</option>
-                      <option value="enduit">Enduit</option>
-                      <option value="papier">Pose de papier peint</option>
-                      <option value="sol">Revêtement de sol</option>
-                      <option value="urgence">Dépannage d'urgence</option>
-                      <option value="autre">Autre</option>
+                      <option value="">{t('subjectPlaceholder')}</option>
+                      <option value="devis">{t('subject1')}</option>
+                      <option value="interieur">{t('subject2')}</option>
+                      <option value="enduit">{t('subject3')}</option>
+                      <option value="papier">{t('subject4')}</option>
+                      <option value="sol">{t('subject5')}</option>
+                      <option value="urgence">{t('subject6')}</option>
+                      <option value="autre">{t('subject7')}</option>
                     </select>
                   </div>
 
                   {/* Message */}
                   <div>
                     <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
-                      Message *
+                      {t('messageLabel')}
                     </label>
                     <textarea
                       id="message"
@@ -307,7 +303,7 @@ export default function Contact() {
                       onChange={handleChange}
                       rows={6}
                       className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
-                      placeholder="Décrivez votre projet..."
+                      placeholder={t('messagePlaceholder')}
                     />
                   </div>
 
@@ -334,10 +330,10 @@ export default function Contact() {
                           <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4"></circle>
                           <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                         </svg>
-                        Envoi en cours...
+                        {t('sending')}
                       </>
                     ) : (
-                      'Envoyer le message'
+                      t('send')
                     )}
                   </button>
                 </form>
