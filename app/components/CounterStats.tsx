@@ -1,36 +1,14 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
+import {useTranslations} from 'next-intl';
 
 interface Stat {
   value: number;
-  label: string;
+  labelKey: string;
   suffix?: string;
   prefix?: string;
 }
-
-const stats: Stat[] = [
-  {
-    value: 10,
-    label: "Années d'expérience",
-    suffix: '+',
-  },
-  {
-    value: 250,
-    label: 'Projets réalisés',
-    suffix: '+',
-  },
-  {
-    value: 100,
-    label: 'Clients satisfaits',
-    suffix: '%',
-  },
-  {
-    value: 35,
-    label: 'Zone d\'intervention',
-    suffix: ' km',
-  },
-];
 
 function Counter({ target, suffix = '', prefix = '', duration = 2000 }: { target: number; suffix?: string; prefix?: string; duration?: number }) {
   const [count, setCount] = useState(0);
@@ -88,19 +66,30 @@ function Counter({ target, suffix = '', prefix = '', duration = 2000 }: { target
 }
 
 export default function CounterStats() {
+  const t = useTranslations('Stats');
+
+  const stats: Stat[] = [
+    {
+      value: 10,
+      labelKey: 'experience',
+      suffix: '+',
+    },
+    {
+      value: 250,
+      labelKey: 'projects',
+      suffix: '+',
+    },
+    {
+      value: 100,
+      labelKey: 'satisfaction',
+      suffix: '%',
+    },
+  ];
+
   return (
     <section className="py-20 px-4 bg-gradient-to-br from-orange-50 via-white to-orange-50">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Nos chiffres clés
-          </h2>
-          <p className="text-xl text-gray-600">
-            La preuve de notre expertise et de votre confiance
-          </p>
-        </div>
-
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
@@ -113,7 +102,7 @@ export default function CounterStats() {
                 duration={2000}
               />
               <p className="mt-4 text-lg font-medium text-gray-700">
-                {stat.label}
+                {t(stat.labelKey)}
               </p>
             </div>
           ))}

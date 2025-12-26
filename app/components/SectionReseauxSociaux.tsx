@@ -1,29 +1,35 @@
+'use client';
+
+import {useTranslations} from 'next-intl';
+
 export default function SocialMedia() {
+  const t = useTranslations('SocialMedia');
+
   return (
     <section className="py-20 px-4 bg-white">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Restez connectés
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600">
-            Suivez nos actualités et découvrez nos dernières réalisations
+            {t('subtitle')}
           </p>
         </div>
 
         {/* Facebook Feed */}
         <div className="bg-white rounded-2xl shadow-xl overflow-hidden border-top-cameleon-cyan">
           {/*
-            IMPORTANT : Pour configurer l'iframe Facebook :
-            1. Allez sur https://developers.facebook.com/docs/plugins/page-plugin
-            2. Entrez l'URL de votre page Facebook (ex: https://www.facebook.com/VotrePageEntreprise)
-            3. Configurez :
-               - Afficher les posts : OUI
-               - Hauteur : 600px
-               - Largeur adaptative : OUI
-               - Masquer la photo de couverture : NON
-            4. Copiez le code généré et remplacez l'iframe ci-dessous
+            IMPORTANT: To configure the Facebook iframe:
+            1. Go to https://developers.facebook.com/docs/plugins/page-plugin
+            2. Enter your Facebook page URL (e.g., https://www.facebook.com/YourBusinessPage)
+            3. Configure:
+               - Show posts: YES
+               - Height: 600px
+               - Adaptive width: YES
+               - Hide cover photo: NO
+            4. Copy the generated code and replace the iframe below
           */}
 
           <div className="flex justify-center p-6">
@@ -50,7 +56,7 @@ export default function SocialMedia() {
               <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/>
               </svg>
-              Voir notre page Facebook
+              {t('viewFacebookPage')}
             </a>
           </div>
         </div>
@@ -58,16 +64,7 @@ export default function SocialMedia() {
         {/* Note de configuration */}
         <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
           <p className="text-sm text-gray-700">
-            <strong>📝 Configuration :</strong> Pour afficher vos vraies publications Facebook, rendez-vous sur{' '}
-            <a
-              href="https://developers.facebook.com/docs/plugins/page-plugin"
-              target="_blank"
-              rel="noopener"
-              className="text-blue-600 hover:underline"
-            >
-              Facebook Page Plugin
-            </a>
-            {' '}et générez le code avec l'URL de votre page professionnelle.
+            <strong>{t('configNote')}</strong> {t('configInstructions')}
           </p>
         </div>
       </div>

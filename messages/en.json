@@ -1,0 +1,1062 @@
+{
+  "Navigation": {
+    "home": "Home",
+    "about": "About Us",
+    "achievements": "Our Work",
+    "services": "Services",
+    "contact": "Contact Us",
+    "skipToContent": "Skip to main content",
+    "interiorPainting": "Interior Painting",
+    "coating": "Coating",
+    "wallpaper": "Wallpaper Installation",
+    "flooring": "Flooring",
+    "closeMenu": "Close menu",
+    "openMenu": "Open menu"
+  },
+  "Hero": {
+    "title": "Haut en Couleur",
+    "subtitle": "Painting Contractor in Rennes",
+    "description": "Expertise and quality for your painting projects",
+    "cta": "CONTACT US"
+  },
+  "Company": {
+    "title": "OUR COMPANY",
+    "description1": "Based in <strong>Mordelles</strong>, <strong>Haut en Couleur</strong> puts its expertise at the service of your painting and renovation projects.",
+    "description2": "Specialist in <strong>interior painting</strong> and <strong>exterior painting</strong>, we work professionally on all types of projects, from private individuals to businesses.",
+    "description3": "Our service area extends <strong>35 km around Rennes</strong>, allowing us to respond quickly to your needs.",
+    "description4": "We are committed to providing <strong>quality work</strong>, <strong>attentive listening</strong> to your expectations, <strong>exemplary responsiveness</strong> and <strong>impeccable quality</strong> in each of our projects.",
+    "cta": "CONTACT"
+  },
+  "Services": {
+    "title": "OUR SERVICES",
+    "subtitle": "Professional services for all your projects",
+    "interiorPainting": {
+      "title": "Interior Painting",
+      "description": "Professional paint application on all types of surfaces: walls, ceilings, woodwork."
+    },
+    "coating": {
+      "title": "Coating",
+      "description": "Application of smoothing coating, filling and surface preparation for perfect finish before painting."
+    },
+    "wallpaper": {
+      "title": "Wallpaper Installation",
+      "description": "Professional installation of non-woven, vinyl and panoramic wallpaper. Wall preparation and perfect seams."
+    },
+    "flooring": {
+      "title": "Flooring",
+      "description": "Installation of floor coverings: lino, PVC, carpet. Surface preparation and impeccable finishes."
+    },
+    "discover": "Discover"
+  },
+  "Stats": {
+    "experience": "Years of Experience",
+    "projects": "Completed Projects",
+    "satisfaction": "Satisfied Clients"
+  },
+  "InterventionZone": {
+    "title": "Service Area",
+    "description1": "<strong>Haut en Couleur</strong> serves the entire Rennes region and surrounding areas.",
+    "description2": "Our coverage area extends over a <strong>35 kilometer radius around Mordelles</strong>, including:",
+    "city1": "Chavagne",
+    "city2": "Bréal-sous-Montfort",
+    "city3": "Le Rheu",
+    "city4": "Bruz",
+    "city5": "Cintré",
+    "city6": "L'Hermitage",
+    "city7": "Saint Malo",
+    "city8": "And many other municipalities",
+    "ctaTitle": "Need a quote?",
+    "ctaText": "Contact us to verify that your location is part of our service area.",
+    "loadingMap": "Loading map..."
+  },
+  "Footer": {
+    "description": "Painting contractor in Mordelles, near Rennes. Specialized in interior painting, coating, wallpaper installation and flooring.",
+    "quickLinks": "Quick Links",
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "achievements": "Our Work",
+    "contact": "Contact",
+    "contactUs": "Contact Us",
+    "address": "Address",
+    "addressValue": "Mordelles, Ille-et-Vilaine",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursValue": "Monday - Friday: 8am - 7pm",
+    "rights": "All rights reserved.",
+    "legal": "Legal Notice",
+    "privacy": "Privacy Policy",
+    "country": "France",
+    "cookies": "Cookies"
+  },
+  "LocaleSwitcher": {
+    "french": "Français",
+    "english": "English",
+    "switchTo": "Switch to"
+  },
+  "Contact": {
+    "title": "Contact Us",
+    "subtitle": "A question? A project? Don't hesitate to contact us",
+    "heroTitle": "Contact Us",
+    "heroSubtitle": "A question? A project? Don't hesitate to contact us",
+    "mapLoading": "Loading map...",
+    "captchaRequired": "Please complete the CAPTCHA",
+    "sendError": "Error sending message",
+    "genericError": "An error occurred",
+    "infoTitle": "Our Contact Information",
+    "address": "Address",
+    "addressLine1": "Mordelles, Ille-et-Vilaine",
+    "addressLine2": "France",
+    "phone": "Phone",
+    "email": "Email",
+    "hours": "Hours",
+    "hoursWeekday": "Monday - Friday: 8am - 6pm",
+    "hoursWeekend": "Saturday - Sunday: Closed",
+    "formTitle": "Send us a message",
+    "nameLabel": "Full Name *",
+    "namePlaceholder": "Your name",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "your@email.com",
+    "phoneLabel": "Phone *",
+    "phonePlaceholder": "06 00 00 00 00",
+    "subjectLabel": "Subject *",
+    "subjectPlaceholder": "Select a subject",
+    "subject1": "Request for quote",
+    "subject2": "Interior painting",
+    "subject3": "Coating",
+    "subject4": "Wallpaper installation",
+    "subject5": "Flooring",
+    "subject6": "Emergency service",
+    "subject7": "Other",
+    "messageLabel": "Message *",
+    "messagePlaceholder": "Describe your project...",
+    "send": "Send message",
+    "sending": "Sending...",
+    "successTitle": "Message sent successfully!",
+    "successMessage": "Thank you for your message. We will respond to you as soon as possible.",
+    "errorTitle": "Error sending message",
+    "info": {
+      "title": "Our Contact Information",
+      "address": "Address",
+      "addressValue": "Mordelles, Ille-et-Vilaine<br/>France",
+      "phone": "Phone",
+      "email": "Email",
+      "hours": "Hours",
+      "hoursValue": "Monday - Friday: 8am - 6pm<br/>Saturday - Sunday: Closed"
+    },
+    "form": {
+      "title": "Send us a message",
+      "name": "Full Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "phone": "Phone",
+      "phonePlaceholder": "06 00 00 00 00",
+      "subject": "Subject",
+      "subjectPlaceholder": "Select a subject",
+      "subjects": {
+        "quote": "Request for quote",
+        "interior": "Interior painting",
+        "coating": "Coating",
+        "wallpaper": "Wallpaper installation",
+        "flooring": "Flooring",
+        "emergency": "Emergency service",
+        "other": "Other"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Describe your project...",
+      "captcha": "Please complete the CAPTCHA",
+      "submit": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "successMessage": "Thank you for your message. We will respond to you as soon as possible.",
+      "error": "Error sending message"
+    }
+  },
+  "CookieBanner": {
+    "message": "🍪 We use cookies to improve your browsing experience and analyze our site traffic.",
+    "learnMore": "Learn more",
+    "decline": "Decline",
+    "accept": "Accept"
+  },
+  "FAQ": {
+    "title": "Frequently Asked Questions",
+    "subtitle": "Have questions? We have answers!",
+    "q1": {
+      "question": "What are your rates?",
+      "answer": "Our rates vary depending on the nature and scope of the work. We offer free, personalized quotes. Feel free to contact us for an accurate estimate of your project."
+    },
+    "q2": {
+      "question": "Do you work for individuals and businesses?",
+      "answer": "Yes, we work for both individuals and businesses (offices, shops, etc.). We adapt our services to your specific needs."
+    },
+    "q3": {
+      "question": "What is your service area?",
+      "answer": "We operate within a 35 km radius around Mordelles, covering Rennes and its surroundings, including Chavagne, Bréal-sous-Montfort, Le Rheu, Bruz, and many other municipalities in Ille-et-Vilaine."
+    },
+    "q4": {
+      "question": "Do you offer emergency services?",
+      "answer": "Yes, we offer emergency services to respond quickly to your needs. Contact us by phone for more information."
+    },
+    "q5": {
+      "question": "Do you provide materials?",
+      "answer": "Yes, we provide all the materials necessary to complete your work. We work with recognized quality brands to ensure a lasting result."
+    },
+    "q6": {
+      "question": "How long does the work take?",
+      "answer": "The duration of the work depends on the size and nature of the project. During our visit to provide a quote, we will give you an accurate estimate of the timeline."
+    },
+    "q7": {
+      "question": "Do I need to prepare my home before you arrive?",
+      "answer": "We take care of protecting your furniture and floors. However, it is preferable to clear the rooms as much as possible to facilitate our work."
+    },
+    "q8": {
+      "question": "Do you offer warranties on your work?",
+      "answer": "Yes, all our work is guaranteed. We are insured and you benefit from the legal warranties in force."
+    },
+    "q9": {
+      "question": "How does a quote work?",
+      "answer": "Contact us by phone or through our form. We will arrange an appointment to visit your project, assess your needs, and provide you with a free, no-obligation quote."
+    },
+    "q10": {
+      "question": "Can I choose my own colors and finishes?",
+      "answer": "Absolutely! We advise you on the choice of colors and finishes, but the final decision is yours. We can also work with your own supplies if you wish."
+    }
+  },
+  "GoogleReviews": {
+    "title": "What our clients say",
+    "basedOn": "Based on {count} Google reviews",
+    "leaveReview": "Leave a Google review",
+    "errorFetching": "Error retrieving reviews",
+    "errorLoading": "Unable to load Google reviews",
+    "loading": "Loading reviews...",
+    "fetchedFrom": "Reviews fetched from"
+  },
+  "Map": {
+    "loading": "Loading map...",
+    "headquarters": "📍 Headquarters"
+  },
+  "BeforeAfter": {
+    "before": "Before",
+    "after": "After",
+    "all": "All",
+    "title": "Our before/after transformations",
+    "subtitle": "Discover the impact of our work by sliding the cursor"
+  },
+  "Gallery": {
+    "all": "All",
+    "close": "Close",
+    "previous": "Previous image",
+    "next": "Next image"
+  },
+  "Timeline": {
+    "title": "Our story",
+    "subtitle": "9 years of experience serving your projects",
+    "event1": {
+      "year": "2016",
+      "title": "The Beginning",
+      "description": "Creation of Haut en Couleur company in Mordelles. Specializing in interior painting for individuals."
+    },
+    "event2": {
+      "year": "2018",
+      "title": "Service Expansion",
+      "description": "Expansion of our range of services: coating, wallpaper and flooring. Started working with businesses."
+    },
+    "event3": {
+      "year": "2021",
+      "title": "Growth",
+      "description": "Extension of our service area to 35 km around Rennes. Over 150 successfully completed projects."
+    },
+    "event4": {
+      "year": "2024",
+      "title": "Today",
+      "description": "Over 250 completed projects, a qualified team and satisfied clients. We continue to innovate to offer you the best service."
+    },
+    "continuingMessage": "And the adventure continues..."
+  },
+  "SocialMedia": {
+    "title": "Stay connected",
+    "subtitle": "Follow our news and discover our latest work",
+    "viewFacebookPage": "View our Facebook page",
+    "configNote": "📝 Configuration:",
+    "configInstructions": "To display your Facebook page, add your Facebook URL in the .env.local file with the variable NEXT_PUBLIC_FACEBOOK_PAGE_URL"
+  },
+  "SeoHome": {
+    "block1Title": "Painting company in Rennes and surroundings",
+    "block1Content": "<strong>Haut en Couleur</strong>, your <strong>painting contractor</strong> located in <strong>Mordelles</strong>, near <strong>Rennes</strong>, supports you in all your <strong>painting and renovation projects</strong>. With several years of experience, we put our expertise at the service of <strong>individuals</strong> and <strong>businesses</strong> for quality services. Whether you need <strong>interior painting</strong>, <strong>coating</strong>, <strong>wallpaper installation</strong> or <strong>flooring</strong>, our qualified team is here to listen and realize your desires.",
+    "block2Title": "Why choose Haut en Couleur?",
+    "reason1": "<strong>Professional expertise</strong>: A team of qualified painters with several years of experience in the painting industry.",
+    "reason2": "<strong>Quality work</strong>: We pay particular attention to detail and finishing for an impeccable result that lasts over time.",
+    "reason3": "<strong>Listening and advice</strong>: We take the time to listen to your needs and advise you on the best solutions adapted to your project and budget.",
+    "reason4": "<strong>Responsiveness and punctuality</strong>: We respect the agreed deadlines and are available to answer your questions throughout the project.",
+    "zonesTitle": "Service Areas",
+    "zonesSubtitle": "We operate within a <strong>35 km radius around Mordelles</strong>, covering Rennes and many municipalities in Ille-et-Vilaine:",
+    "city1": "Rennes",
+    "city2": "Mordelles",
+    "city3": "Chavagne",
+    "city4": "Bréal-sous-Montfort",
+    "city5": "Le Rheu",
+    "city6": "Bruz",
+    "city7": "Cintré",
+    "city8": "L'Hermitage",
+    "city9": "Saint-Jacques-de-la-Lande",
+    "city10": "Vezin-le-Coquet",
+    "city11": "Pacé",
+    "city12": "Betton",
+    "moreCities": "And many other municipalities in Ille-et-Vilaine (35)"
+  },
+  "QuiSommesNous": {
+    "heroTitle": "About Us",
+    "heroSubtitle": "Discover the history and values of Haut en Couleur",
+    "teamTitle": "Our Team",
+    "teamDesc1": "Our team is composed of a <strong>qualified professional painter</strong> who is passionate about their craft.",
+    "teamDesc2": "Each member of our team has several years of experience in the building painting field and regularly attends training to stay up to date with the latest techniques and innovations in the sector.",
+    "teamDesc3": "We are proud of our expertise and are committed to offering you a superior quality service for all your painting projects.",
+    "valuesTitle": "Our Values",
+    "value1Title": "Quality",
+    "value1Desc": "We only use top quality materials and apply the best techniques for a lasting result.",
+    "value2Title": "Listening",
+    "value2Desc": "We take the time to listen to your needs and expectations to offer you solutions adapted to your project.",
+    "value3Title": "Responsiveness",
+    "value3Desc": "We are committed to meeting agreed deadlines and intervening quickly in case of emergency."
+  },
+  "Realisations": {
+    "heroTitle": "Our Work",
+    "heroSubtitle": "Discover some of our recent projects and get inspired",
+    "galleryTitle": "Gallery of our work",
+    "gallerySubtitle": "Click on an image to enlarge it and discover more details",
+    "ctaTitle": "Have a project in mind?",
+    "ctaSubtitle": "Contact us to discuss your project and get a free quote",
+    "ctaButton": "Request a quote"
+  },
+  "Prestations": {
+    "heroTitle": "Our Services",
+    "heroSubtitle": "Complete painting and renovation services for all your projects",
+    "learnMore": "Learn more"
+  },
+  "Common": {
+    "readMore": "Read more",
+    "getQuote": "Request a quote",
+    "callUs": "Call us",
+    "required": "*"
+  },
+  "NotFound": {
+    "title": "Page Not Found",
+    "description": "Sorry, the page you are looking for does not exist or has been moved.",
+    "suggestionsTitle": "What would you like to do?",
+    "link1Title": "Back to Home",
+    "link1Description": "Discover our services",
+    "link2Title": "Our Services",
+    "link2Description": "View all our services",
+    "link3Title": "Our Work",
+    "link3Description": "Project portfolio",
+    "link4Title": "Contact Us",
+    "link4Description": "Request a quote",
+    "ctaButton": "Back to Home"
+  },
+  "PrestationsData": {
+    "peintureInterieure": {
+      "title": "Interior Painting",
+      "description": "Transform your interior spaces with our professional painting services.",
+      "services": {
+        "0": "Wall and ceiling painting",
+        "1": "Decorative finishes",
+        "2": "Woodwork painting",
+        "3": "Color and ambiance advice"
+      }
+    },
+    "enduit": {
+      "title": "Coating",
+      "description": "Application of smoothing coating, filling and surface preparation for a perfect finish.",
+      "services": {
+        "0": "Smoothing coating",
+        "1": "Filling and repair",
+        "2": "Surface preparation",
+        "3": "Impeccable finishes"
+      }
+    },
+    "papierPeint": {
+      "title": "Wallpaper Installation",
+      "description": "Professional wallpaper installation to personalize your interiors with style.",
+      "services": {
+        "0": "Non-woven wallpaper",
+        "1": "Vinyl wallpaper",
+        "2": "Panoramic wallpaper",
+        "3": "Wall preparation"
+      }
+    },
+    "revetementSol": {
+      "title": "Flooring",
+      "description": "Installation of floor coverings for all your spaces: lino, PVC, carpet.",
+      "services": {
+        "0": "Lino and linoleum",
+        "1": "PVC flooring",
+        "2": "Carpet",
+        "3": "Surface preparation"
+      }
+    }
+  },
+  "RealisationsData": {
+    "beforeAfterProjects": {
+      "project1": {
+        "title": "Interior Renovation Apartment Rennes",
+        "category": "Interior Painting",
+        "description": "Complete renovation of a 90m² apartment with painting of walls and ceilings."
+      },
+      "project2": {
+        "title": "Living Room Wallpaper Installation",
+        "category": "Wallpaper Installation",
+        "description": "Installation of panoramic wallpaper in a modern living room with perfect seams."
+      },
+      "project3": {
+        "title": "PVC Flooring",
+        "category": "Flooring",
+        "description": "Installation of PVC flooring imitating parquet in a living area."
+      }
+    },
+    "galleryImages": {
+      "image1": {
+        "title": "Interior Painting Living Room",
+        "category": "Interior Painting"
+      },
+      "image2": {
+        "title": "Interior Painting Bedroom",
+        "category": "Interior Painting"
+      },
+      "image3": {
+        "title": "Wallpaper Installation",
+        "category": "Wallpaper Installation"
+      },
+      "image4": {
+        "title": "Interior Painting Kitchen",
+        "category": "Interior Painting"
+      },
+      "image5": {
+        "title": "Smoothing Coating",
+        "category": "Coating"
+      },
+      "image6": {
+        "title": "Interior Painting Office",
+        "category": "Interior Painting"
+      },
+      "image7": {
+        "title": "Lino Flooring",
+        "category": "Flooring"
+      },
+      "image8": {
+        "title": "Bedroom Wallpaper Installation",
+        "category": "Wallpaper Installation"
+      },
+      "image9": {
+        "title": "Interior Painting Living Area",
+        "category": "Interior Painting"
+      }
+    }
+  },
+  "PeintureInterieure": {
+    "metaTitle": "Interior Painting - Haut en Couleur",
+    "metaDescription": "Interior painting services in Rennes: walls, ceilings, woodwork. Decorative finishes and personalized advice.",
+    "heroTitle": "Interior Painting",
+    "heroSubtitle": "Transform your spaces with our expertise in decorative painting and quality finishes",
+    "servicesTitle": "Our interior painting services",
+    "service1": {
+      "title": "Wall and ceiling painting",
+      "description": "Professional paint application on all types of surfaces: plaster, concrete, wallpaper.",
+      "items": {
+        "item1": "Meticulous surface preparation",
+        "item2": "Matte, satin or glossy finish",
+        "item3": "Eco-friendly paints available"
+      }
+    },
+    "service2": {
+      "title": "Woodwork painting",
+      "description": "Renovation and painting of doors, windows, baseboards, stairs and joinery.",
+      "items": {
+        "item1": "Stripping and sanding",
+        "item2": "Lacquered or satin paint",
+        "item3": "Long-lasting protection"
+      }
+    },
+    "service3": {
+      "title": "Decorative finishes",
+      "description": "Create unique atmospheres with our decorative painting techniques.",
+      "items": {
+        "item1": "Decorative effects (patina, glaze)",
+        "item2": "Two-tone and patterns",
+        "item3": "Personalized color advice"
+      }
+    },
+    "service4": {
+      "title": "Complete renovation",
+      "description": "Apartment or house renovation project from A to Z.",
+      "items": {
+        "item1": "Study and decoration advice",
+        "item2": "Complete project management",
+        "item3": "Deadline compliance"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why choose Haut en Couleur?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Over 10 years of experience in interior painting"
+      },
+      "reason2": {
+        "title": "Punctuality",
+        "description": "Strict compliance with agreed deadlines"
+      },
+      "reason3": {
+        "title": "Quality",
+        "description": "Premium materials and quality finishes"
+      }
+    },
+    "cta": {
+      "title": "Ready to start your project?",
+      "subtitle": "Contact us for a free, personalized quote.",
+      "button": "Request a quote",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "Enduit": {
+    "metaTitle": "Coating & Plastering - Haut en Couleur",
+    "metaDescription": "Coating application in Rennes: smoothing coating, filling and surface preparation for perfect finish before painting.",
+    "heroTitle": "Coating & Plastering",
+    "heroSubtitle": "Application of smoothing coating, filling and surface preparation for perfect finish before painting",
+    "servicesTitle": "Our coating services",
+    "service1": {
+      "title": "Smoothing coating",
+      "description": "Application of smoothing coating to achieve perfectly smooth surfaces before painting.",
+      "items": {
+        "item1": "Perfectly smooth surface",
+        "item2": "Optimal preparation for painting",
+        "item3": "Application on walls and ceilings",
+        "item4": "Professional finish guaranteed"
+      }
+    },
+    "service2": {
+      "title": "Filling and repair",
+      "description": "Filling holes, cracks and imperfections for a flawless surface.",
+      "items": {
+        "item1": "Crack repair",
+        "item2": "Filling holes and impacts",
+        "item3": "Correction of imperfections",
+        "item4": "Invisible result after painting"
+      }
+    },
+    "service3": {
+      "title": "Surface preparation",
+      "description": "Complete preparation of walls and ceilings before paint application.",
+      "items": {
+        "item1": "Stripping and sanding",
+        "item2": "Treatment of old paints",
+        "item3": "Application of bonding primer",
+        "item4": "Surface ready for finishing"
+      }
+    },
+    "service4": {
+      "title": "Complete renovation",
+      "description": "Complete restoration of your walls and ceilings for total renovation.",
+      "items": {
+        "item1": "Diagnosis of surface condition",
+        "item2": "Complete repair and preparation",
+        "item3": "Multi-layer coating application",
+        "item4": "Perfect finish ready to paint"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why choose Haut en Couleur?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Perfect mastery of coating application techniques"
+      },
+      "reason2": {
+        "title": "Speed",
+        "description": "Quality work completed within agreed deadlines"
+      },
+      "reason3": {
+        "title": "Quality",
+        "description": "Professional materials and impeccable finishes"
+      }
+    },
+    "cta": {
+      "title": "Need coating application?",
+      "subtitle": "Contact us for a free, personalized quote.",
+      "button": "Request a quote",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "MentionsLegales": {
+    "metaTitle": "Legal Notice - Haut en Couleur",
+    "metaDescription": "Legal notice of the Haut en Couleur website, painting company in Mordelles.",
+    "heroTitle": "Legal Notice",
+    "heroSubtitle": "Legal information regarding the Haut en Couleur website",
+    "section1": {
+      "title": "1. Website Publisher",
+      "companyName": "<strong>Company name:</strong> DAVISON SANDRINE (HAUT EN COULEUR)",
+      "legalForm": "<strong>Legal form:</strong> Sole proprietorship",
+      "address": "<strong>Address:</strong> 22 Le Domaine, 35310 Mordelles, France",
+      "siret": "<strong>SIRET:</strong> 823 682 745 00026",
+      "email": "<strong>Email:</strong> contact@haut-en-couleur.fr",
+      "phone": "<strong>Phone:</strong> 06 66 28 44 58",
+      "publisher": "<strong>Publication manager:</strong> Sandrine Davison"
+    },
+    "section2": {
+      "title": "2. Website Host",
+      "name": "<strong>Name:</strong> OVH SAS",
+      "address": "<strong>Address:</strong> 2 rue Kellermann, 59100 Roubaix, France",
+      "website": "<strong>Website:</strong> <a href=\"https://www.ovh.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">www.ovh.com</a>"
+    },
+    "section3": {
+      "title": "3. Intellectual Property",
+      "paragraph1": "All content on this website (texts, images, videos, logos, etc.) is the exclusive property of Haut en Couleur, unless otherwise stated.",
+      "paragraph2": "Any reproduction, distribution, modification, adaptation, retransmission or publication of these various elements is strictly prohibited without prior written consent from Haut en Couleur.",
+      "paragraph3": "The trademarks and logos present on the website are registered by Haut en Couleur or by third parties. Any use of these trademarks without authorization is prohibited."
+    },
+    "section4": {
+      "title": "4. Personal Data Protection",
+      "paragraph1": "In accordance with the General Data Protection Regulation (GDPR), you have the right to access, rectify, delete and object to personal data concerning you.",
+      "paragraph2": "To exercise these rights, you can contact us:",
+      "contactEmail": "By email: contact@haut-en-couleur.fr",
+      "contactPhone": "By phone: 06 66 28 44 58",
+      "contactMail": "By mail: Haut en Couleur, 22 Le Domaine, 35310 Mordelles, France",
+      "paragraph3": "For more information on the management of your personal data, please consult our <a href=\"/politique-confidentialite\" class=\"text-primary hover:underline\">Privacy Policy</a>."
+    },
+    "section5": {
+      "title": "5. Cookies",
+      "paragraph1": "This website uses cookies to improve your browsing experience and analyze traffic.",
+      "paragraph2": "You can configure your cookie preferences from your browser. To learn more, consult our <a href=\"/politique-confidentialite\" class=\"text-primary hover:underline\">Privacy Policy</a>."
+    },
+    "section6": {
+      "title": "6. Limitation of Liability",
+      "paragraph1": "Haut en Couleur strives to ensure the accuracy and updating of the information published on this website. However, we cannot guarantee the accuracy, precision or completeness of the information made available on this website.",
+      "paragraph2": "Consequently, we disclaim all liability:",
+      "liability1": "For any inaccuracy, error or omission relating to information available on the website",
+      "liability2": "For any damage resulting from fraudulent intrusion by a third party that resulted in modification of the information made available on the website",
+      "liability3": "For any direct or indirect damage resulting from the use of the website"
+    },
+    "section7": {
+      "title": "7. Applicable Law and Jurisdiction",
+      "paragraph1": "This legal notice is governed by French law.",
+      "paragraph2": "In the event of a dispute and failing an amicable agreement, the dispute will be brought before the French courts in accordance with the applicable rules of jurisdiction."
+    },
+    "section8": {
+      "title": "Any questions?",
+      "paragraph1": "For any questions regarding this legal notice, please contact us:",
+      "emailLabel": "<strong>Email:</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phoneLabel": "<strong>Phone:</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>"
+    },
+    "lastUpdate": "Last update:"
+  },
+  "CookiesPage": {
+    "metaTitle": "Cookie Policy - Haut en Couleur",
+    "metaDescription": "Cookie usage policy for the Haut en Couleur website. Information about cookies used and your rights.",
+    "heroTitle": "Cookie Policy",
+    "heroSubtitle": "Information about cookie usage on our website",
+    "section1": {
+      "title": "What is a cookie?",
+      "content": "A cookie is a small text file placed on your computer, tablet or smartphone when visiting a website. Cookies allow the website to recognize your device and remember certain information about you, to facilitate your navigation and offer you a personalized experience."
+    },
+    "section2": {
+      "title": "The cookies we use"
+    },
+    "section3": {
+      "title": "How to manage your cookies?",
+      "paragraph1": "You can choose to disable these cookies at any time. Your browser can also be configured to notify you of cookies being placed on your computer and ask you to accept them or not.",
+      "paragraph2Title": "Browser settings",
+      "browser1": "<strong>Chrome</strong>: Menu &gt; Settings &gt; Privacy and security &gt; Cookies",
+      "browser2": "<strong>Firefox</strong>: Menu &gt; Options &gt; Privacy and security &gt; Cookies",
+      "browser3": "<strong>Safari</strong>: Preferences &gt; Privacy &gt; Cookies and website data",
+      "browser4": "<strong>Edge</strong>: Settings &gt; Privacy &gt; Cookies and site permissions"
+    },
+    "section4": {
+      "title": "Retention period",
+      "content": "Cookies are stored for a maximum period of 13 months from their first deposit on your device. At the end of this period, your consent will be required again."
+    },
+    "section5": {
+      "title": "Your rights",
+      "paragraph1": "In accordance with the General Data Protection Regulation (GDPR) and the Data Protection Act, you have the following rights:",
+      "right1": "Right to access your personal data",
+      "right2": "Right to rectify your data",
+      "right3": "Right to erasure of your data",
+      "right4": "Right to object to the processing of your data",
+      "right5": "Right to data portability"
+    },
+    "section6": {
+      "title": "Contact us",
+      "paragraph1": "For any questions regarding our cookie policy or to exercise your rights, you can contact us:",
+      "email": "<strong>Email:</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phone": "<strong>Phone:</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>",
+      "address": "<strong>Address:</strong> Mordelles, Ille-et-Vilaine, France"
+    },
+    "cookieTypes": {
+      "essential": {
+        "title": "1. Essential cookies (required)",
+        "description": "These cookies are essential for the website to function. They cannot be disabled.",
+        "cookie1": "<strong>cookie_consent</strong>: Records your choice regarding cookies (duration: 1 year)",
+        "cookie2": "<strong>session</strong>: Maintains your browsing session (duration: session)"
+      },
+      "security": {
+        "title": "2. Security cookies",
+        "description": "These cookies help us protect our website against malicious activities.",
+        "cookie1": "<strong>hCaptcha</strong>: Anti-spam protection on the contact form (duration: session)"
+      },
+      "analytics": {
+        "title": "3. Analytics cookies (optional)",
+        "description": "These cookies allow us to understand how you use our website to improve it. You can refuse them without affecting your browsing experience.",
+        "cookie1": "<strong>Google Analytics</strong>: Statistical analysis of traffic (duration: 2 years)",
+        "cookie2": "<strong>_ga, _gid</strong>: Audience measurement and visit statistics"
+      }
+    },
+    "lastUpdate": "Last update:"
+  },
+  "PolitiqueConfidentialite": {
+    "metaTitle": "Privacy Policy - Haut en Couleur",
+    "metaDescription": "Privacy policy and personal data protection of Haut en Couleur.",
+    "heroTitle": "Privacy Policy",
+    "heroSubtitle": "How we protect and use your personal data",
+    "intro": {
+      "paragraph1": "At Haut en Couleur, we attach great importance to protecting your privacy and your personal data. This privacy policy explains how we collect, use, store and protect your personal information in accordance with the General Data Protection Regulation (GDPR).",
+      "paragraph2": "By using our website, you accept the practices described in this policy."
+    },
+    "section1": {
+      "title": "1. Data Controller",
+      "companyName": "<strong>Company name:</strong> Haut en Couleur",
+      "location": "<strong>Location:</strong> Mordelles, 35310, France",
+      "email": "<strong>Email:</strong> contact@haut-en-couleur.fr",
+      "phone": "<strong>Phone:</strong> 06 66 28 44 58"
+    },
+    "section2": {
+      "title": "2. Personal Data Collected",
+      "subsection1": {
+        "title": "2.1. Data Collected Directly",
+        "intro": "When you use our contact form or contact us by email, we collect the following information:",
+        "item1": "First and last name",
+        "item2": "Email address",
+        "item3": "Phone number",
+        "item4": "Subject of your request",
+        "item5": "Message and content of your request"
+      },
+      "subsection2": {
+        "title": "2.2. Automatically Collected Data",
+        "intro": "When you browse our site, we may automatically collect:",
+        "item1": "Your IP address",
+        "item2": "Browser type and operating system",
+        "item3": "Pages visited and visit duration",
+        "item4": "Referral source (how you arrived on our site)",
+        "item5": "Date and time of visit"
+      }
+    },
+    "section3": {
+      "title": "3. Purposes of Processing",
+      "intro": "Your personal data is collected and processed for the following purposes:",
+      "purpose1": "<strong>Processing your requests:</strong> Responding to your questions, quote requests and information requests",
+      "purpose2": "<strong>Customer relationship management:</strong> Monitoring your project, communication about work progress",
+      "purpose3": "<strong>Site improvement:</strong> Analyzing site usage to improve our services",
+      "purpose4": "<strong>Legal obligations:</strong> Complying with our legal and regulatory obligations",
+      "purpose5": "<strong>Marketing (with your consent):</strong> Sending you information about our services, promotions and news"
+    },
+    "section4": {
+      "title": "4. Legal Basis for Processing",
+      "intro": "The processing of your personal data is based on:",
+      "basis1": "<strong>Your consent:</strong> For sending marketing communications",
+      "basis2": "<strong>Contract execution:</strong> For processing your quote request or performing work",
+      "basis3": "<strong>Legitimate interest:</strong> For improving our services and site security",
+      "basis4": "<strong>Legal obligations:</strong> To comply with our accounting and tax obligations"
+    },
+    "section5": {
+      "title": "5. Data Recipients",
+      "paragraph1": "Your personal data is intended for the internal services of Haut en Couleur.",
+      "paragraph2": "We may also share your data with:",
+      "recipient1": "Our technical service providers (hosting, site maintenance)",
+      "recipient2": "Our partners for carrying out certain work (subcontractors)",
+      "recipient3": "Competent authorities in case of legal obligation",
+      "paragraph3": "We ensure that these third parties respect the confidentiality and security of your personal data."
+    },
+    "section6": {
+      "title": "6. Retention Period",
+      "intro": "Your personal data is retained for the period necessary for the purposes for which it was collected:",
+      "duration1": "<strong>Contact requests:</strong> 3 years after last contact",
+      "duration2": "<strong>Customers:</strong> 10 years for accounting and tax obligations",
+      "duration3": "<strong>Browsing data:</strong> Maximum 13 months",
+      "duration4": "<strong>Newsletter (if applicable):</strong> Until you unsubscribe",
+      "outro": "At the end of these periods, your data is deleted or anonymized."
+    },
+    "section7": {
+      "title": "7. Your Rights",
+      "intro": "In accordance with GDPR, you have the following rights regarding your personal data:",
+      "right1": "<strong>Right of access:</strong> Obtain confirmation that your data is being processed and access to this data",
+      "right2": "<strong>Right of rectification:</strong> Correct your inaccurate or incomplete data",
+      "right3": "<strong>Right to erasure:</strong> Request deletion of your data under certain conditions",
+      "right4": "<strong>Right to restriction:</strong> Limit the processing of your data in certain cases",
+      "right5": "<strong>Right to object:</strong> Object to the processing of your data for reasons relating to your particular situation",
+      "right6": "<strong>Right to portability:</strong> Receive your data in a structured format and transmit it to another controller",
+      "right7": "<strong>Right to withdraw your consent:</strong> At any time, without affecting the lawfulness of processing based on consent before withdrawal",
+      "exerciseTitle": "How to Exercise Your Rights",
+      "exerciseIntro": "To exercise your rights, you can contact us:",
+      "exerciseEmail": "By email: contact@haut-en-couleur.fr",
+      "exercisePhone": "By phone: 06 66 28 44 58",
+      "exerciseMail": "By mail: Haut en Couleur, Mordelles, 35310, France",
+      "responseTime": "We are committed to responding to your request within one month.",
+      "cnil": "You also have the right to lodge a complaint with the CNIL (French Data Protection Authority) if you believe your rights are not being respected: <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">www.cnil.fr</a>"
+    },
+    "section8": {
+      "title": "8. Cookies and Similar Technologies",
+      "intro": "Our site uses cookies to improve your browsing experience.",
+      "subsection1": {
+        "title": "8.1. What is a Cookie?",
+        "content": "A cookie is a small text file stored on your device when you visit our site. It allows us to recognize you on your next visits."
+      },
+      "subsection2": {
+        "title": "8.2. Types of Cookies Used",
+        "type1": "<strong>Essential cookies:</strong> Necessary for the site to function (cannot be disabled)",
+        "type2": "<strong>Analytical cookies:</strong> Help us understand how visitors use our site",
+        "type3": "<strong>Preference cookies:</strong> Allow us to remember your choices (language, region)"
+      },
+      "subsection3": {
+        "title": "8.3. Managing Cookies",
+        "intro": "You can manage your cookie preferences directly from your browser:",
+        "chrome": "Chrome: Menu &gt; Settings &gt; Privacy and security &gt; Cookies",
+        "firefox": "Firefox: Menu &gt; Options &gt; Privacy and security &gt; Cookies",
+        "safari": "Safari: Preferences &gt; Privacy &gt; Cookies",
+        "edge": "Edge: Menu &gt; Settings &gt; Privacy &gt; Cookies"
+      }
+    },
+    "section9": {
+      "title": "9. Data Security",
+      "paragraph1": "We implement appropriate technical and organizational measures to protect your personal data against accidental or unlawful destruction, loss, alteration, disclosure or unauthorized access.",
+      "paragraph2": "These measures include:",
+      "measure1": "Encryption of sensitive data",
+      "measure2": "Restricted access to personal data",
+      "measure3": "Regular backups",
+      "measure4": "Regular security updates"
+    },
+    "section10": {
+      "title": "10. Data Transfers Outside the EU",
+      "content": "Your personal data is hosted and processed within the European Union. If we were to transfer your data outside the EU, we would ensure that appropriate safeguards are in place in accordance with GDPR."
+    },
+    "section11": {
+      "title": "11. Policy Modifications",
+      "paragraph1": "We reserve the right to modify this privacy policy at any time. Any modification will be published on this page with a new update date.",
+      "paragraph2": "We encourage you to regularly consult this page to be aware of any modifications."
+    },
+    "contact": {
+      "title": "Questions About Your Data?",
+      "intro": "For any questions regarding this privacy policy or your personal data, contact us:",
+      "email": "<strong>Email:</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phone": "<strong>Phone:</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>"
+    },
+    "lastUpdate": "Last updated:"
+  },
+  "PapierPeint": {
+    "metaTitle": "Wallpaper Installation - Haut en Couleur",
+    "metaDescription": "Professional wallpaper installation in Rennes: non-woven, vinyl, panoramic. Wall preparation, perfect seams and quality finishes.",
+    "heroTitle": "Wallpaper Installation",
+    "heroSubtitle": "Professional wallpaper installation to personalize your interiors with style and elegance",
+    "servicesTitle": "Our wallpaper installation services",
+    "service1": {
+      "title": "Non-woven wallpaper",
+      "description": "Installation of non-woven wallpaper, the easiest to install and remove.",
+      "items": {
+        "item1": "Quick and clean installation",
+        "item2": "Easily repositionable",
+        "item3": "Very durable and washable",
+        "item4": "Wide choice of patterns"
+      }
+    },
+    "service2": {
+      "title": "Vinyl wallpaper",
+      "description": "Application of vinyl wallpaper, ideal for humid rooms.",
+      "items": {
+        "item1": "Moisture resistant",
+        "item2": "Washable and durable",
+        "item3": "Perfect for kitchens and bathrooms",
+        "item4": "Easy maintenance"
+      }
+    },
+    "service3": {
+      "title": "Panoramic wallpaper",
+      "description": "Installation of panoramic wallpaper for spectacular decor.",
+      "items": {
+        "item1": "Unique and personalized decor",
+        "item2": "Invisible seams",
+        "item3": "Guaranteed trompe-l'oeil effect",
+        "item4": "Precision installation"
+      }
+    },
+    "service4": {
+      "title": "Wall preparation",
+      "description": "Meticulous wall preparation for perfect wallpaper installation.",
+      "items": {
+        "item1": "Removal of old wallpaper",
+        "item2": "Smoothing and filling",
+        "item3": "Application of primer coat",
+        "item4": "Perfectly prepared surfaces"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why choose Haut en Couleur?",
+      "reason1": {
+        "title": "Precision",
+        "description": "Perfect seams and impeccable finishes"
+      },
+      "reason2": {
+        "title": "Speed",
+        "description": "Fast and quality professional installation"
+      },
+      "reason3": {
+        "title": "Advice",
+        "description": "Help choosing suitable patterns and styles"
+      }
+    },
+    "cta": {
+      "title": "Want to transform your walls?",
+      "subtitle": "Contact us for a free, personalized quote.",
+      "button": "Request a quote",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "RevetementSol": {
+    "metaTitle": "Flooring - Haut en Couleur",
+    "metaDescription": "Floor covering installation in Rennes: lino, PVC, carpet. Surface preparation, professional installation and impeccable finishes.",
+    "heroTitle": "Flooring",
+    "heroSubtitle": "Floor covering installation for all your spaces: lino, PVC, carpet",
+    "servicesTitle": "Our flooring installation services",
+    "service1": {
+      "title": "Lino and linoleum",
+      "description": "Installation of lino and linoleum, a durable and ecological solution for all your floors.",
+      "items": {
+        "item1": "Natural and ecological material",
+        "item2": "Resistant and easy to maintain",
+        "item3": "Wide choice of colors and patterns",
+        "item4": "Acoustic and thermal comfort"
+      }
+    },
+    "service2": {
+      "title": "PVC flooring",
+      "description": "Installation of PVC flooring, a practical and economical solution for all rooms.",
+      "items": {
+        "item1": "Very resistant to wear",
+        "item2": "Waterproof and washable",
+        "item3": "Parquet or tile imitation",
+        "item4": "Quick installation without glue"
+      }
+    },
+    "service3": {
+      "title": "Carpet",
+      "description": "Carpet installation for optimal comfort and sound insulation.",
+      "items": {
+        "item1": "Comfort and softness to the touch",
+        "item2": "Excellent sound insulation",
+        "item3": "Effective thermal insulation",
+        "item4": "Many colors and textures"
+      }
+    },
+    "service4": {
+      "title": "Surface preparation",
+      "description": "Professional floor preparation for durable and impeccable installation.",
+      "items": {
+        "item1": "Floor leveling",
+        "item2": "Leveling compound if necessary",
+        "item3": "Installation of insulating underlayment",
+        "item4": "Perfectly prepared surface"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Why choose Haut en Couleur?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Mastery of all installation techniques"
+      },
+      "reason2": {
+        "title": "Speed",
+        "description": "Quick installation with minimal disruption"
+      },
+      "reason3": {
+        "title": "Quality",
+        "description": "Quality and durable finishes"
+      }
+    },
+    "cta": {
+      "title": "Flooring project?",
+      "subtitle": "Contact us for a free, personalized quote.",
+      "button": "Request a quote",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "SeoContentQuiSommesNous": {
+    "block1Title": "A human-sized painting company",
+    "block1Paragraph1": "Founded in 2010, <strong>Haut en Couleur</strong> is a family-run painting company based in Mordelles, near Rennes. We have built our reputation on the quality of our work, our attentiveness, and our closeness to our clients.",
+    "block1Paragraph2": "Our philosophy is simple: to offer a <strong>professional painting service</strong> with personalized support from the beginning to the end of your project. Each project is unique, and we adapt to your specific needs.",
+    "block1Paragraph3": "Whether for <strong>interior painting</strong>, <strong>exterior painting</strong>, or applying <strong>decorative coatings</strong>, we put all our expertise at your service.",
+    "block2Title": "Our quality commitment",
+    "commitment1Title": "Qualified and experienced painter",
+    "commitment1Desc": "Over 10 years of experience in the building painting field",
+    "commitment2Title": "Environmental respect",
+    "commitment2Desc": "Use of eco-friendly paints that respect your health",
+    "commitment3Title": "Guarantee of our work",
+    "commitment3Desc": "We guarantee the quality and durability of our achievements",
+    "commitment4Title": "Personalized advice",
+    "commitment4Desc": "Help choosing colors, finishes, and materials suitable for your project"
+  },
+  "SeoContentPrestations": {
+    "block1Title": "Your painting work in Rennes with confidence",
+    "block1Paragraph1": "<strong>Haut en Couleur</strong> is your <strong>painting company in Rennes</strong> for all your <strong>interior painting</strong>, <strong>coating</strong>, <strong>wallpaper installation</strong> and <strong>flooring</strong> projects.",
+    "block1Paragraph2": "Whether you want to <strong>refresh your interior</strong>, <strong>install wallpaper</strong> or <strong>renovate your floor</strong>, our professional painter puts their expertise at your service.",
+    "block1Paragraph3": "Based in <strong>Mordelles</strong>, we operate throughout the <strong>Rennes</strong> region and surroundings for <strong>quality painting work</strong>, carried out in compliance with standards and your expectations.",
+    "block2Title": "Our painting services",
+    "service1Title": "Interior painting in Rennes",
+    "service1Desc": "Walls, ceilings, woodwork - We paint all your interior spaces with care. Color selection, decorating advice, and impeccable finishes.",
+    "service2Title": "Coating in Rennes",
+    "service2Desc": "Application of smoothing coating, filling and surface preparation. For a perfect finish before painting.",
+    "service3Title": "Wallpaper installation",
+    "service3Desc": "Professional installation of non-woven, vinyl and panoramic wallpaper. Perfect seams and neat finishes.",
+    "service4Title": "Flooring",
+    "service4Desc": "Installation of lino, PVC, carpet for all your spaces. Surface preparation and professional installation.",
+    "processTitle": "Our work process",
+    "step1Title": "Free visit",
+    "step1Desc": "We come to your home to assess your needs and take measurements",
+    "step2Title": "Detailed quote",
+    "step2Desc": "Clear proposal with work details and transparent pricing",
+    "step3Title": "Execution",
+    "step3Desc": "Professional painting work with site protection and cleaning",
+    "step4Title": "Finishing touches",
+    "step4Desc": "Quality control and touch-ups if necessary for your satisfaction",
+    "benefitsTitle": "Why hire a professional painter?",
+    "benefit1Title": "Time saving",
+    "benefit1Desc": "Our professional painters complete your work quickly and efficiently, allowing you to quickly enjoy your new space.",
+    "benefit2Title": "Perfect result",
+    "benefit2Desc": "Professional techniques, suitable equipment and expertise guarantee impeccable and durable finishes.",
+    "benefit3Title": "Expert advice",
+    "benefit3Desc": "Help choosing colors, finishes and products suitable for your project and budget."
+  },
+  "SeoContentRealisations": {
+    "block1Title": "Custom painting projects in Rennes",
+    "block1Paragraph1": "Discover our <strong>painting projects</strong> throughout the Rennes region. Each project is unique and reflects the personality and needs of our clients.",
+    "block1Paragraph2": "Whether for <strong>renovating a house</strong>, <strong>painting an apartment</strong>, or <strong>decorating professional offices</strong>, we bring the same care and attention to detail.",
+    "block1Paragraph3": "Our <strong>interior painting</strong>, <strong>wallpaper installation</strong> and <strong>flooring</strong> work demonstrate our expertise and our commitment to offering perfect finishes. Browse our gallery for inspiration and imagine what we could create for you.",
+    "block2Title": "Types of projects completed",
+    "project1Title": "House and apartment painting",
+    "project1Desc": "Bedrooms, living rooms, kitchens, bathrooms - We transform all your interior spaces",
+    "project2Title": "Coating",
+    "project2Desc": "Application of smoothing coating and filling for a perfect finish",
+    "project3Title": "Wallpaper installation",
+    "project3Desc": "Non-woven, vinyl, panoramic wallpaper - Professional installation with perfect seams",
+    "project4Title": "Flooring",
+    "project4Desc": "Installation of lino, PVC, carpet for all your spaces with neat finishes"
+  },
+  "StructuredData": {
+    "description": "Painting company in Mordelles, near Rennes. Specialized in interior painting, coating, wallpaper installation and flooring.",
+    "service1": "Interior Painting",
+    "service2": "Coating",
+    "service3": "Wallpaper Installation",
+    "service4": "Flooring",
+    "service5": "Woodwork Painting",
+    "service6": "Decorative Finishes",
+    "catalogName": "Painting Services",
+    "service1Desc": "Professional paint application on all types of surfaces: walls, ceilings, woodwork.",
+    "service2Desc": "Application of smoothing coating, filling and surface preparation for perfect finish before painting.",
+    "service3Desc": "Professional installation of non-woven, vinyl and panoramic wallpaper. Wall preparation and perfect seams.",
+    "service4Desc": "Installation of floor coverings: lino, PVC, carpet. Surface preparation and impeccable finishes."
+  }
+}

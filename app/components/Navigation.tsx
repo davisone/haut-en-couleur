@@ -4,18 +4,26 @@ import { useState } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import { usePathname } from 'next/navigation';
+import {useTranslations, useLocale} from 'next-intl';
+import LocaleSwitcher from './LocaleSwitcher';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isServicesOpen, setIsServicesOpen] = useState(false);
   const pathname = usePathname();
+  const t = useTranslations('Navigation');
+  const locale = useLocale();
+
+  // Fonction pour créer des liens avec la locale
+  const localePath = (path: string) => `/${locale}${path}`;
 
   // Fonction pour vérifier si le lien est actif
   const isActive = (path: string) => {
+    const fullPath = localePath(path);
     if (path === '/') {
-      return pathname === '/';
+      return pathname === fullPath;
     }
-    return pathname.startsWith(path);
+    return pathname.startsWith(fullPath);
   };
 
   // Classes pour les liens actifs
@@ -31,7 +39,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href={localePath('/')} className="flex items-center gap-3">
               <Image
                 src="/img/logo2.png"
                 alt="Haut en Couleur"
@@ -39,27 +47,26 @@ export default function Navigation() {
                 height={80}
                 className="w-20 h-20 object-contain"
               />
-              <span className="text-2xl font-bold text-gray-800">Haut en Couleur</span>
             </Link>
           </div>
 
           {/* Desktop Menu */}
           <div className="hidden md:flex items-center gap-8">
-            <Link href="/" className={getLinkClasses('/')}>
-              Accueil
+            <Link href={localePath('/')} className={getLinkClasses('/')}>
+              {t('home')}
             </Link>
-            <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')}>
-              Qui sommes-nous ?
+            <Link href={localePath('/qui-sommes-nous')} className={getLinkClasses('/qui-sommes-nous')}>
+              {t('about')}
             </Link>
-            <Link href="/realisations" className={getLinkClasses('/realisations')}>
-              Nos réalisations
+            <Link href={localePath('/realisations')} className={getLinkClasses('/realisations')}>
+              {t('achievements')}
             </Link>
 
             {/* Dropdown Menu */}
             <div
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => setIsServicesOpen(false)}
+              onMouseLeave={() => (false)}
             >
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -68,7 +75,7 @@ export default function Navigation() {
                 aria-haspopup="true"
                 aria-controls="desktop-services-menu"
               >
-                Nos prestations
+                {t('services')}
                 <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                   <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
                 </svg>
@@ -77,7 +84,7 @@ export default function Navigation() {
                 <div id="desktop-services-menu" className="absolute top-full left-0 pt-2 w-56" role="menu">
                   <div className="bg-white rounded-lg shadow-lg py-2 border border-gray-100">
                     <Link
-                      href="/prestations/peinture-interieure"
+                      href={localePath('/prestations/peinture-interieure')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/peinture-interieure')
                           ? 'bg-orange-50 text-primary font-semibold'
@@ -85,10 +92,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Peinture intérieure
+                      {t('interiorPainting')}
                     </Link>
                     <Link
-                      href="/prestations/enduit"
+                      href={localePath('/prestations/enduit')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/enduit')
                           ? 'bg-orange-50 text-primary font-semibold'
@@ -96,10 +103,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Enduit
+                      {t('coating')}
                     </Link>
                     <Link
-                      href="/prestations/papier-peint"
+                      href={localePath('/prestations/papier-peint')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/papier-peint')
                           ? 'bg-orange-50 text-primary font-semibold'
@@ -107,10 +114,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Pose de papier peint
+                      {t('wallpaper')}
                     </Link>
                     <Link
-                      href="/prestations/revetement-sol"
+                      href={localePath('/prestations/revetement-sol')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/revetement-sol')
                           ? 'bg-orange-50 text-primary font-semibold'
@@ -118,18 +125,21 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Revêtement de sol
+                      {t('flooring')}
                     </Link>
                   </div>
                 </div>
               )}
             </div>
 
+            {/* Sélecteur de langue */}
+            <LocaleSwitcher />
+
             <Link
-              href="/contact"
+              href={localePath('/contact')}
               className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium bg-white text-primary hover:bg-primary hover:!text-white"
             >
-              Nous contacter
+              {t('contact')}
             </Link>
           </div>
 
@@ -140,7 +150,7 @@ export default function Navigation() {
               className="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
-              aria-label={isMenuOpen ? "Fermer le menu" : "Ouvrir le menu"}
+              aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                 {isMenuOpen ? (
@@ -157,14 +167,14 @@ export default function Navigation() {
         {isMenuOpen && (
           <div id="mobile-menu" className="md:hidden pb-4">
             <div className="flex flex-col gap-4" role="menu">
-              <Link href="/" className={getLinkClasses('/')} role="menuitem">
-                Accueil
+              <Link href={localePath('/')} className={getLinkClasses('/')} role="menuitem">
+                {t('home')}
               </Link>
-              <Link href="/qui-sommes-nous" className={getLinkClasses('/qui-sommes-nous')} role="menuitem">
-                Qui sommes-nous ?
+              <Link href={localePath('/qui-sommes-nous')} className={getLinkClasses('/qui-sommes-nous')} role="menuitem">
+                {t('about')}
               </Link>
-              <Link href="/realisations" className={getLinkClasses('/realisations')} role="menuitem">
-                Nos réalisations
+              <Link href={localePath('/realisations')} className={getLinkClasses('/realisations')} role="menuitem">
+                {t('achievements')}
               </Link>
               <div>
                 <button
@@ -173,7 +183,7 @@ export default function Navigation() {
                   aria-expanded={isServicesOpen}
                   aria-controls="mobile-services-menu"
                 >
-                  Nos prestations
+                  {t('services')}
                   <svg className={`w-4 h-4 transition-transform ${isServicesOpen ? 'rotate-180' : ''}`} fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
                     <path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"/>
                   </svg>
@@ -181,7 +191,7 @@ export default function Navigation() {
                 {isServicesOpen && (
                   <div id="mobile-services-menu" className="ml-4 mt-2 flex flex-col gap-2" role="menu">
                     <Link
-                      href="/prestations/peinture-interieure"
+                      href={localePath('/prestations/peinture-interieure')}
                       className={`transition-colors ${
                         isActive('/prestations/peinture-interieure')
                           ? 'text-primary font-semibold'
@@ -189,10 +199,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Peinture intérieure
+                      {t('interiorPainting')}
                     </Link>
                     <Link
-                      href="/prestations/enduit"
+                      href={localePath('/prestations/enduit')}
                       className={`transition-colors ${
                         isActive('/prestations/enduit')
                           ? 'text-primary font-semibold'
@@ -200,10 +210,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Enduit
+                      {t('coating')}
                     </Link>
                     <Link
-                      href="/prestations/papier-peint"
+                      href={localePath('/prestations/papier-peint')}
                       className={`transition-colors ${
                         isActive('/prestations/papier-peint')
                           ? 'text-primary font-semibold'
@@ -211,10 +221,10 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Pose de papier peint
+                      {t('wallpaper')}
                     </Link>
                     <Link
-                      href="/prestations/revetement-sol"
+                      href={localePath('/prestations/revetement-sol')}
                       className={`transition-colors ${
                         isActive('/prestations/revetement-sol')
                           ? 'text-primary font-semibold'
@@ -222,17 +232,23 @@ export default function Navigation() {
                       }`}
                       role="menuitem"
                     >
-                      Revêtement de sol
+                      {t('flooring')}
                     </Link>
                   </div>
                 )}
               </div>
+
+              {/* Sélecteur de langue mobile */}
+              <div className="pt-4 border-t border-gray-200">
+                <LocaleSwitcher />
+              </div>
+
               <Link
-                href="/contact"
+                href={localePath('/contact')}
                 className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium text-center bg-white text-primary hover:bg-primary hover:!text-white"
                 role="menuitem"
               >
-                Nous contacter
+                {t('contact')}
               </Link>
             </div>
           </div>

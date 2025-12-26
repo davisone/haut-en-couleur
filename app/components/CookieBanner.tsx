@@ -2,8 +2,10 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import { useTranslations } from 'next-intl';
 
 export default function CookieBanner() {
+  const t = useTranslations('CookieBanner');
   const [showBanner, setShowBanner] = useState(false);
 
   useEffect(() => {
@@ -58,14 +60,13 @@ export default function CookieBanner() {
             {/* Message */}
             <div className="flex-1 text-center sm:text-left">
               <p className="text-sm sm:text-base leading-relaxed">
-                🍪 Nous utilisons des cookies pour améliorer votre expérience sur notre site.
-                En continuant votre navigation, vous acceptez notre utilisation des cookies.
+                {t('message')}
                 {' '}
                 <Link
                   href="/cookies"
                   className="text-primary hover:text-primary-light underline font-medium"
                 >
-                  En savoir plus
+                  {t('learnMore')}
                 </Link>
               </p>
             </div>
@@ -76,13 +77,13 @@ export default function CookieBanner() {
                 onClick={handleDecline}
                 className="px-6 py-2.5 text-sm font-medium text-gray-300 bg-gray-700 hover:bg-gray-600 rounded-lg transition-all duration-200"
               >
-                Refuser
+                {t('decline')}
               </button>
               <button
                 onClick={handleAccept}
                 className="px-6 py-2.5 text-sm font-medium text-white bg-primary hover:bg-primary-light rounded-lg transition-all duration-200 shadow-lg"
               >
-                Accepter
+                {t('accept')}
               </button>
             </div>
           </div>

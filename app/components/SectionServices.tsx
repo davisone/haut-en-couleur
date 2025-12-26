@@ -1,49 +1,53 @@
 'use client';
 
 import Link from 'next/link';
-
-const services = [
-  {
-    id: 'peinture-interieure',
-    title: 'Peinture intérieure',
-    image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2070',
-    description: 'Transformation et embellissement de vos espaces intérieurs',
-    borderColor: 'border-top-cameleon-turquoise',
-  },
-  {
-    id: 'enduit',
-    title: 'Enduit',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
-    description: 'Application d\'enduit pour vos murs et plafonds',
-    borderColor: 'border-top-cameleon-lime',
-  },
-  {
-    id: 'papier-peint',
-    title: 'Pose de papier peint',
-    image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069',
-    description: 'Pose professionnelle pour personnaliser vos intérieurs',
-    borderColor: 'border-top-cameleon-yellow',
-  },
-  {
-    id: 'revetement-sol',
-    title: 'Revêtement de sol',
-    image: 'https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070',
-    description: 'Pose de revêtements de sol pour tous vos espaces',
-    borderColor: 'border-top-cameleon-blue',
-  },
-];
+import {useTranslations, useLocale} from 'next-intl';
 
 export default function Services() {
+  const t = useTranslations('Services');
+  const locale = useLocale();
+
+  const services = [
+    {
+      id: 'peinture-interieure',
+      titleKey: 'interiorPainting.title',
+      descriptionKey: 'interiorPainting.description',
+      image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?q=80&w=2070',
+      borderColor: 'border-top-cameleon-turquoise',
+    },
+    {
+      id: 'enduit',
+      titleKey: 'coating.title',
+      descriptionKey: 'coating.description',
+      image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000',
+      borderColor: 'border-top-cameleon-lime',
+    },
+    {
+      id: 'papier-peint',
+      titleKey: 'wallpaper.title',
+      descriptionKey: 'wallpaper.description',
+      image: 'https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069',
+      borderColor: 'border-top-cameleon-yellow',
+    },
+    {
+      id: 'revetement-sol',
+      titleKey: 'flooring.title',
+      descriptionKey: 'flooring.description',
+      image: 'https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070',
+      borderColor: 'border-top-cameleon-blue',
+    },
+  ];
+
   return (
     <section id="prestations" className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            NOS SERVICES
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600">
-            Découvrez notre expertise dans différents domaines
+            {t('subtitle')}
           </p>
         </div>
 
@@ -52,7 +56,7 @@ export default function Services() {
           {services.map((service) => (
             <Link
               key={service.id}
-              href={`/prestations/${service.id}`}
+              href={`/${locale}/prestations/${service.id}`}
               className={`group relative bg-white rounded-2xl overflow-hidden shadow-xl hover:shadow-2xl transition-all duration-500 hover:-translate-y-2 ${service.borderColor}`}
             >
               {/* Effet de brillance au survol */}
@@ -70,19 +74,19 @@ export default function Services() {
 
                 {/* Badge animé */}
                 <div className="absolute top-4 right-4 bg-white/90 backdrop-blur-sm px-3 py-1 rounded-full text-xs font-semibold text-gray-800 opacity-0 group-hover:opacity-100 transform translate-x-4 group-hover:translate-x-0 transition-all duration-500">
-                  Découvrir
+                  {t('discover')}
                 </div>
               </div>
               {/* Content */}
               <div className="p-6 relative">
                 <h3 className="text-xl font-bold text-gray-800 mb-2 group-hover:text-primary transition-colors duration-300">
-                  {service.title}
+                  {t(service.titleKey)}
                 </h3>
                 <p className="text-gray-600 text-sm mb-4 group-hover:text-gray-700 transition-colors duration-300">
-                  {service.description}
+                  {t(service.descriptionKey)}
                 </p>
                 <div className="flex items-center text-primary font-semibold group-hover:gap-2 transition-all duration-300">
-                  En savoir plus
+                  {t('discover')}
                   <svg className="w-5 h-5 ml-2 transform group-hover:translate-x-2 group-hover:scale-110 transition-all duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                   </svg>

@@ -1,15 +1,15 @@
 'use client';
 
-import Navigation from '../components/Navigation';
-import Footer from '../components/Footer';
-import PageHero from '../components/PageHero';
-import FAQ from '../components/FAQ';
+import Navigation from '@/app/components/Navigation';
+import Footer from '@/app/components/Footer';
+import PageHero from '@/app/components/PageHero';
+import FAQ from '@/app/components/FAQ';
 import { useState, useRef } from 'react';
 import dynamic from 'next/dynamic';
 import HCaptcha from '@hcaptcha/react-hcaptcha';
 
 // Charger la carte uniquement côté client
-const Map = dynamic(() => import('../components/Map'), {
+const Map = dynamic(() => import('@/app/components/Map'), {
   ssr: false,
   loading: () => (
     <div className="w-full h-full flex items-center justify-center bg-gray-200">

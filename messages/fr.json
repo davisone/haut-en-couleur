@@ -1,0 +1,1062 @@
+{
+  "Navigation": {
+    "home": "Accueil",
+    "about": "Qui sommes-nous ?",
+    "achievements": "Nos réalisations",
+    "services": "Nos prestations",
+    "contact": "Nous contacter",
+    "skipToContent": "Aller au contenu principal",
+    "interiorPainting": "Peinture intérieure",
+    "coating": "Enduit",
+    "wallpaper": "Pose de papier peint",
+    "flooring": "Revêtement de sol",
+    "closeMenu": "Fermer le menu",
+    "openMenu": "Ouvrir le menu"
+  },
+  "Hero": {
+    "title": "Haut en Couleur",
+    "subtitle": "Peintre en bâtiment à Rennes",
+    "description": "Expertise et qualité pour vos projets de peinture",
+    "cta": "CONTACTEZ-NOUS"
+  },
+  "Company": {
+    "title": "NOTRE ENTREPRISE",
+    "description1": "Basée à <strong>Mordelles</strong>, l'entreprise <strong>Haut en Couleur</strong> met son savoir-faire au service de vos projets de peinture et de rénovation.",
+    "description2": "Spécialiste des travaux de <strong>peinture intérieure</strong> et <strong>peinture extérieure</strong>, nous intervenons avec professionnalisme sur tous types de chantiers, du particulier aux professionnels.",
+    "description3": "Notre rayon d'intervention s'étend sur <strong>35 km autour de Rennes</strong>, nous permettant de répondre rapidement à vos besoins.",
+    "description4": "Nous nous engageons à fournir un <strong>travail soigné</strong>, une <strong>écoute attentive</strong> de vos attentes, une <strong>réactivité exemplaire</strong> et une <strong>qualité irréprochable</strong> dans chacune de nos réalisations.",
+    "cta": "CONTACTER"
+  },
+  "Services": {
+    "title": "NOS PRESTATIONS",
+    "subtitle": "Des services professionnels pour tous vos projets",
+    "interiorPainting": {
+      "title": "Peinture intérieure",
+      "description": "Application professionnelle de peinture sur tous types de supports : murs, plafonds, boiseries."
+    },
+    "coating": {
+      "title": "Enduit",
+      "description": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture."
+    },
+    "wallpaper": {
+      "title": "Pose de papier peint",
+      "description": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Préparation des murs et raccords parfaits."
+    },
+    "flooring": {
+      "title": "Revêtement de sol",
+      "description": "Pose de revêtements de sol : lino, PVC, moquette. Préparation du support et finitions impeccables."
+    },
+    "discover": "Découvrir"
+  },
+  "Stats": {
+    "experience": "Années d'expérience",
+    "projects": "Projets réalisés",
+    "satisfaction": "Clients satisfaits"
+  },
+  "InterventionZone": {
+    "title": "Zone d'intervention",
+    "description1": "<strong>Haut en Couleur</strong> intervient dans toute la région de Rennes et ses environs.",
+    "description2": "Notre zone de couverture s'étend sur un rayon de <strong>35 kilomètres autour de Mordelles</strong>, incluant notamment :",
+    "city1": "Chavagne",
+    "city2": "Bréal-sous-Montfort",
+    "city3": "Le Rheu",
+    "city4": "Bruz",
+    "city5": "Cintré",
+    "city6": "L'Hermitage",
+    "city7": "Saint Malo",
+    "city8": "Et bien d'autres communes",
+    "ctaTitle": "Besoin d'un devis ?",
+    "ctaText": "Contactez-nous pour vérifier que votre localisation fait partie de notre zone d'intervention.",
+    "loadingMap": "Chargement de la carte..."
+  },
+  "Footer": {
+    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, enduit, pose de papier peint et revêtement de sol.",
+    "quickLinks": "Liens rapides",
+    "home": "Accueil",
+    "about": "Qui sommes-nous",
+    "services": "Prestations",
+    "achievements": "Réalisations",
+    "contact": "Contact",
+    "contactUs": "Nous contacter",
+    "address": "Adresse",
+    "addressValue": "Mordelles, Ille-et-Vilaine",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Horaires",
+    "hoursValue": "Lundi - Vendredi : 8h - 19h",
+    "rights": "Tous droits réservés.",
+    "legal": "Mentions légales",
+    "privacy": "Politique de confidentialité",
+    "country": "France",
+    "cookies": "Cookies"
+  },
+  "LocaleSwitcher": {
+    "french": "Français",
+    "english": "English",
+    "switchTo": "Passer en"
+  },
+  "Contact": {
+    "title": "Nous contacter",
+    "subtitle": "Une question ? Un projet ? N'hésitez pas à nous contacter",
+    "heroTitle": "Nous contacter",
+    "heroSubtitle": "Une question ? Un projet ? N'hésitez pas à nous contacter",
+    "mapLoading": "Chargement de la carte...",
+    "captchaRequired": "Veuillez compléter le CAPTCHA",
+    "sendError": "Erreur lors de l'envoi du message",
+    "genericError": "Une erreur est survenue",
+    "infoTitle": "Nos coordonnées",
+    "address": "Adresse",
+    "addressLine1": "Mordelles, Ille-et-Vilaine",
+    "addressLine2": "France",
+    "phone": "Téléphone",
+    "email": "Email",
+    "hours": "Horaires",
+    "hoursWeekday": "Lundi - Vendredi : 8h - 18h",
+    "hoursWeekend": "Samedi - Dimanche : Fermé",
+    "formTitle": "Envoyez-nous un message",
+    "nameLabel": "Nom complet *",
+    "namePlaceholder": "Votre nom",
+    "emailLabel": "Email *",
+    "emailPlaceholder": "votre@email.com",
+    "phoneLabel": "Téléphone *",
+    "phonePlaceholder": "06 00 00 00 00",
+    "subjectLabel": "Sujet *",
+    "subjectPlaceholder": "Sélectionnez un sujet",
+    "subject1": "Demande de devis",
+    "subject2": "Peinture intérieure",
+    "subject3": "Enduit",
+    "subject4": "Pose de papier peint",
+    "subject5": "Revêtement de sol",
+    "subject6": "Dépannage d'urgence",
+    "subject7": "Autre",
+    "messageLabel": "Message *",
+    "messagePlaceholder": "Décrivez votre projet...",
+    "send": "Envoyer le message",
+    "sending": "Envoi en cours...",
+    "successTitle": "Message envoyé avec succès !",
+    "successMessage": "Merci pour votre message. Nous vous répondrons dans les plus brefs délais.",
+    "errorTitle": "Erreur lors de l'envoi",
+    "info": {
+      "title": "Nos coordonnées",
+      "address": "Adresse",
+      "addressValue": "Mordelles, Ille-et-Vilaine<br/>France",
+      "phone": "Téléphone",
+      "email": "Email",
+      "hours": "Horaires",
+      "hoursValue": "Lundi - Vendredi : 8h - 18h<br/>Samedi - Dimanche : Fermé"
+    },
+    "form": {
+      "title": "Envoyez-nous un message",
+      "name": "Nom complet",
+      "namePlaceholder": "Votre nom",
+      "email": "Email",
+      "emailPlaceholder": "votre@email.com",
+      "phone": "Téléphone",
+      "phonePlaceholder": "06 00 00 00 00",
+      "subject": "Sujet",
+      "subjectPlaceholder": "Sélectionnez un sujet",
+      "subjects": {
+        "quote": "Demande de devis",
+        "interior": "Peinture intérieure",
+        "coating": "Enduit",
+        "wallpaper": "Pose de papier peint",
+        "flooring": "Revêtement de sol",
+        "emergency": "Dépannage d'urgence",
+        "other": "Autre"
+      },
+      "message": "Message",
+      "messagePlaceholder": "Décrivez votre projet...",
+      "captcha": "Veuillez compléter le CAPTCHA",
+      "submit": "Envoyer le message",
+      "sending": "Envoi en cours...",
+      "success": "Message envoyé avec succès !",
+      "successMessage": "Merci pour votre message. Nous vous répondrons dans les plus brefs délais.",
+      "error": "Erreur lors de l'envoi"
+    }
+  },
+  "CookieBanner": {
+    "message": "🍪 Nous utilisons des cookies pour améliorer votre expérience de navigation et analyser le trafic de notre site.",
+    "learnMore": "En savoir plus",
+    "decline": "Refuser",
+    "accept": "Accepter"
+  },
+  "FAQ": {
+    "title": "Questions fréquentes",
+    "subtitle": "Vous avez des questions ? Nous avons les réponses !",
+    "q1": {
+      "question": "Quels sont vos tarifs ?",
+      "answer": "Nos tarifs varient en fonction de la nature et de l'ampleur des travaux. Nous proposons des devis gratuits et personnalisés. N'hésitez pas à nous contacter pour obtenir une estimation précise de votre projet."
+    },
+    "q2": {
+      "question": "Intervenez-vous pour les particuliers et les professionnels ?",
+      "answer": "Oui, nous intervenons aussi bien pour les particuliers que pour les professionnels (bureaux, commerces, etc.). Nous adaptons nos services à vos besoins spécifiques."
+    },
+    "q3": {
+      "question": "Quelle est votre zone d'intervention ?",
+      "answer": "Nous intervenons dans un rayon de 35 km autour de Mordelles, couvrant Rennes et ses environs, incluant Chavagne, Bréal-sous-Montfort, Le Rheu, Bruz, et bien d'autres communes en Ille-et-Vilaine."
+    },
+    "q4": {
+      "question": "Proposez-vous un service de dépannage d'urgence ?",
+      "answer": "Oui, nous proposons un service de dépannage d'urgence pour répondre rapidement à vos besoins. Contactez-nous par téléphone pour plus d'informations."
+    },
+    "q5": {
+      "question": "Fournissez-vous les matériaux ?",
+      "answer": "Oui, nous fournissons tous les matériaux nécessaires à la réalisation de vos travaux. Nous travaillons avec des marques de qualité reconnues pour garantir un résultat durable."
+    },
+    "q6": {
+      "question": "Combien de temps durent les travaux ?",
+      "answer": "La durée des travaux dépend de la superficie et de la nature du chantier. Lors de notre visite pour établir le devis, nous vous donnerons une estimation précise du délai d'exécution."
+    },
+    "q7": {
+      "question": "Dois-je préparer mon logement avant votre arrivée ?",
+      "answer": "Nous nous chargeons de la protection de vos meubles et sols. Cependant, il est préférable de dégager au maximum les pièces concernées pour faciliter notre travail."
+    },
+    "q8": {
+      "question": "Proposez-vous des garanties sur vos travaux ?",
+      "answer": "Oui, tous nos travaux sont garantis. Nous sommes assurés et vous bénéficiez des garanties légales en vigueur."
+    },
+    "q9": {
+      "question": "Comment se déroule un devis ?",
+      "answer": "Contactez-nous par téléphone ou via notre formulaire. Nous conviendrons d'un rendez-vous pour visiter votre projet, évaluer vos besoins et vous remettre un devis gratuit et sans engagement."
+    },
+    "q10": {
+      "question": "Puis-je choisir mes propres couleurs et finitions ?",
+      "answer": "Absolument ! Nous vous conseillons dans le choix des couleurs et finitions, mais la décision finale vous appartient. Nous pouvons également travailler avec vos propres fournitures si vous le souhaitez."
+    }
+  },
+  "GoogleReviews": {
+    "title": "Ce que disent nos clients",
+    "basedOn": "Basé sur {count} avis Google",
+    "leaveReview": "Laisser un avis Google",
+    "errorFetching": "Erreur lors de la récupération des avis",
+    "errorLoading": "Impossible de charger les avis Google",
+    "loading": "Chargement des avis...",
+    "fetchedFrom": "Avis récupérés depuis"
+  },
+  "Map": {
+    "loading": "Chargement de la carte...",
+    "headquarters": "📍 Siège social"
+  },
+  "BeforeAfter": {
+    "before": "Avant",
+    "after": "Après",
+    "all": "Tous",
+    "title": "Nos transformations avant/après",
+    "subtitle": "Découvrez l'impact de notre travail en glissant le curseur"
+  },
+  "Gallery": {
+    "all": "Tous",
+    "close": "Fermer",
+    "previous": "Image précédente",
+    "next": "Image suivante"
+  },
+  "Timeline": {
+    "title": "Notre histoire",
+    "subtitle": "9 ans d'expérience au service de vos projets",
+    "event1": {
+      "year": "2016",
+      "title": "Les débuts",
+      "description": "Création de l'entreprise Haut en Couleur à Mordelles. Spécialisation dans la peinture intérieure pour les particuliers."
+    },
+    "event2": {
+      "year": "2018",
+      "title": "Expansion des services",
+      "description": "Élargissement de notre gamme de prestations : enduit, papier peint et revêtement de sol. Début des interventions pour les professionnels."
+    },
+    "event3": {
+      "year": "2021",
+      "title": "Croissance",
+      "description": "Extension de notre zone d'intervention à 35 km autour de Rennes. Plus de 150 projets réalisés avec succès."
+    },
+    "event4": {
+      "year": "2024",
+      "title": "Aujourd'hui",
+      "description": "Plus de 250 projets réalisés, une équipe qualifiée et des clients satisfaits. Nous continuons d'innover pour vous offrir le meilleur service."
+    },
+    "continuingMessage": "Et l'aventure continue..."
+  },
+  "SocialMedia": {
+    "title": "Restez connectés",
+    "subtitle": "Suivez nos actualités et découvrez nos dernières réalisations",
+    "viewFacebookPage": "Voir notre page Facebook",
+    "configNote": "📝 Configuration :",
+    "configInstructions": "Pour afficher votre page Facebook, ajoutez votre URL Facebook dans le fichier .env.local avec la variable NEXT_PUBLIC_FACEBOOK_PAGE_URL"
+  },
+  "SeoHome": {
+    "block1Title": "Entreprise de peinture à Rennes et environs",
+    "block1Content": "<strong>Haut en Couleur</strong>, votre entreprise de <strong>peinture en bâtiment</strong> située à <strong>Mordelles</strong>, près de <strong>Rennes</strong>, vous accompagne dans tous vos <strong>projets de peinture et de rénovation</strong>. Fort de plusieurs années d'expérience, nous mettons notre savoir-faire au service des <strong>particuliers</strong> et des <strong>professionnels</strong> pour des prestations de qualité. Que vous ayez besoin d'une <strong>peinture intérieure</strong>, d'<strong>enduit</strong>, de <strong>pose de papier peint</strong> ou de <strong>revêtement de sol</strong>, notre équipe qualifiée est à votre écoute pour réaliser vos envies.",
+    "block2Title": "Pourquoi choisir Haut en Couleur ?",
+    "reason1": "<strong>Expertise professionnelle</strong> : Une équipe de peintres qualifiés avec plusieurs années d'expérience dans le domaine de la peinture en bâtiment.",
+    "reason2": "<strong>Travail soigné</strong> : Nous accordons une attention particulière aux détails et à la finition pour un résultat impeccable qui dure dans le temps.",
+    "reason3": "<strong>Écoute et conseil</strong> : Nous prenons le temps d'écouter vos besoins et de vous conseiller sur les meilleures solutions adaptées à votre projet et votre budget.",
+    "reason4": "<strong>Réactivité et ponctualité</strong> : Nous respectons les délais convenus et sommes disponibles pour répondre à vos questions tout au long du chantier.",
+    "zonesTitle": "Zones d'intervention",
+    "zonesSubtitle": "Nous intervenons dans un rayon de <strong>35 km autour de Mordelles</strong>, couvrant Rennes et de nombreuses communes en Ille-et-Vilaine :",
+    "city1": "Rennes",
+    "city2": "Mordelles",
+    "city3": "Chavagne",
+    "city4": "Bréal-sous-Montfort",
+    "city5": "Le Rheu",
+    "city6": "Bruz",
+    "city7": "Cintré",
+    "city8": "L'Hermitage",
+    "city9": "Saint-Jacques-de-la-Lande",
+    "city10": "Vezin-le-Coquet",
+    "city11": "Pacé",
+    "city12": "Betton",
+    "moreCities": "Et bien d'autres communes en Ille-et-Vilaine (35)"
+  },
+  "QuiSommesNous": {
+    "heroTitle": "Qui sommes-nous ?",
+    "heroSubtitle": "Découvrez l'histoire et les valeurs de Haut en Couleur",
+    "teamTitle": "Notre équipe",
+    "teamDesc1": "Notre équipe est composée d'<strong>un peintre professionnel qualifié</strong> et passionné par son métier.",
+    "teamDesc2": "Chaque membre de notre équipe possède plusieurs années d'expérience dans le domaine de la peinture en bâtiment et suit régulièrement des formations pour rester à jour avec les dernières techniques et innovations du secteur.",
+    "teamDesc3": "Nous sommes fiers de notre savoir-faire et nous nous engageons à vous offrir un service de qualité supérieure pour tous vos projets de peinture.",
+    "valuesTitle": "Nos valeurs",
+    "value1Title": "Qualité",
+    "value1Desc": "Nous utilisons uniquement des matériaux de première qualité et appliquons les meilleures techniques pour un résultat durable.",
+    "value2Title": "Écoute",
+    "value2Desc": "Nous prenons le temps d'écouter vos besoins et vos attentes pour vous proposer des solutions adaptées à votre projet.",
+    "value3Title": "Réactivité",
+    "value3Desc": "Nous nous engageons à respecter les délais convenus et à intervenir rapidement en cas d'urgence."
+  },
+  "Realisations": {
+    "heroTitle": "Nos réalisations",
+    "heroSubtitle": "Découvrez quelques-uns de nos projets récents et laissez-vous inspirer",
+    "galleryTitle": "Galerie de nos réalisations",
+    "gallerySubtitle": "Cliquez sur une image pour l'agrandir et découvrir plus de détails",
+    "ctaTitle": "Un projet en tête ?",
+    "ctaSubtitle": "Contactez-nous pour discuter de votre projet et obtenir un devis gratuit",
+    "ctaButton": "Demander un devis"
+  },
+  "Prestations": {
+    "heroTitle": "Nos prestations",
+    "heroSubtitle": "Des services complets de peinture et rénovation pour tous vos projets",
+    "learnMore": "En savoir plus"
+  },
+  "Common": {
+    "readMore": "En savoir plus",
+    "getQuote": "Demander un devis",
+    "callUs": "Appelez-nous",
+    "required": "*"
+  },
+  "NotFound": {
+    "title": "Page introuvable",
+    "description": "Désolé, la page que vous recherchez n'existe pas ou a été déplacée.",
+    "suggestionsTitle": "Que souhaitez-vous faire ?",
+    "link1Title": "Retour à l'accueil",
+    "link1Description": "Découvrez nos services",
+    "link2Title": "Nos prestations",
+    "link2Description": "Voir tous nos services",
+    "link3Title": "Nos réalisations",
+    "link3Description": "Portfolio de projets",
+    "link4Title": "Nous contacter",
+    "link4Description": "Demander un devis",
+    "ctaButton": "Retour à l'accueil"
+  },
+  "PrestationsData": {
+    "peintureInterieure": {
+      "title": "Peinture intérieure",
+      "description": "Transformez vos espaces intérieurs avec nos services de peinture professionnelle.",
+      "services": {
+        "0": "Peinture de murs et plafonds",
+        "1": "Finitions décoratives",
+        "2": "Peinture de boiseries",
+        "3": "Conseils couleurs et ambiances"
+      }
+    },
+    "enduit": {
+      "title": "Enduit",
+      "description": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite.",
+      "services": {
+        "0": "Enduit de lissage",
+        "1": "Rebouchage et réparation",
+        "2": "Préparation des surfaces",
+        "3": "Finitions impeccables"
+      }
+    },
+    "papierPeint": {
+      "title": "Pose de papier peint",
+      "description": "Pose professionnelle de papier peint pour personnaliser vos intérieurs avec style.",
+      "services": {
+        "0": "Papier peint intissé",
+        "1": "Papier peint vinyle",
+        "2": "Papier peint panoramique",
+        "3": "Préparation des murs"
+      }
+    },
+    "revetementSol": {
+      "title": "Revêtement de sol",
+      "description": "Pose de revêtements de sol pour tous vos espaces : lino, PVC, moquette.",
+      "services": {
+        "0": "Lino et linoléum",
+        "1": "Sol PVC",
+        "2": "Moquette",
+        "3": "Préparation du support"
+      }
+    }
+  },
+  "RealisationsData": {
+    "beforeAfterProjects": {
+      "project1": {
+        "title": "Rénovation intérieure appartement Rennes",
+        "category": "Peinture intérieure",
+        "description": "Rénovation complète d'un appartement de 90m² avec peinture des murs et plafonds."
+      },
+      "project2": {
+        "title": "Pose de papier peint salon",
+        "category": "Papier peint",
+        "description": "Pose de papier peint panoramique dans un salon moderne avec raccords parfaits."
+      },
+      "project3": {
+        "title": "Revêtement de sol PVC",
+        "category": "Revêtement de sol",
+        "description": "Pose de sol PVC imitation parquet dans une pièce de vie."
+      }
+    },
+    "galleryImages": {
+      "image1": {
+        "title": "Peinture intérieure salon",
+        "category": "Peinture intérieure"
+      },
+      "image2": {
+        "title": "Peinture intérieure chambre",
+        "category": "Peinture intérieure"
+      },
+      "image3": {
+        "title": "Pose de papier peint",
+        "category": "Papier peint"
+      },
+      "image4": {
+        "title": "Peinture intérieure cuisine",
+        "category": "Peinture intérieure"
+      },
+      "image5": {
+        "title": "Enduit de lissage",
+        "category": "Enduit"
+      },
+      "image6": {
+        "title": "Peinture intérieure bureau",
+        "category": "Peinture intérieure"
+      },
+      "image7": {
+        "title": "Revêtement de sol lino",
+        "category": "Revêtement de sol"
+      },
+      "image8": {
+        "title": "Pose papier peint chambre",
+        "category": "Papier peint"
+      },
+      "image9": {
+        "title": "Peinture intérieure séjour",
+        "category": "Peinture intérieure"
+      }
+    }
+  },
+  "PeintureInterieure": {
+    "metaTitle": "Peinture intérieure - Haut en Couleur",
+    "metaDescription": "Services de peinture intérieure à Rennes : murs, plafonds, boiseries. Finitions décoratives et conseils personnalisés.",
+    "heroTitle": "Peinture intérieure",
+    "heroSubtitle": "Transformez vos espaces avec notre expertise en peinture décorative et finitions de qualité",
+    "servicesTitle": "Nos services de peinture intérieure",
+    "service1": {
+      "title": "Peinture de murs et plafonds",
+      "description": "Application professionnelle de peinture sur tous types de supports : plâtre, béton, papier peint.",
+      "items": {
+        "item1": "Préparation minutieuse des surfaces",
+        "item2": "Finition mate, satinée ou brillante",
+        "item3": "Peintures écologiques disponibles"
+      }
+    },
+    "service2": {
+      "title": "Peinture de boiseries",
+      "description": "Rénovation et peinture de portes, fenêtres, plinthes, escaliers et menuiseries.",
+      "items": {
+        "item1": "Décapage et ponçage",
+        "item2": "Peinture laquée ou satinée",
+        "item3": "Protection longue durée"
+      }
+    },
+    "service3": {
+      "title": "Finitions décoratives",
+      "description": "Créez des ambiances uniques avec nos techniques de peinture décorative.",
+      "items": {
+        "item1": "Effets décoratifs (patine, glacis)",
+        "item2": "Bi-coloration et motifs",
+        "item3": "Conseil personnalisé couleurs"
+      }
+    },
+    "service4": {
+      "title": "Rénovation complète",
+      "description": "Projet de rénovation d'appartement ou maison de A à Z.",
+      "items": {
+        "item1": "Étude et conseil déco",
+        "item2": "Gestion complète du chantier",
+        "item3": "Respect des délais"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi choisir Haut en Couleur ?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Plus de 10 ans d'expérience en peinture intérieure"
+      },
+      "reason2": {
+        "title": "Ponctualité",
+        "description": "Respect strict des délais convenus"
+      },
+      "reason3": {
+        "title": "Qualité",
+        "description": "Matériaux premium et finitions soignées"
+      }
+    },
+    "cta": {
+      "title": "Prêt à démarrer votre projet ?",
+      "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
+      "button": "Demander un devis",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "Enduit": {
+    "metaTitle": "Enduit - Haut en Couleur",
+    "metaDescription": "Application d'enduit à Rennes : enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture.",
+    "heroTitle": "Enduit",
+    "heroSubtitle": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture",
+    "servicesTitle": "Nos services d'enduit",
+    "service1": {
+      "title": "Enduit de lissage",
+      "description": "Application d'enduit de lissage pour obtenir des surfaces parfaitement lisses avant peinture.",
+      "items": {
+        "item1": "Surface parfaitement lisse",
+        "item2": "Préparation optimale pour la peinture",
+        "item3": "Application sur murs et plafonds",
+        "item4": "Finition professionnelle garantie"
+      }
+    },
+    "service2": {
+      "title": "Rebouchage et réparation",
+      "description": "Rebouchage de trous, fissures et imperfections pour une surface impeccable.",
+      "items": {
+        "item1": "Réparation des fissures",
+        "item2": "Rebouchage de trous et impacts",
+        "item3": "Correction des imperfections",
+        "item4": "Résultat invisible après peinture"
+      }
+    },
+    "service3": {
+      "title": "Préparation des surfaces",
+      "description": "Préparation complète des murs et plafonds avant application de peinture.",
+      "items": {
+        "item1": "Décapage et ponçage",
+        "item2": "Traitement des anciennes peintures",
+        "item3": "Application de primaire d'accrochage",
+        "item4": "Support prêt pour la finition"
+      }
+    },
+    "service4": {
+      "title": "Rénovation complète",
+      "description": "Remise en état complète de vos murs et plafonds pour une rénovation totale.",
+      "items": {
+        "item1": "Diagnostic de l'état des supports",
+        "item2": "Réparation et préparation complète",
+        "item3": "Application d'enduit multi-couches",
+        "item4": "Finition parfaite prête à peindre"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi choisir Haut en Couleur ?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Maîtrise parfaite des techniques d'application d'enduit"
+      },
+      "reason2": {
+        "title": "Rapidité",
+        "description": "Travail soigné réalisé dans les délais convenus"
+      },
+      "reason3": {
+        "title": "Qualité",
+        "description": "Matériaux professionnels et finitions impeccables"
+      }
+    },
+    "cta": {
+      "title": "Besoin d'application d'enduit ?",
+      "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
+      "button": "Demander un devis",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "MentionsLegales": {
+    "metaTitle": "Mentions légales - Haut en Couleur",
+    "metaDescription": "Mentions légales du site Haut en Couleur, entreprise de peinture à Mordelles.",
+    "heroTitle": "Mentions légales",
+    "heroSubtitle": "Informations légales concernant le site Haut en Couleur",
+    "section1": {
+      "title": "1. Éditeur du site",
+      "companyName": "<strong>Raison sociale :</strong> DAVISON SANDRINE (HAUT EN COULEUR)",
+      "legalForm": "<strong>Forme juridique :</strong> Entreprise individuelle",
+      "address": "<strong>Adresse :</strong> 22 Le Domaine, 35310 Mordelles, France",
+      "siret": "<strong>SIRET :</strong> 823 682 745 00026",
+      "email": "<strong>Email :</strong> contact@haut-en-couleur.fr",
+      "phone": "<strong>Téléphone :</strong> 06 66 28 44 58",
+      "publisher": "<strong>Responsable de publication :</strong> Sandrine Davison"
+    },
+    "section2": {
+      "title": "2. Hébergeur du site",
+      "name": "<strong>Nom :</strong> OVH SAS",
+      "address": "<strong>Adresse :</strong> 2 rue Kellermann, 59100 Roubaix, France",
+      "website": "<strong>Site web :</strong> <a href=\"https://www.ovh.com\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">www.ovh.com</a>"
+    },
+    "section3": {
+      "title": "3. Propriété intellectuelle",
+      "paragraph1": "L'ensemble du contenu de ce site (textes, images, vidéos, logos, etc.) est la propriété exclusive de Haut en Couleur, sauf mention contraire.",
+      "paragraph2": "Toute reproduction, distribution, modification, adaptation, retransmission ou publication de ces différents éléments est strictement interdite sans l'accord écrit préalable de Haut en Couleur.",
+      "paragraph3": "Les marques et logos présents sur le site sont déposés par Haut en Couleur ou par des tiers. Toute utilisation de ces marques sans autorisation est interdite."
+    },
+    "section4": {
+      "title": "4. Protection des données personnelles",
+      "paragraph1": "Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez d'un droit d'accès, de rectification, de suppression et d'opposition aux données personnelles vous concernant.",
+      "paragraph2": "Pour exercer ces droits, vous pouvez nous contacter :",
+      "contactEmail": "Par email : contact@haut-en-couleur.fr",
+      "contactPhone": "Par téléphone : 06 66 28 44 58",
+      "contactMail": "Par courrier : Haut en Couleur, 22 Le Domaine, 35310 Mordelles, France",
+      "paragraph3": "Pour plus d'informations sur la gestion de vos données personnelles, consultez notre <a href=\"/politique-confidentialite\" class=\"text-primary hover:underline\">Politique de confidentialité</a>."
+    },
+    "section5": {
+      "title": "5. Cookies",
+      "paragraph1": "Ce site utilise des cookies pour améliorer votre expérience de navigation et analyser le trafic.",
+      "paragraph2": "Vous pouvez paramétrer vos préférences concernant les cookies depuis votre navigateur. Pour en savoir plus, consultez notre <a href=\"/politique-confidentialite\" class=\"text-primary hover:underline\">Politique de confidentialité</a>."
+    },
+    "section6": {
+      "title": "6. Limitation de responsabilité",
+      "paragraph1": "Haut en Couleur s'efforce d'assurer l'exactitude et la mise à jour des informations diffusées sur ce site. Toutefois, nous ne pouvons garantir l'exactitude, la précision ou l'exhaustivité des informations mises à disposition sur ce site.",
+      "paragraph2": "En conséquence, nous déclinons toute responsabilité :",
+      "liability1": "Pour toute imprécision, inexactitude ou omission portant sur des informations disponibles sur le site",
+      "liability2": "Pour tous dommages résultant d'une intrusion frauduleuse d'un tiers ayant entraîné une modification des informations mises à disposition sur le site",
+      "liability3": "Pour tous dommages directs ou indirects résultant de l'utilisation du site"
+    },
+    "section7": {
+      "title": "7. Droit applicable et juridiction compétente",
+      "paragraph1": "Les présentes mentions légales sont régies par le droit français.",
+      "paragraph2": "En cas de litige et à défaut d'accord amiable, le litige sera porté devant les tribunaux français conformément aux règles de compétence en vigueur."
+    },
+    "section8": {
+      "title": "Des questions ?",
+      "paragraph1": "Pour toute question concernant ces mentions légales, n'hésitez pas à nous contacter :",
+      "emailLabel": "<strong>Email :</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phoneLabel": "<strong>Téléphone :</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>"
+    },
+    "lastUpdate": "Dernière mise à jour :"
+  },
+  "CookiesPage": {
+    "metaTitle": "Politique de Cookies - Haut en Couleur",
+    "metaDescription": "Politique d'utilisation des cookies du site Haut en Couleur. Informations sur les cookies utilisés et vos droits.",
+    "heroTitle": "Politique de Cookies",
+    "heroSubtitle": "Informations sur l'utilisation des cookies sur notre site",
+    "section1": {
+      "title": "Qu'est-ce qu'un cookie ?",
+      "content": "Un cookie est un petit fichier texte déposé sur votre ordinateur, tablette ou smartphone lors de la visite d'un site internet. Les cookies permettent au site de reconnaître votre appareil et de mémoriser certaines informations vous concernant, afin de faciliter votre navigation et de vous proposer une expérience personnalisée."
+    },
+    "section2": {
+      "title": "Les cookies que nous utilisons"
+    },
+    "section3": {
+      "title": "Comment gérer vos cookies ?",
+      "paragraph1": "Vous pouvez à tout moment choisir de désactiver ces cookies. Votre navigateur peut également être paramétré pour vous signaler les cookies qui sont déposés dans votre ordinateur et vous demander de les accepter ou non.",
+      "paragraph2Title": "Paramétrage de votre navigateur",
+      "browser1": "<strong>Chrome</strong> : Menu &gt; Paramètres &gt; Confidentialité et sécurité &gt; Cookies",
+      "browser2": "<strong>Firefox</strong> : Menu &gt; Options &gt; Vie privée et sécurité &gt; Cookies",
+      "browser3": "<strong>Safari</strong> : Préférences &gt; Confidentialité &gt; Cookies et données de sites web",
+      "browser4": "<strong>Edge</strong> : Paramètres &gt; Confidentialité &gt; Cookies et autorisations de site"
+    },
+    "section4": {
+      "title": "Durée de conservation",
+      "content": "Les cookies sont conservés pour une durée maximale de 13 mois à compter de leur premier dépôt dans votre terminal. À l'issue de cette période, votre consentement sera à nouveau requis."
+    },
+    "section5": {
+      "title": "Vos droits",
+      "paragraph1": "Conformément au Règlement Général sur la Protection des Données (RGPD) et à la loi Informatique et Libertés, vous disposez des droits suivants :",
+      "right1": "Droit d'accès à vos données personnelles",
+      "right2": "Droit de rectification de vos données",
+      "right3": "Droit à l'effacement de vos données",
+      "right4": "Droit d'opposition au traitement de vos données",
+      "right5": "Droit à la portabilité de vos données"
+    },
+    "section6": {
+      "title": "Nous contacter",
+      "paragraph1": "Pour toute question concernant notre politique de cookies ou pour exercer vos droits, vous pouvez nous contacter :",
+      "email": "<strong>Email :</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phone": "<strong>Téléphone :</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>",
+      "address": "<strong>Adresse :</strong> Mordelles, Ille-et-Vilaine, France"
+    },
+    "cookieTypes": {
+      "essential": {
+        "title": "1. Cookies essentiels (obligatoires)",
+        "description": "Ces cookies sont indispensables au fonctionnement du site. Ils ne peuvent pas être désactivés.",
+        "cookie1": "<strong>cookie_consent</strong> : Enregistre votre choix concernant les cookies (durée : 1 an)",
+        "cookie2": "<strong>session</strong> : Maintient votre session de navigation (durée : session)"
+      },
+      "security": {
+        "title": "2. Cookies de sécurité",
+        "description": "Ces cookies nous aident à protéger notre site contre les activités malveillantes.",
+        "cookie1": "<strong>hCaptcha</strong> : Protection anti-spam sur le formulaire de contact (durée : session)"
+      },
+      "analytics": {
+        "title": "3. Cookies analytiques (optionnels)",
+        "description": "Ces cookies nous permettent de comprendre comment vous utilisez notre site afin de l'améliorer. Vous pouvez les refuser sans que cela n'affecte votre navigation.",
+        "cookie1": "<strong>Google Analytics</strong> : Analyse statistique de la fréquentation (durée : 2 ans)",
+        "cookie2": "<strong>_ga, _gid</strong> : Mesure d'audience et statistiques de visite"
+      }
+    },
+    "lastUpdate": "Dernière mise à jour :"
+  },
+  "PolitiqueConfidentialite": {
+    "metaTitle": "Politique de confidentialité - Haut en Couleur",
+    "metaDescription": "Politique de confidentialité et protection des données personnelles de Haut en Couleur.",
+    "heroTitle": "Politique de confidentialité",
+    "heroSubtitle": "Comment nous protégeons et utilisons vos données personnelles",
+    "intro": {
+      "paragraph1": "Chez Haut en Couleur, nous accordons une grande importance à la protection de votre vie privée et de vos données personnelles. Cette politique de confidentialité explique comment nous collectons, utilisons, stockons et protégeons vos informations personnelles conformément au Règlement Général sur la Protection des Données (RGPD).",
+      "paragraph2": "En utilisant notre site web, vous acceptez les pratiques décrites dans cette politique."
+    },
+    "section1": {
+      "title": "1. Responsable du traitement des données",
+      "companyName": "<strong>Raison sociale :</strong> Haut en Couleur",
+      "location": "<strong>Localisation :</strong> Mordelles, 35310, France",
+      "email": "<strong>Email :</strong> contact@haut-en-couleur.fr",
+      "phone": "<strong>Téléphone :</strong> 06 66 28 44 58"
+    },
+    "section2": {
+      "title": "2. Données personnelles collectées",
+      "subsection1": {
+        "title": "2.1. Données collectées directement",
+        "intro": "Lorsque vous utilisez notre formulaire de contact ou nous contactez par email, nous collectons les informations suivantes :",
+        "item1": "Nom et prénom",
+        "item2": "Adresse email",
+        "item3": "Numéro de téléphone",
+        "item4": "Sujet de votre demande",
+        "item5": "Message et contenu de votre demande"
+      },
+      "subsection2": {
+        "title": "2.2. Données collectées automatiquement",
+        "intro": "Lors de votre navigation sur notre site, nous pouvons collecter automatiquement :",
+        "item1": "Votre adresse IP",
+        "item2": "Type de navigateur et système d'exploitation",
+        "item3": "Pages visitées et durée de visite",
+        "item4": "Source de référence (comment vous êtes arrivé sur notre site)",
+        "item5": "Date et heure de visite"
+      }
+    },
+    "section3": {
+      "title": "3. Finalités du traitement",
+      "intro": "Vos données personnelles sont collectées et traitées pour les finalités suivantes :",
+      "purpose1": "<strong>Traitement de vos demandes :</strong> Répondre à vos questions, demandes de devis et demandes d'information",
+      "purpose2": "<strong>Gestion de la relation client :</strong> Suivi de votre projet, communication sur l'avancement des travaux",
+      "purpose3": "<strong>Amélioration du site :</strong> Analyser l'utilisation du site pour améliorer nos services",
+      "purpose4": "<strong>Obligations légales :</strong> Respecter nos obligations légales et réglementaires",
+      "purpose5": "<strong>Marketing (avec votre consentement) :</strong> Vous envoyer des informations sur nos services, promotions et actualités"
+    },
+    "section4": {
+      "title": "4. Base légale du traitement",
+      "intro": "Le traitement de vos données personnelles est fondé sur :",
+      "basis1": "<strong>Votre consentement :</strong> Pour l'envoi de communications marketing",
+      "basis2": "<strong>L'exécution d'un contrat :</strong> Pour le traitement de votre demande de devis ou la réalisation de travaux",
+      "basis3": "<strong>L'intérêt légitime :</strong> Pour l'amélioration de nos services et la sécurité du site",
+      "basis4": "<strong>Les obligations légales :</strong> Pour respecter nos obligations comptables et fiscales"
+    },
+    "section5": {
+      "title": "5. Destinataires des données",
+      "paragraph1": "Vos données personnelles sont destinées aux services internes de Haut en Couleur.",
+      "paragraph2": "Nous pouvons également partager vos données avec :",
+      "recipient1": "Nos prestataires techniques (hébergement, maintenance du site)",
+      "recipient2": "Nos partenaires pour la réalisation de certains travaux (sous-traitants)",
+      "recipient3": "Les autorités compétentes en cas d'obligation légale",
+      "paragraph3": "Nous veillons à ce que ces tiers respectent la confidentialité et la sécurité de vos données personnelles."
+    },
+    "section6": {
+      "title": "6. Durée de conservation",
+      "intro": "Vos données personnelles sont conservées pendant la durée nécessaire aux finalités pour lesquelles elles ont été collectées :",
+      "duration1": "<strong>Demandes de contact :</strong> 3 ans après le dernier contact",
+      "duration2": "<strong>Clients :</strong> 10 ans pour les obligations comptables et fiscales",
+      "duration3": "<strong>Données de navigation :</strong> 13 mois maximum",
+      "duration4": "<strong>Newsletter (si applicable) :</strong> Jusqu'à votre désinscription",
+      "outro": "À l'issue de ces durées, vos données sont supprimées ou anonymisées."
+    },
+    "section7": {
+      "title": "7. Vos droits",
+      "intro": "Conformément au RGPD, vous disposez des droits suivants concernant vos données personnelles :",
+      "right1": "<strong>Droit d'accès :</strong> Obtenir la confirmation que vos données sont traitées et accéder à ces données",
+      "right2": "<strong>Droit de rectification :</strong> Corriger vos données inexactes ou incomplètes",
+      "right3": "<strong>Droit à l'effacement :</strong> Demander la suppression de vos données dans certaines conditions",
+      "right4": "<strong>Droit à la limitation :</strong> Limiter le traitement de vos données dans certains cas",
+      "right5": "<strong>Droit d'opposition :</strong> Vous opposer au traitement de vos données pour des raisons tenant à votre situation particulière",
+      "right6": "<strong>Droit à la portabilité :</strong> Recevoir vos données dans un format structuré et les transmettre à un autre responsable",
+      "right7": "<strong>Droit de retirer votre consentement :</strong> À tout moment, sans affecter la licéité du traitement fondé sur le consentement effectué avant le retrait",
+      "exerciseTitle": "Comment exercer vos droits",
+      "exerciseIntro": "Pour exercer vos droits, vous pouvez nous contacter :",
+      "exerciseEmail": "Par email : contact@haut-en-couleur.fr",
+      "exercisePhone": "Par téléphone : 06 66 28 44 58",
+      "exerciseMail": "Par courrier : Haut en Couleur, Mordelles, 35310, France",
+      "responseTime": "Nous nous engageons à répondre à votre demande dans un délai d'un mois.",
+      "cnil": "Vous avez également le droit d'introduire une réclamation auprès de la CNIL (Commission Nationale de l'Informatique et des Libertés) si vous estimez que vos droits ne sont pas respectés : <a href=\"https://www.cnil.fr\" target=\"_blank\" rel=\"noopener noreferrer\" class=\"text-primary hover:underline\">www.cnil.fr</a>"
+    },
+    "section8": {
+      "title": "8. Cookies et technologies similaires",
+      "intro": "Notre site utilise des cookies pour améliorer votre expérience de navigation.",
+      "subsection1": {
+        "title": "8.1. Qu'est-ce qu'un cookie ?",
+        "content": "Un cookie est un petit fichier texte stocké sur votre appareil lors de votre visite sur notre site. Il permet de vous reconnaître lors de vos prochaines visites."
+      },
+      "subsection2": {
+        "title": "8.2. Types de cookies utilisés",
+        "type1": "<strong>Cookies essentiels :</strong> Nécessaires au fonctionnement du site (ne peuvent pas être désactivés)",
+        "type2": "<strong>Cookies analytiques :</strong> Nous aident à comprendre comment les visiteurs utilisent notre site",
+        "type3": "<strong>Cookies de préférence :</strong> Permettent de mémoriser vos choix (langue, région)"
+      },
+      "subsection3": {
+        "title": "8.3. Gestion des cookies",
+        "intro": "Vous pouvez gérer vos préférences en matière de cookies directement depuis votre navigateur :",
+        "chrome": "Chrome : Menu &gt; Paramètres &gt; Confidentialité et sécurité &gt; Cookies",
+        "firefox": "Firefox : Menu &gt; Options &gt; Vie privée et sécurité &gt; Cookies",
+        "safari": "Safari : Préférences &gt; Confidentialité &gt; Cookies",
+        "edge": "Edge : Menu &gt; Paramètres &gt; Confidentialité &gt; Cookies"
+      }
+    },
+    "section9": {
+      "title": "9. Sécurité des données",
+      "paragraph1": "Nous mettons en œuvre des mesures techniques et organisationnelles appropriées pour protéger vos données personnelles contre la destruction accidentelle ou illicite, la perte, l'altération, la divulgation ou l'accès non autorisé.",
+      "paragraph2": "Ces mesures incluent :",
+      "measure1": "Chiffrement des données sensibles",
+      "measure2": "Accès restreint aux données personnelles",
+      "measure3": "Sauvegardes régulières",
+      "measure4": "Mises à jour de sécurité régulières"
+    },
+    "section10": {
+      "title": "10. Transferts de données hors UE",
+      "content": "Vos données personnelles sont hébergées et traitées au sein de l'Union Européenne. Si nous devions transférer vos données en dehors de l'UE, nous nous assurerions que des garanties appropriées sont mises en place conformément au RGPD."
+    },
+    "section11": {
+      "title": "11. Modifications de la politique",
+      "paragraph1": "Nous nous réservons le droit de modifier cette politique de confidentialité à tout moment. Toute modification sera publiée sur cette page avec une nouvelle date de mise à jour.",
+      "paragraph2": "Nous vous encourageons à consulter régulièrement cette page pour prendre connaissance des éventuelles modifications."
+    },
+    "contact": {
+      "title": "Des questions sur vos données ?",
+      "intro": "Pour toute question concernant cette politique de confidentialité ou vos données personnelles, contactez-nous :",
+      "email": "<strong>Email :</strong> <a href=\"mailto:contact@haut-en-couleur.fr\" class=\"text-primary hover:underline\">contact@haut-en-couleur.fr</a>",
+      "phone": "<strong>Téléphone :</strong> <a href=\"tel:+33666284458\" class=\"text-primary hover:underline\">06 66 28 44 58</a>"
+    },
+    "lastUpdate": "Dernière mise à jour :"
+  },
+  "PapierPeint": {
+    "metaTitle": "Pose de papier peint - Haut en Couleur",
+    "metaDescription": "Pose professionnelle de papier peint à Rennes : intissé, vinyle, panoramique. Préparation des murs, raccords parfaits et finitions soignées.",
+    "heroTitle": "Pose de papier peint",
+    "heroSubtitle": "Pose professionnelle de papier peint pour personnaliser vos intérieurs avec style et élégance",
+    "servicesTitle": "Nos services de pose de papier peint",
+    "service1": {
+      "title": "Papier peint intissé",
+      "description": "Pose de papier peint intissé, le plus facile à poser et à décoller.",
+      "items": {
+        "item1": "Pose rapide et propre",
+        "item2": "Facilement repositionnable",
+        "item3": "Très résistant et lavable",
+        "item4": "Large choix de motifs"
+      }
+    },
+    "service2": {
+      "title": "Papier peint vinyle",
+      "description": "Application de papier peint vinyle, idéal pour les pièces humides.",
+      "items": {
+        "item1": "Résistant à l'humidité",
+        "item2": "Lessivable et durable",
+        "item3": "Parfait pour cuisines et salles de bain",
+        "item4": "Entretien facile"
+      }
+    },
+    "service3": {
+      "title": "Papier peint panoramique",
+      "description": "Installation de papier peint panoramique pour un décor spectaculaire.",
+      "items": {
+        "item1": "Décor unique et personnalisé",
+        "item2": "Raccords invisibles",
+        "item3": "Effet trompe-l'oeil garanti",
+        "item4": "Pose de précision"
+      }
+    },
+    "service4": {
+      "title": "Préparation des murs",
+      "description": "Préparation minutieuse des murs pour une pose parfaite du papier peint.",
+      "items": {
+        "item1": "Décollage de l'ancien papier",
+        "item2": "Lissage et rebouchage",
+        "item3": "Application d'une sous-couche",
+        "item4": "Surfaces parfaitement préparées"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi choisir Haut en Couleur ?",
+      "reason1": {
+        "title": "Précision",
+        "description": "Raccords parfaits et finitions impeccables"
+      },
+      "reason2": {
+        "title": "Rapidité",
+        "description": "Pose professionnelle rapide et soignée"
+      },
+      "reason3": {
+        "title": "Conseil",
+        "description": "Aide au choix des motifs et styles adaptés"
+      }
+    },
+    "cta": {
+      "title": "Envie de transformer vos murs ?",
+      "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
+      "button": "Demander un devis",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "RevetementSol": {
+    "metaTitle": "Revêtement de sol - Haut en Couleur",
+    "metaDescription": "Pose de revêtements de sol à Rennes : lino, PVC, moquette. Préparation du support, pose professionnelle et finitions impeccables.",
+    "heroTitle": "Revêtement de sol",
+    "heroSubtitle": "Pose de revêtements de sol pour tous vos espaces : lino, PVC, moquette",
+    "servicesTitle": "Nos services de pose de revêtement de sol",
+    "service1": {
+      "title": "Lino et linoléum",
+      "description": "Pose de lino et linoléum, solution durable et écologique pour tous vos sols.",
+      "items": {
+        "item1": "Matériau naturel et écologique",
+        "item2": "Résistant et facile d'entretien",
+        "item3": "Large choix de couleurs et motifs",
+        "item4": "Confort acoustique et thermique"
+      }
+    },
+    "service2": {
+      "title": "Sol PVC",
+      "description": "Installation de sol PVC, solution pratique et économique pour toutes les pièces.",
+      "items": {
+        "item1": "Très résistant à l'usure",
+        "item2": "Imperméable et lessivable",
+        "item3": "Imitation parquet ou carrelage",
+        "item4": "Pose rapide et sans colle"
+      }
+    },
+    "service3": {
+      "title": "Moquette",
+      "description": "Pose de moquette pour un confort optimal et une isolation acoustique.",
+      "items": {
+        "item1": "Confort et douceur au toucher",
+        "item2": "Excellente isolation phonique",
+        "item3": "Isolation thermique efficace",
+        "item4": "Nombreux coloris et textures"
+      }
+    },
+    "service4": {
+      "title": "Préparation du support",
+      "description": "Préparation professionnelle du sol pour une pose durable et impeccable.",
+      "items": {
+        "item1": "Nivellement du sol",
+        "item2": "Ragréage si nécessaire",
+        "item3": "Pose de sous-couche isolante",
+        "item4": "Support parfaitement préparé"
+      }
+    },
+    "whyChooseUs": {
+      "title": "Pourquoi choisir Haut en Couleur ?",
+      "reason1": {
+        "title": "Expertise",
+        "description": "Maîtrise de toutes les techniques de pose"
+      },
+      "reason2": {
+        "title": "Rapidité",
+        "description": "Pose rapide avec un minimum de gêne"
+      },
+      "reason3": {
+        "title": "Qualité",
+        "description": "Finitions soignées et durables"
+      }
+    },
+    "cta": {
+      "title": "Projet de revêtement de sol ?",
+      "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
+      "button": "Demander un devis",
+      "phone": "06 66 28 44 58"
+    }
+  },
+  "SeoContentQuiSommesNous": {
+    "block1Title": "Une entreprise de peinture à taille humaine",
+    "block1Paragraph1": "Créée en 2010, <strong>Haut en Couleur</strong> est une entreprise de peinture familiale basée à Mordelles, près de Rennes. Nous avons bâti notre réputation sur la qualité de notre travail, notre écoute et notre proximité avec nos clients.",
+    "block1Paragraph2": "Notre philosophie est simple : offrir un service de <strong>peinture professionnel</strong> avec un accompagnement personnalisé du début à la fin de votre projet. Chaque chantier est unique, et nous nous adaptons à vos besoins spécifiques.",
+    "block1Paragraph3": "Que ce soit pour des <strong>travaux de peinture intérieure</strong>, de <strong>peinture extérieure</strong>, ou la pose d'<strong>enduits décoratifs</strong>, nous mettons tout notre savoir-faire à votre service.",
+    "block2Title": "Notre engagement qualité",
+    "commitment1Title": "Peintre qualifié et expérimenté",
+    "commitment1Desc": "Plus de 10 ans d'expérience dans le domaine de la peinture en bâtiment",
+    "commitment2Title": "Respect de l'environnement",
+    "commitment2Desc": "Utilisation de peintures écologiques et respectueuses de votre santé",
+    "commitment3Title": "Garantie de nos travaux",
+    "commitment3Desc": "Nous garantissons la qualité et la durabilité de nos réalisations",
+    "commitment4Title": "Conseils personnalisés",
+    "commitment4Desc": "Aide au choix des couleurs, des finitions et des matériaux adaptés à votre projet"
+  },
+  "SeoContentPrestations": {
+    "block1Title": "Vos travaux de peinture à Rennes en toute confiance",
+    "block1Paragraph1": "<strong>Haut en Couleur</strong> est votre <strong>entreprise de peinture à Rennes</strong> pour tous vos projets de <strong>peinture intérieure</strong>, <strong>enduit</strong>, <strong>pose de papier peint</strong> et <strong>revêtement de sol</strong>.",
+    "block1Paragraph2": "Que vous souhaitiez <strong>rafraîchir votre intérieur</strong>, <strong>poser du papier peint</strong> ou <strong>rénover votre sol</strong>, notre peintre professionnel met son expertise à votre service.",
+    "block1Paragraph3": "Basés à <strong>Mordelles</strong>, nous intervenons dans toute la région de <strong>Rennes</strong> et ses environs pour des <strong>travaux de peinture de qualité</strong>, réalisés dans le respect des normes et de vos attentes.",
+    "block2Title": "Nos prestations de peinture",
+    "service1Title": "Peinture intérieure à Rennes",
+    "service1Desc": "Murs, plafonds, boiseries - Nous peignons tous vos espaces intérieurs avec soin. Choix des couleurs, conseils déco et finitions impeccables.",
+    "service2Title": "Enduit à Rennes",
+    "service2Desc": "Application d'enduit de lissage, rebouchage et préparation des surfaces. Pour une finition parfaite avant peinture.",
+    "service3Title": "Pose de papier peint",
+    "service3Desc": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Raccords parfaits et finitions soignées.",
+    "service4Title": "Revêtement de sol",
+    "service4Desc": "Pose de lino, PVC, moquette pour tous vos espaces. Préparation du support et pose professionnelle.",
+    "processTitle": "Notre processus de travail",
+    "step1Title": "Visite gratuite",
+    "step1Desc": "Nous venons chez vous pour évaluer vos besoins et prendre les mesures",
+    "step2Title": "Devis détaillé",
+    "step2Desc": "Proposition claire avec détails des travaux et tarifs transparents",
+    "step3Title": "Réalisation",
+    "step3Desc": "Travaux de peinture professionnels avec protection des lieux et nettoyage",
+    "step4Title": "Finitions",
+    "step4Desc": "Contrôle qualité et retouches si nécessaire pour votre satisfaction",
+    "benefitsTitle": "Pourquoi faire appel à un peintre professionnel ?",
+    "benefit1Title": "Gain de temps",
+    "benefit1Desc": "Nos peintres professionnels réalisent vos travaux rapidement et efficacement, vous permettant de profiter rapidement de votre nouvel espace.",
+    "benefit2Title": "Résultat parfait",
+    "benefit2Desc": "Techniques professionnelles, matériel adapté et savoir-faire garantissent des finitions impeccables et durables.",
+    "benefit3Title": "Conseils d'expert",
+    "benefit3Desc": "Aide au choix des couleurs, des finitions et des produits adaptés à votre projet et à votre budget."
+  },
+  "SeoContentRealisations": {
+    "block1Title": "Des réalisations de peinture sur mesure à Rennes",
+    "block1Paragraph1": "Découvrez nos <strong>réalisations de peinture</strong> dans toute la région rennaise. Chaque projet est unique et reflète la personnalité et les besoins de nos clients.",
+    "block1Paragraph2": "Que ce soit pour la <strong>rénovation d'une maison</strong>, la <strong>peinture d'un appartement</strong>, ou la <strong>décoration de bureaux professionnels</strong>, nous apportons le même soin et la même attention aux détails.",
+    "block1Paragraph3": "Nos travaux de <strong>peinture intérieure</strong>, <strong>pose de papier peint</strong> et <strong>revêtement de sol</strong> témoignent de notre expertise et de notre engagement à offrir des finitions parfaites. Parcourez notre galerie pour vous inspirer et imaginer ce que nous pourrions réaliser pour vous.",
+    "block2Title": "Types de projets réalisés",
+    "project1Title": "Peinture de maisons et appartements",
+    "project1Desc": "Chambres, salons, cuisines, salles de bain - Nous transformons tous vos espaces intérieurs",
+    "project2Title": "Enduit",
+    "project2Desc": "Application d'enduit de lissage et rebouchage pour une finition parfaite",
+    "project3Title": "Pose de papier peint",
+    "project3Desc": "Papier peint intissé, vinyle, panoramique - Pose professionnelle avec raccords parfaits",
+    "project4Title": "Revêtement de sol",
+    "project4Desc": "Pose de lino, PVC, moquette pour tous vos espaces avec finitions soignées"
+  },
+  "StructuredData": {
+    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, enduit, pose de papier peint et revêtement de sol.",
+    "service1": "Peinture intérieure",
+    "service2": "Enduit",
+    "service3": "Pose de papier peint",
+    "service4": "Revêtement de sol",
+    "service5": "Peinture de boiseries",
+    "service6": "Finitions décoratives",
+    "catalogName": "Services de peinture",
+    "service1Desc": "Application professionnelle de peinture sur tous types de supports : murs, plafonds, boiseries.",
+    "service2Desc": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture.",
+    "service3Desc": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Préparation des murs et raccords parfaits.",
+    "service4Desc": "Pose de revêtements de sol : lino, PVC, moquette. Préparation du support et finitions impeccables."
+  }
+}

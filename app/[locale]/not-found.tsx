@@ -1,8 +1,13 @@
+'use client';
+
 import Link from 'next/link';
-import Navigation from './components/Navigation';
-import Footer from './components/Footer';
+import {useLocale, useTranslations} from 'next-intl';
+import Navigation from '@/app/components/Navigation';
+import Footer from '@/app/components/Footer';
 
 export default function NotFound() {
+  const locale = useLocale();
+  const t = useTranslations('NotFound');
   return (
     <>
       <Navigation />
@@ -16,20 +21,20 @@ export default function NotFound() {
 
           {/* Message */}
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Page introuvable
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Désolé, la page que vous recherchez n'existe pas ou a été déplacée.
+            {t('description')}
           </p>
 
           {/* Suggestions */}
           <div className="bg-white rounded-2xl shadow-lg p-8 mb-8">
             <h3 className="text-2xl font-bold text-gray-800 mb-6">
-              Que souhaitez-vous faire ?
+              {t('suggestionsTitle')}
             </h3>
             <div className="grid md:grid-cols-2 gap-4">
               <Link
-                href="/"
+                href={`/${locale}/`}
                 className="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-orange-50 transition-all group"
               >
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -37,14 +42,14 @@ export default function NotFound() {
                 </svg>
                 <div className="text-left">
                   <p className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    Retour à l'accueil
+                    {t('link1Title')}
                   </p>
-                  <p className="text-sm text-gray-500">Découvrez nos services</p>
+                  <p className="text-sm text-gray-500">{t('link1Description')}</p>
                 </div>
               </Link>
 
               <Link
-                href="/prestations"
+                href={`/${locale}/prestations`}
                 className="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-orange-50 transition-all group"
               >
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -52,14 +57,14 @@ export default function NotFound() {
                 </svg>
                 <div className="text-left">
                   <p className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    Nos prestations
+                    {t('link2Title')}
                   </p>
-                  <p className="text-sm text-gray-500">Voir tous nos services</p>
+                  <p className="text-sm text-gray-500">{t('link2Description')}</p>
                 </div>
               </Link>
 
               <Link
-                href="/realisations"
+                href={`/${locale}/realisations`}
                 className="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-orange-50 transition-all group"
               >
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -67,14 +72,14 @@ export default function NotFound() {
                 </svg>
                 <div className="text-left">
                   <p className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    Nos réalisations
+                    {t('link3Title')}
                   </p>
-                  <p className="text-sm text-gray-500">Portfolio de projets</p>
+                  <p className="text-sm text-gray-500">{t('link3Description')}</p>
                 </div>
               </Link>
 
               <Link
-                href="/contact"
+                href={`/${locale}/contact`}
                 className="flex items-center gap-3 p-4 rounded-xl border-2 border-gray-200 hover:border-primary hover:bg-orange-50 transition-all group"
               >
                 <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
@@ -82,9 +87,9 @@ export default function NotFound() {
                 </svg>
                 <div className="text-left">
                   <p className="font-semibold text-gray-800 group-hover:text-primary transition-colors">
-                    Nous contacter
+                    {t('link4Title')}
                   </p>
-                  <p className="text-sm text-gray-500">Demander un devis</p>
+                  <p className="text-sm text-gray-500">{t('link4Description')}</p>
                 </div>
               </Link>
             </div>
@@ -92,10 +97,10 @@ export default function NotFound() {
 
           {/* CTA Button */}
           <Link
-            href="/"
+            href={`/${locale}/`}
             className="inline-block px-10 py-4 text-lg font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all duration-300 transform hover:scale-105 shadow-lg"
           >
-            Retour à l'accueil
+            {t('ctaButton')}
           </Link>
 
           {/* Decorative Paint Brush */}

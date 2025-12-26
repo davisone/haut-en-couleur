@@ -1,43 +1,47 @@
 'use client';
 
+import {useTranslations} from 'next-intl';
+
 interface TimelineEvent {
   year: string;
   title: string;
   description: string;
 }
 
-const events: TimelineEvent[] = [
-  {
-    year: "2016",
-    title: "Création de l'entreprise",
-    description: "HAUT EN COULEUR, SARL, est créée le 24 octobre 2016 à Mordelles, spécialisée dans les travaux de peinture et vitrerie.",
-  },
-  {
-    year: "2019",
-    title: "Développement local",
-    description: "Consolidation de notre présence dans la région rennaise avec une expertise reconnue en peinture intérieure et extérieure.",
-  },
-  {
-    year: "2023",
-    title: "Reconnaissance PME",
-    description: "L'entreprise est catégorisée Petite ou Moyenne Entreprise, témoignant de son développement et de sa solidité.",
-  },
-  {
-    year: "2025",
-    title: "Aujourd'hui",
-    description: "9 ans d'expérience au service des particuliers et professionnels. Une entreprise à taille humaine reconnue pour son savoir-faire et sa proximité avec ses clients.",
-  },
-];
-
 export default function Timeline() {
+  const t = useTranslations('Timeline');
+
+  const events: TimelineEvent[] = [
+    {
+      year: t('event1.year'),
+      title: t('event1.title'),
+      description: t('event1.description'),
+    },
+    {
+      year: t('event2.year'),
+      title: t('event2.title'),
+      description: t('event2.description'),
+    },
+    {
+      year: t('event3.year'),
+      title: t('event3.title'),
+      description: t('event3.description'),
+    },
+    {
+      year: t('event4.year'),
+      title: t('event4.title'),
+      description: t('event4.description'),
+    },
+  ];
+
   return (
     <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
-          Notre histoire
+          {t('title')}
         </h2>
         <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
-            9 ans d&apos;expérience au service de vos projets
+          {t('subtitle')}
         </p>
 
         <div className="relative">
@@ -86,7 +90,7 @@ export default function Timeline() {
         <div className="mt-16 text-center">
           <div className="inline-block bg-white px-8 py-6 rounded-2xl shadow-lg">
             <p className="text-xl text-gray-700 font-medium">
-              Et l&apos;aventure continue...
+              {t('continuingMessage')}
             </p>
             <div className="mt-4 w-16 h-1 bg-primary mx-auto rounded-full"></div>
           </div>

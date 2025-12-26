@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import { MapContainer, TileLayer, Marker, Popup, Circle } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
+import { useTranslations } from 'next-intl';
 
 // Icône personnalisée orange moderne
 const createCustomIcon = (isMain = false) => {
@@ -49,6 +50,7 @@ interface MapProps {
 }
 
 export default function Map({ showAllCities = true }: MapProps) {
+  const t = useTranslations('Map');
   const [isClient, setIsClient] = useState(false);
 
   useEffect(() => {
@@ -66,7 +68,7 @@ export default function Map({ showAllCities = true }: MapProps) {
   if (!isClient) {
     return (
       <div className="w-full h-full flex items-center justify-center bg-gray-200 rounded-2xl">
-        <p className="text-gray-600">Chargement de la carte...</p>
+        <p className="text-gray-600">{t('loading')}</p>
       </div>
     );
   }
@@ -111,7 +113,7 @@ export default function Map({ showAllCities = true }: MapProps) {
               <div className="p-2">
                 <p className="font-bold text-gray-800 text-base">{city.name}</p>
                 {city.name === 'Mordelles' && (
-                  <p className="text-sm text-primary mt-1">📍 Siège social</p>
+                  <p className="text-sm text-primary mt-1">{t('headquarters')}</p>
                 )}
               </div>
             </Popup>
@@ -125,7 +127,7 @@ export default function Map({ showAllCities = true }: MapProps) {
           <Popup className="custom-popup">
             <div className="p-2">
               <p className="font-bold text-gray-800 text-base">Mordelles</p>
-              <p className="text-sm text-primary mt-1">📍 Siège social</p>
+              <p className="text-sm text-primary mt-1">{t('headquarters')}</p>
             </div>
           </Popup>
         </Marker>

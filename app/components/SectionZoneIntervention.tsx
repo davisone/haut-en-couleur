@@ -1,21 +1,24 @@
 'use client';
 
 import dynamic from 'next/dynamic';
-
-// Import dynamique pour éviter les erreurs SSR avec Leaflet
-const Map = dynamic(() => import('./Map'), {
-  ssr: false,
-  loading: () => (
-    <div className="h-full w-full bg-gray-200 rounded-2xl flex items-center justify-center">
-      <div className="text-center">
-        <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
-        <p className="text-gray-600">Chargement de la carte...</p>
-      </div>
-    </div>
-  )
-});
+import {useTranslations} from 'next-intl';
 
 export default function ServiceArea() {
+  const t = useTranslations('InterventionZone');
+
+  // Import dynamique pour éviter les erreurs SSR avec Leaflet
+  const Map = dynamic(() => import('./Map'), {
+    ssr: false,
+    loading: () => (
+      <div className="h-full w-full bg-gray-200 rounded-2xl flex items-center justify-center">
+        <div className="text-center">
+          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto mb-4"></div>
+          <p className="text-gray-600">{t('loadingMap')}</p>
+        </div>
+      </div>
+    )
+  });
+
   return (
     <section className="py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
@@ -23,27 +26,23 @@ export default function ServiceArea() {
           {/* Text Content */}
           <div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">
-              Zone d'intervention
+              {t('title')}
             </h2>
             <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
-              <p>
-                <strong>Haut en Couleur</strong> intervient dans toute la région de Rennes et ses environs.
-              </p>
-              <p>
-                Notre zone de couverture s&apos;étend sur un rayon de <strong>35 kilomètres autour de Mordelles</strong>, incluant notamment :
-              </p>
+              <p dangerouslySetInnerHTML={{ __html: t.raw('description1') }} />
+              <p dangerouslySetInnerHTML={{ __html: t.raw('description2') }} />
               <ul className="list-disc list-inside space-y-2 ml-4">
-                <li>Chavagne</li>
-                <li>Bréal-sous-Montfort</li>
-                <li>Le Rheu</li>
-                <li>Bruz</li>
-                <li>Cintré</li>
-                <li>L&apos;Hermitage</li>
-                <li>Saint Malo</li>
-                <li>Et bien d&apos;autres communes</li>
+                <li>{t('city1')}</li>
+                <li>{t('city2')}</li>
+                <li>{t('city3')}</li>
+                <li>{t('city4')}</li>
+                <li>{t('city5')}</li>
+                <li>{t('city6')}</li>
+                <li>{t('city7')}</li>
+                <li>{t('city8')}</li>
               </ul>
               <p className="mt-6 p-4 bg-orange-50 border-l-4 border-primary rounded">
-                <strong>Besoin d&apos;un devis ?</strong> Contactez-nous pour vérifier que votre localisation fait partie de notre zone d&apos;intervention.
+                <strong>{t('ctaTitle')}</strong> {t('ctaText')}
               </p>
             </div>
           </div>

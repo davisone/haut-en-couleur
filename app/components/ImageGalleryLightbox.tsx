@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import { X, ChevronLeft, ChevronRight } from 'lucide-react';
+import {useTranslations} from 'next-intl';
 
 interface GalleryImage {
   id: number;
@@ -15,14 +16,15 @@ interface ImageGalleryLightboxProps {
 }
 
 export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxProps) {
+  const t = useTranslations('Gallery');
   const [selectedImageIndex, setSelectedImageIndex] = useState<number | null>(null);
-  const [selectedCategory, setSelectedCategory] = useState<string>('Tous');
+  const [selectedCategory, setSelectedCategory] = useState<string>(t('all'));
 
   // Extraire toutes les catégories uniques
-  const categories: string[] = ['Tous', ...Array.from(new Set(images.map(img => img.category).filter((cat): cat is string => Boolean(cat))))];
+  const categories: string[] = [t('all'), ...Array.from(new Set(images.map(img => img.category).filter((cat): cat is string => Boolean(cat))))];
 
   // Filtrer les images par catégorie
-  const filteredImages = selectedCategory === 'Tous'
+  const filteredImages = selectedCategory === t('all')
     ? images
     : images.filter(img => img.category === selectedCategory);
 
@@ -126,7 +128,7 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
           <button
             onClick={closeLightbox}
             className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-50"
-            aria-label="Fermer"
+            aria-label={t('close')}
           >
             <X className="w-8 h-8" />
           </button>
@@ -138,7 +140,7 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
               goToPrevious();
             }}
             className="absolute left-4 text-white hover:text-gray-300 transition-colors z-50"
-            aria-label="Image précédente"
+            aria-label={t('previous')}
           >
             <ChevronLeft className="w-12 h-12" />
           </button>
@@ -150,7 +152,7 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
               goToNext();
             }}
             className="absolute right-4 text-white hover:text-gray-300 transition-colors z-50"
-            aria-label="Image suivante"
+            aria-label={t('next')}
           >
             <ChevronRight className="w-12 h-12" />
           </button>

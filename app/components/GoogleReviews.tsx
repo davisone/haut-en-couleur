@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import { useTranslations } from 'next-intl';
 
 interface Review {
   author_name: string;
@@ -17,6 +18,7 @@ interface GoogleReviewsProps {
 }
 
 export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
+  const t = useTranslations('GoogleReviews');
   const [reviews, setReviews] = useState<Review[]>([]);
   const [averageRating, setAverageRating] = useState(0);
   const [totalReviews, setTotalReviews] = useState(0);
@@ -34,7 +36,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
         const response = await fetch(`/api/google-reviews?placeId=${placeId}`);
 
         if (!response.ok) {
-          throw new Error('Erreur lors de la récupération des avis');
+          throw new Error(t('errorFetching'));
         }
 
         const data = await response.json();
@@ -43,8 +45,8 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
         setTotalReviews(data.user_ratings_total || 0);
         setLoading(false);
       } catch (err) {
-        console.error('Erreur avis:', err);
-        setError('Impossible de charger les avis Google');
+        console.error('Reviews error:', err);
+        setError(t('errorLoading'));
         setLoading(false);
       }
     };
@@ -69,7 +71,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
     return (
       <section className="py-20 px-4 bg-white">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-600">Chargement des avis...</p>
+          <p className="text-gray-600">{t('loading')}</p>
         </div>
       </section>
     );
@@ -91,7 +93,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
         {/* Header avec note globale */}
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
-            Ce que disent nos clients
+            {t('title')}
           </h2>
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="flex gap-1">
@@ -100,7 +102,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
             <span className="text-3xl font-bold text-gray-800">{averageRating.toFixed(1)}</span>
           </div>
           <p className="text-gray-600">
-            Basé sur <strong>{totalReviews} avis</strong> Google
+            {t('basedOn', { count: totalReviews })}
           </p>
 
           {/* Bouton pour laisser un avis */}
@@ -110,7 +112,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
             rel="noopener noreferrer"
             className="inline-block mt-6 px-8 py-3 text-lg font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all duration-300"
           >
-            Laisser un avis Google
+            {t('leaveReview')}
           </a>
         </div>
 
@@ -168,7 +170,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
         {/* Logo Google */}
         <div className="text-center mt-8">
           <p className="text-sm text-gray-500">
-            Avis récupérés depuis{' '}
+            {t('fetchedFrom')}{' '}
             <span className="font-semibold text-gray-700">Google</span>
           </p>
         </div>

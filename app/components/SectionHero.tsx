@@ -2,9 +2,12 @@
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import {useTranslations, useLocale} from 'next-intl';
 
 export default function Hero() {
   const [scrollY, setScrollY] = useState(0);
+  const t = useTranslations('Hero');
+  const locale = useLocale();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,22 +53,22 @@ export default function Hero() {
 
         {/* Title */}
         <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 drop-shadow-lg animate-fade-in">
-          Haut en Couleur
+          {t('title')}
         </h1>
         <p className="text-xl md:text-2xl lg:text-3xl text-white mb-4 font-semibold animate-fade-in" style={{ animationDelay: '0.2s' }}>
-          Peintre en bâtiment à Rennes
+          {t('subtitle')}
         </p>
         <p className="text-lg md:text-xl text-white/90 mb-12 animate-fade-in" style={{ animationDelay: '0.4s' }}>
-          Expertise et qualité pour vos projets de peinture
+          {t('description')}
         </p>
 
         {/* CTA Button */}
         <Link
-          href="/contact"
+          href={`/${locale}/contact`}
           className="inline-block px-10 py-4 text-lg font-semibold text-white border-2 border-white rounded-full hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105 animate-fade-in"
           style={{ animationDelay: '0.6s' }}
         >
-          CONTACTEZ-NOUS
+          {t('cta')}
         </Link>
       </div>
 

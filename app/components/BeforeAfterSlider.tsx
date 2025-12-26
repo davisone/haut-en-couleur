@@ -1,6 +1,7 @@
 'use client';
 
 import { useState, useRef, useEffect } from 'react';
+import {useTranslations} from 'next-intl';
 
 interface BeforeAfterSliderProps {
   beforeImage: string;
@@ -12,9 +13,12 @@ interface BeforeAfterSliderProps {
 export default function BeforeAfterSlider({
   beforeImage,
   afterImage,
-  beforeLabel = 'Avant',
-  afterLabel = 'Après'
+  beforeLabel,
+  afterLabel
 }: BeforeAfterSliderProps) {
+  const t = useTranslations('BeforeAfter');
+  const defaultBeforeLabel = beforeLabel || t('before');
+  const defaultAfterLabel = afterLabel || t('after');
   const [sliderPosition, setSliderPosition] = useState(50);
   const [isDragging, setIsDragging] = useState(false);
   const [containerWidth, setContainerWidth] = useState(0);
@@ -88,7 +92,7 @@ export default function BeforeAfterSlider({
         />
         {/* After Label */}
         <div className="absolute top-4 right-4 bg-green-600 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-          {afterLabel}
+          {defaultAfterLabel}
         </div>
       </div>
 
@@ -106,7 +110,7 @@ export default function BeforeAfterSlider({
         />
         {/* Before Label */}
         <div className="absolute top-4 left-4 bg-gray-700 text-white px-4 py-2 rounded-full text-sm font-semibold shadow-lg">
-          {beforeLabel}
+          {defaultBeforeLabel}
         </div>
       </div>
 

@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { useTranslations } from 'next-intl';
 import BeforeAfterSlider from './BeforeAfterSlider';
 
 interface BeforeAfterProject {
@@ -17,13 +18,14 @@ interface BeforeAfterSectionProps {
 }
 
 export default function BeforeAfterSection({ projects }: BeforeAfterSectionProps) {
-  const [selectedCategory, setSelectedCategory] = useState<string>('Tous');
+  const t = useTranslations('BeforeAfter');
+  const [selectedCategory, setSelectedCategory] = useState<string>(t('all'));
 
   // Extraire toutes les catégories uniques
-  const categories = ['Tous', ...Array.from(new Set(projects.map(p => p.category)))];
+  const categories = [t('all'), ...Array.from(new Set(projects.map(p => p.category)))];
 
   // Filtrer les projets par catégorie
-  const filteredProjects = selectedCategory === 'Tous'
+  const filteredProjects = selectedCategory === t('all')
     ? projects
     : projects.filter(p => p.category === selectedCategory);
 
@@ -32,10 +34,10 @@ export default function BeforeAfterSection({ projects }: BeforeAfterSectionProps
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl font-bold text-gray-800 mb-4">
-            Nos transformations avant/après
+            {t('title')}
           </h2>
           <p className="text-xl text-gray-600">
-            Découvrez l&apos;impact de notre travail en glissant le curseur
+            {t('subtitle')}
           </p>
         </div>
 
@@ -66,6 +68,8 @@ export default function BeforeAfterSection({ projects }: BeforeAfterSectionProps
               <BeforeAfterSlider
                 beforeImage={project.beforeImage}
                 afterImage={project.afterImage}
+                beforeLabel={t('before')}
+                afterLabel={t('after')}
               />
 
               {/* Content */}

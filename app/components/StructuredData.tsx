@@ -1,11 +1,15 @@
-export default function StructuredData() {
+import { getTranslations } from 'next-intl/server';
+
+export default async function StructuredData() {
+  const t = await getTranslations('StructuredData');
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "@id": "https://haut-en-couleur.fr/#organization",
     "name": "Haut en Couleur",
     "image": "https://haut-en-couleur.fr/img/logo2.png",
-    "description": "Entreprise de peinture en bâtiment à Mordelles, près de Rennes. Spécialisée en peinture intérieure, enduit, pose de papier peint et revêtement de sol.",
+    "description": t('description'),
     "url": "https://haut-en-couleur.fr",
     "telephone": "+33666284458",
     "email": "contact@haut-en-couleur.fr",
@@ -47,63 +51,63 @@ export default function StructuredData() {
     ],
     "priceRange": "€€",
     "serviceType": [
-      "Peinture intérieure",
-      "Enduit",
-      "Pose de papier peint",
-      "Revêtement de sol",
-      "Peinture de boiseries",
-      "Finitions décoratives"
+      t('service1'),
+      t('service2'),
+      t('service3'),
+      t('service4'),
+      t('service5'),
+      t('service6')
     ],
     "hasOfferCatalog": {
       "@type": "OfferCatalog",
-      "name": "Services de peinture",
+      "name": t('catalogName'),
       "itemListElement": [
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Peinture intérieure",
-            "description": "Application professionnelle de peinture sur tous types de supports : murs, plafonds, boiseries."
+            "name": t('service1'),
+            "description": t('service1Desc')
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Enduit",
-            "description": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture."
+            "name": t('service2'),
+            "description": t('service2Desc')
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Pose de papier peint",
-            "description": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Préparation des murs et raccords parfaits."
+            "name": t('service3'),
+            "description": t('service3Desc')
           }
         },
         {
           "@type": "Offer",
           "itemOffered": {
             "@type": "Service",
-            "name": "Revêtement de sol",
-            "description": "Pose de revêtements de sol : lino, PVC, moquette. Préparation du support et finitions impeccables."
+            "name": t('service4'),
+            "description": t('service4Desc')
           }
         }
       ]
     },
-    // Note: Les données aggregateRating seront automatiquement récupérées par Google
-    // depuis vos avis Google Business Profile. Pas besoin de les mettre ici en dur.
+    // Note: aggregateRating data will be automatically retrieved by Google
+    // from your Google Business Profile reviews. No need to hardcode it here.
 
     // ========================================
-    // RÉSEAUX SOCIAUX - À ACTIVER PLUS TARD
+    // SOCIAL MEDIA - TO ACTIVATE LATER
     // ========================================
-    // Décommentez la section ci-dessous quand vous aurez créé vos pages sociales
-    // et remplacez les URLs par vos vraies pages :
+    // Uncomment the section below when you've created your social pages
+    // and replace the URLs with your real pages:
     /*
     "sameAs": [
-      "https://www.facebook.com/VOTRE_PAGE_FACEBOOK",
-      // "https://www.instagram.com/VOTRE_COMPTE_INSTAGRAM"  // Si vous créez un compte Instagram
+      "https://www.facebook.com/YOUR_FACEBOOK_PAGE",
+      // "https://www.instagram.com/YOUR_INSTAGRAM_ACCOUNT"  // If you create an Instagram account
     ]
     */
   };
