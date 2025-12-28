@@ -5,6 +5,7 @@ import StructuredData from '@/app/components/StructuredData';
 import CookieBanner from '@/app/components/CookieBanner';
 import GoogleAnalytics from '@/app/components/GoogleAnalytics';
 import ScrollToTop from '@/app/components/ScrollToTop';
+import ThemeProvider from '@/app/components/ThemeProvider';
 import {NextIntlClientProvider} from 'next-intl';
 import {getMessages} from 'next-intl/server';
 import {notFound} from 'next/navigation';
@@ -75,26 +76,28 @@ export default async function LocaleLayout(props: {
   const messages = await getMessages();
 
   return (
-    <html lang={locale}>
+    <html lang={locale} suppressHydrationWarning>
       <head>
         <StructuredData />
         <GoogleAnalytics />
       </head>
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 transition-colors`}
       >
-        <NextIntlClientProvider messages={messages} locale={locale}>
-          {/* Skip link pour l'accessibilité */}
-          <a
-            href="#main-content"
-            className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
-          >
-            Aller au contenu principal
-          </a>
-          {children}
-          <CookieBanner />
-          <ScrollToTop />
-        </NextIntlClientProvider>
+        <ThemeProvider>
+          <NextIntlClientProvider messages={messages} locale={locale}>
+            {/* Skip link pour l'accessibilité */}
+            <a
+              href="#main-content"
+              className="sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-primary focus:text-white focus:rounded-lg focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2"
+            >
+              Aller au contenu principal
+            </a>
+            {children}
+            <CookieBanner />
+            <ScrollToTop />
+          </NextIntlClientProvider>
+        </ThemeProvider>
       </body>
     </html>
   );

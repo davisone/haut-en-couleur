@@ -6,23 +6,23 @@ export default function SeoContent() {
   const t = useTranslations('SeoHome');
 
   return (
-    <section className="py-16 px-4 bg-orange-50">
+    <section className="py-16 px-4 bg-orange-50 dark:bg-gray-800 transition-colors">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Bloc 1 */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
               {t('block1Title')}
             </h2>
-            <p className="text-gray-600 leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.raw('block1Content') }} />
+            <p className="text-gray-600 dark:text-gray-300 leading-relaxed mb-4" dangerouslySetInnerHTML={{ __html: t.raw('block1Content') }} />
           </div>
 
           {/* Bloc 2 */}
           <div>
-            <h2 className="text-3xl font-bold text-gray-800 mb-4">
+            <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">
               {t('block2Title')}
             </h2>
-            <ul className="space-y-3 text-gray-600">
+            <ul className="space-y-3 text-gray-600 dark:text-gray-300">
               <li className="flex items-start gap-3">
                 <svg className="w-6 h-6 text-primary flex-shrink-0 mt-1" fill="currentColor" viewBox="0 0 20 20">
                   <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"/>
@@ -52,26 +52,26 @@ export default function SeoContent() {
         </div>
 
         {/* Bloc zones d'intervention */}
-        <div className="mt-12 p-8 bg-white rounded-2xl shadow-lg">
-          <h2 className="text-3xl font-bold text-gray-800 mb-4 text-center">
+        <div className="mt-12 p-8 bg-white dark:bg-gray-900 rounded-2xl shadow-lg transition-colors">
+          <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4 text-center">
             {t('zonesTitle')}
           </h2>
-          <p className="text-gray-600 text-center mb-6" dangerouslySetInnerHTML={{ __html: t.raw('zonesSubtitle') }} />
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700">
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city1')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city2')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city5')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">Cesson-Sévigné</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city10')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">Saint-Grégoire</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city11')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city12')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">Chantepie</div>
-            <div className="p-3 bg-gray-50 rounded-lg">Thorigné-Fouillard</div>
-            <div className="p-3 bg-gray-50 rounded-lg">{t('city5')}</div>
-            <div className="p-3 bg-gray-50 rounded-lg">Chartres-de-Bretagne</div>
+          <p className="text-gray-600 dark:text-gray-300 text-center mb-6" dangerouslySetInnerHTML={{ __html: t.raw('zonesSubtitle') }} />
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center text-gray-700 dark:text-gray-300">
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city1')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city2')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city5')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">Cesson-Sévigné</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city10')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">Saint-Grégoire</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city11')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city12')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">Chantepie</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">Thorigné-Fouillard</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">{t('city5')}</div>
+            <div className="p-3 bg-gray-50 dark:bg-gray-800 rounded-lg">Chartres-de-Bretagne</div>
           </div>
-          <p className="text-gray-500 text-sm text-center mt-6">
+          <p className="text-gray-500 dark:text-gray-400 text-sm text-center mt-6">
             {t('moreCities')}
           </p>
         </div>

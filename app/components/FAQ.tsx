@@ -25,13 +25,13 @@ export default function FAQ() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gray-50">
+    <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
       <div className="max-w-4xl mx-auto">
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             {t('title')}
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             {t('subtitle')}
           </p>
         </div>
@@ -40,13 +40,13 @@ export default function FAQ() {
           {faqItems.map((item, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
+              className="bg-white dark:bg-gray-800 rounded-lg shadow-md overflow-hidden transition-all duration-300 hover:shadow-lg"
             >
               <button
                 onClick={() => toggleQuestion(index)}
-                className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-gray-50 transition-colors"
+                className="w-full px-6 py-5 text-left flex items-center justify-between gap-4 hover:bg-gray-50 dark:hover:bg-gray-700 transition-colors"
               >
-                <span className="text-lg font-semibold text-gray-800 flex-1">
+                <span className="text-lg font-semibold text-gray-800 dark:text-white flex-1">
                   {item.question}
                 </span>
                 <svg
@@ -72,7 +72,7 @@ export default function FAQ() {
                 }`}
               >
                 <div className="px-6 pb-5 pt-2">
-                  <p className="text-gray-600 leading-relaxed">
+                  <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                     {item.answer}
                   </p>
                 </div>

@@ -1058,5 +1058,9 @@
     "service2Desc": "Application d'enduit de lissage, rebouchage et préparation des surfaces pour une finition parfaite avant peinture.",
     "service3Desc": "Pose professionnelle de papier peint intissé, vinyle et panoramique. Préparation des murs et raccords parfaits.",
     "service4Desc": "Pose de revêtements de sol : lino, PVC, moquette. Préparation du support et finitions impeccables."
+  },
+  "ThemeSwitcher": {
+    "switchToLight": "Passer au thème clair",
+    "switchToDark": "Passer au thème sombre"
   }
 }

@@ -102,7 +102,7 @@ export default function Prestations() {
         />
 
         {/* Services Grid */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto space-y-20">
             {prestations.map((prestation, index) => (
               <div
@@ -121,18 +121,18 @@ export default function Prestations() {
 
                 {/* Content */}
                 <div className={index % 2 === 1 ? 'md:order-1' : ''}>
-                  <div className="w-16 h-16 bg-orange-100 rounded-full flex items-center justify-center mb-6 text-primary">
+                  <div className="w-16 h-16 bg-orange-100 dark:bg-orange-900/30 rounded-full flex items-center justify-center mb-6 text-primary">
                     {prestation.icon}
                   </div>
-                  <h2 className="text-4xl font-bold text-gray-800 mb-4">
+                  <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
                     {prestation.title}
                   </h2>
-                  <p className="text-lg text-gray-600 mb-6">
+                  <p className="text-lg text-gray-600 dark:text-gray-300 mb-6">
                     {prestation.description}
                   </p>
                   <ul className="space-y-3 mb-8">
                     {prestation.services.map((service, idx) => (
-                      <li key={idx} className="flex items-center gap-3 text-gray-700">
+                      <li key={idx} className="flex items-center gap-3 text-gray-700 dark:text-gray-300">
                         <svg className="w-6 h-6 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
                         </svg>

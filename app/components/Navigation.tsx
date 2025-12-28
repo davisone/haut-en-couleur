@@ -6,6 +6,7 @@ import Image from 'next/image';
 import { usePathname } from 'next/navigation';
 import {useTranslations, useLocale} from 'next-intl';
 import LocaleSwitcher from './LocaleSwitcher';
+import ThemeSwitcher from './ThemeSwitcher';
 
 export default function Navigation() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -30,11 +31,11 @@ export default function Navigation() {
   const getLinkClasses = (path: string) => {
     return isActive(path)
       ? 'text-primary font-semibold transition-colors'
-      : 'text-gray-700 hover:text-primary transition-colors font-medium';
+      : 'text-gray-700 dark:text-gray-200 hover:text-primary transition-colors font-medium';
   };
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 bg-white shadow-md" aria-label="Navigation principale">
+    <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-gray-800 shadow-md transition-colors" aria-label="Navigation principale">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
@@ -66,7 +67,7 @@ export default function Navigation() {
             <div
               className="relative group"
               onMouseEnter={() => setIsServicesOpen(true)}
-              onMouseLeave={() => (false)}
+              onMouseLeave={() => setIsServicesOpen(false)}
             >
               <button
                 onClick={() => setIsServicesOpen(!isServicesOpen)}
@@ -82,13 +83,13 @@ export default function Navigation() {
               </button>
               {isServicesOpen && (
                 <div id="desktop-services-menu" className="absolute top-full left-0 pt-2 w-56" role="menu">
-                  <div className="bg-white rounded-lg shadow-lg py-2 border border-gray-100">
+                  <div className="bg-white dark:bg-gray-700 rounded-lg shadow-lg py-2 border border-gray-100 dark:border-gray-600">
                     <Link
                       href={localePath('/prestations/peinture-interieure')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/peinture-interieure')
-                          ? 'bg-orange-50 text-primary font-semibold'
-                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                          ? 'bg-orange-50 dark:bg-orange-900 text-primary font-semibold'
+                          : 'text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -98,8 +99,8 @@ export default function Navigation() {
                       href={localePath('/prestations/enduit')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/enduit')
-                          ? 'bg-orange-50 text-primary font-semibold'
-                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                          ? 'bg-orange-50 dark:bg-orange-900 text-primary font-semibold'
+                          : 'text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -109,8 +110,8 @@ export default function Navigation() {
                       href={localePath('/prestations/papier-peint')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/papier-peint')
-                          ? 'bg-orange-50 text-primary font-semibold'
-                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                          ? 'bg-orange-50 dark:bg-orange-900 text-primary font-semibold'
+                          : 'text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -120,8 +121,8 @@ export default function Navigation() {
                       href={localePath('/prestations/revetement-sol')}
                       className={`block px-4 py-2 transition-colors ${
                         isActive('/prestations/revetement-sol')
-                          ? 'bg-orange-50 text-primary font-semibold'
-                          : 'text-gray-700 hover:bg-orange-50 hover:text-primary'
+                          ? 'bg-orange-50 dark:bg-orange-900 text-primary font-semibold'
+                          : 'text-gray-700 dark:text-gray-200 hover:bg-orange-50 dark:hover:bg-orange-900 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -135,9 +136,12 @@ export default function Navigation() {
             {/* Sélecteur de langue */}
             <LocaleSwitcher />
 
+            {/* Sélecteur de thème */}
+            <ThemeSwitcher />
+
             <Link
               href={localePath('/contact')}
-              className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium bg-white text-primary hover:bg-primary hover:!text-white"
+              className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium bg-white dark:bg-gray-800 text-primary hover:bg-primary hover:!text-white"
             >
               {t('contact')}
             </Link>
@@ -147,7 +151,7 @@ export default function Navigation() {
           <div className="md:hidden">
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="text-gray-700 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2"
+              className="text-gray-700 dark:text-gray-200 hover:text-primary focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 rounded-lg p-2"
               aria-expanded={isMenuOpen}
               aria-controls="mobile-menu"
               aria-label={isMenuOpen ? t('closeMenu') : t('openMenu')}
@@ -195,7 +199,7 @@ export default function Navigation() {
                       className={`transition-colors ${
                         isActive('/prestations/peinture-interieure')
                           ? 'text-primary font-semibold'
-                          : 'text-gray-600 hover:text-primary'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -206,7 +210,7 @@ export default function Navigation() {
                       className={`transition-colors ${
                         isActive('/prestations/enduit')
                           ? 'text-primary font-semibold'
-                          : 'text-gray-600 hover:text-primary'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -217,7 +221,7 @@ export default function Navigation() {
                       className={`transition-colors ${
                         isActive('/prestations/papier-peint')
                           ? 'text-primary font-semibold'
-                          : 'text-gray-600 hover:text-primary'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -228,7 +232,7 @@ export default function Navigation() {
                       className={`transition-colors ${
                         isActive('/prestations/revetement-sol')
                           ? 'text-primary font-semibold'
-                          : 'text-gray-600 hover:text-primary'
+                          : 'text-gray-600 dark:text-gray-300 hover:text-primary'
                       }`}
                       role="menuitem"
                     >
@@ -238,14 +242,15 @@ export default function Navigation() {
                 )}
               </div>
 
-              {/* Sélecteur de langue mobile */}
-              <div className="pt-4 border-t border-gray-200">
+              {/* Sélecteurs de langue et thème mobile */}
+              <div className="pt-4 border-t border-gray-200 dark:border-gray-700 flex items-center gap-4">
                 <LocaleSwitcher />
+                <ThemeSwitcher />
               </div>
 
               <Link
                 href={localePath('/contact')}
-                className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium text-center bg-white text-primary hover:bg-primary hover:!text-white"
+                className="px-6 py-2 border-2 border-primary rounded-full transition-colors font-medium text-center bg-white dark:bg-gray-800 text-primary hover:bg-primary hover:!text-white"
                 role="menuitem"
               >
                 {t('contact')}

@@ -58,7 +58,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
     return [...Array(5)].map((_, index) => (
       <svg
         key={index}
-        className={`w-5 h-5 ${index < rating ? 'text-yellow-400' : 'text-gray-300'}`}
+        className={`w-5 h-5 ${index < rating ? 'text-yellow-400' : 'text-gray-300 dark:text-gray-600'}`}
         fill="currentColor"
         viewBox="0 0 20 20"
       >
@@ -69,9 +69,9 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
 
   if (loading) {
     return (
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white dark:bg-gray-800 transition-colors">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-gray-600">{t('loading')}</p>
+          <p className="text-gray-600 dark:text-gray-300">{t('loading')}</p>
         </div>
       </section>
     );
@@ -79,29 +79,29 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
 
   if (error) {
     return (
-      <section className="py-20 px-4 bg-white">
+      <section className="py-20 px-4 bg-white dark:bg-gray-800 transition-colors">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-red-600">{error}</p>
+          <p className="text-red-600 dark:text-red-400">{error}</p>
         </div>
       </section>
     );
   }
 
   return (
-    <section className="py-20 px-4 bg-blue-50">
+    <section className="py-20 px-4 bg-blue-50 dark:bg-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto">
         {/* Header avec note globale */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             {t('title')}
           </h2>
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="flex gap-1">
               {renderStars(Math.round(averageRating))}
             </div>
-            <span className="text-3xl font-bold text-gray-800">{averageRating.toFixed(1)}</span>
+            <span className="text-3xl font-bold text-gray-800 dark:text-white">{averageRating.toFixed(1)}</span>
           </div>
-          <p className="text-gray-600">
+          <p className="text-gray-600 dark:text-gray-300">
             {t('basedOn', { count: totalReviews })}
           </p>
 
@@ -130,7 +130,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
             {reviews.map((review, index) => (
               <div
                 key={index}
-                className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow"
+                className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300"
               >
                 {/* En-tête de l'avis */}
                 <div className="flex items-start gap-4 mb-4">
@@ -146,20 +146,20 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
                     </div>
                   )}
                   <div className="flex-1 min-w-0">
-                    <h3 className="font-semibold text-gray-800 truncate">
+                    <h3 className="font-semibold text-gray-800 dark:text-white truncate">
                       {review.author_name}
                     </h3>
                     <div className="flex gap-1 mb-1">
                       {renderStars(review.rating)}
                     </div>
-                    <p className="text-xs text-gray-500">
+                    <p className="text-xs text-gray-500 dark:text-gray-400">
                       {review.relative_time_description}
                     </p>
                   </div>
                 </div>
 
                 {/* Texte de l'avis */}
-                <p className="text-gray-600 text-sm line-clamp-4">
+                <p className="text-gray-600 dark:text-gray-300 text-sm line-clamp-4">
                   &ldquo;{review.text}&rdquo;
                 </p>
               </div>
@@ -169,9 +169,9 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
 
         {/* Logo Google */}
         <div className="text-center mt-8">
-          <p className="text-sm text-gray-500">
+          <p className="text-sm text-gray-500 dark:text-gray-400">
             {t('fetchedFrom')}{' '}
-            <span className="font-semibold text-gray-700">Google</span>
+            <span className="font-semibold text-gray-700 dark:text-gray-200">Google</span>
           </p>
         </div>
       </div>

@@ -122,13 +122,13 @@ export default function Realisations() {
         <BeforeAfterSection projects={beforeAfterProjects} />
 
         {/* Image Gallery Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-7xl mx-auto">
             <div className="text-center mb-12">
-              <h2 className="text-4xl font-bold text-gray-800 mb-4">
+              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
                 {t('galleryTitle')}
               </h2>
-              <p className="text-xl text-gray-600">
+              <p className="text-xl text-gray-600 dark:text-gray-300">
                 {t('gallerySubtitle')}
               </p>
             </div>
@@ -140,12 +140,12 @@ export default function Realisations() {
         <GoogleReviews placeId={process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID} />
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-gray-50">
+        <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
               {t('ctaTitle')}
             </h2>
-            <p className="text-xl text-gray-600 mb-8">
+            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
               {t('ctaSubtitle')}
             </p>
             <a

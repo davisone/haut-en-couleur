@@ -9,7 +9,7 @@ export default function OurCompany() {
   const locale = useLocale();
 
   return (
-    <section id="qui-sommes-nous" className="py-20 px-4 bg-white">
+    <section id="qui-sommes-nous" className="py-20 px-4 bg-white dark:bg-gray-800 transition-colors">
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
@@ -17,7 +17,7 @@ export default function OurCompany() {
             <h2 className="text-4xl md:text-5xl font-bold text-primary mb-6">
               {t('title')}
             </h2>
-            <div className="space-y-4 text-lg text-gray-700 leading-relaxed">
+            <div className="space-y-4 text-lg text-gray-700 dark:text-gray-300 leading-relaxed">
               <p dangerouslySetInnerHTML={{ __html: t.raw('description1') }} />
               <p dangerouslySetInnerHTML={{ __html: t.raw('description2') }} />
               <p dangerouslySetInnerHTML={{ __html: t.raw('description3') }} />

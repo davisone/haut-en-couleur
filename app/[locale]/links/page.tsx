@@ -51,7 +51,7 @@ export default function LinksPage() {
   ];
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 py-12 px-4">
+    <div className="min-h-screen bg-gradient-to-br from-orange-50 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 py-12 px-4">
       <div className="max-w-2xl mx-auto">
         {/* Header avec logo et infos */}
         <div className="text-center mb-12">
@@ -66,13 +66,13 @@ export default function LinksPage() {
             </div>
           </div>
 
-          <h1 className="text-4xl font-bold text-gray-800 mb-3">
+          <h1 className="text-4xl font-bold text-gray-800 dark:text-white mb-3">
             Haut en Couleur
           </h1>
-          <p className="text-xl text-gray-600 mb-2">
+          <p className="text-xl text-gray-600 dark:text-gray-300 mb-2">
             Peintre en bâtiment à Rennes
           </p>
-          <p className="text-gray-500">
+          <p className="text-gray-500 dark:text-gray-400">
             Expertise et qualité pour vos projets de peinture
           </p>
         </div>
@@ -106,8 +106,8 @@ export default function LinksPage() {
         </div>
 
         {/* Contact direct */}
-        <div className="bg-white rounded-2xl p-6 shadow-lg mb-8">
-          <h3 className="text-lg font-bold text-gray-800 mb-4 text-center">
+        <div className="bg-white dark:bg-gray-800 rounded-2xl p-6 shadow-lg mb-8">
+          <h3 className="text-lg font-bold text-gray-800 dark:text-white mb-4 text-center">
             Contactez-nous directement
           </h3>
           <div className="space-y-3">
@@ -133,7 +133,7 @@ export default function LinksPage() {
         </div>
 
         {/* Footer */}
-        <div className="text-center text-gray-500 text-sm">
+        <div className="text-center text-gray-500 dark:text-gray-400 text-sm">
           <p className="mb-2">
             Mordelles, Ille-et-Vilaine (35310)
           </p>

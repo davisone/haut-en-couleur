@@ -87,13 +87,13 @@ export default function CounterStats() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-br from-orange-50 via-white to-orange-50">
+    <section className="py-20 px-4 bg-gradient-to-br from-orange-50 via-white to-orange-50 dark:from-gray-900 dark:via-gray-800 dark:to-gray-900 transition-colors">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="text-center p-6 rounded-xl bg-white shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="text-center p-6 rounded-xl bg-white dark:bg-gray-800 shadow-lg hover:shadow-xl transition-all duration-300"
             >
               <Counter
                 target={stat.value}
@@ -101,7 +101,7 @@ export default function CounterStats() {
                 prefix={stat.prefix}
                 duration={2000}
               />
-              <p className="mt-4 text-lg font-medium text-gray-700">
+              <p className="mt-4 text-lg font-medium text-gray-700 dark:text-gray-300">
                 {t(stat.labelKey)}
               </p>
             </div>

@@ -35,12 +35,12 @@ export default function Timeline() {
   ];
 
   return (
-    <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50">
+    <section className="py-20 px-4 bg-gradient-to-b from-white to-gray-50 dark:from-gray-900 dark:to-gray-800">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4 text-center">
           {t('title')}
         </h2>
-        <p className="text-xl text-gray-600 text-center mb-16 max-w-2xl mx-auto">
+        <p className="text-xl text-gray-600 dark:text-gray-300 text-center mb-16 max-w-2xl mx-auto">
           {t('subtitle')}
         </p>
 
@@ -59,23 +59,23 @@ export default function Timeline() {
               >
                 {/* Contenu */}
                 <div className={`w-full md:w-5/12 ${index % 2 === 0 ? 'md:pr-12' : 'md:pl-12'}`}>
-                  <div className="bg-white p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-primary">
+                  <div className="bg-white dark:bg-gray-700 p-6 rounded-2xl shadow-lg hover:shadow-xl transition-shadow duration-300 border-l-4 border-primary">
                     <div className="flex items-center gap-4 mb-3">
                       <span className="inline-block px-4 py-2 bg-primary text-white font-bold rounded-full text-lg">
                         {event.year}
                       </span>
                     </div>
-                    <h3 className="text-2xl font-bold text-gray-800 mb-2">
+                    <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-2">
                       {event.title}
                     </h3>
-                    <p className="text-gray-600 leading-relaxed">
+                    <p className="text-gray-600 dark:text-gray-300 leading-relaxed">
                       {event.description}
                     </p>
                   </div>
                 </div>
 
                 {/* Point central sur la ligne */}
-                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white shadow-lg z-10">
+                <div className="hidden md:flex absolute left-1/2 transform -translate-x-1/2 w-6 h-6 bg-primary rounded-full border-4 border-white dark:border-gray-800 shadow-lg z-10">
                   <div className="absolute inset-0 bg-primary rounded-full animate-ping opacity-20"></div>
                 </div>
 
@@ -88,8 +88,8 @@ export default function Timeline() {
 
         {/* Message final */}
         <div className="mt-16 text-center">
-          <div className="inline-block bg-white px-8 py-6 rounded-2xl shadow-lg">
-            <p className="text-xl text-gray-700 font-medium">
+          <div className="inline-block bg-white dark:bg-gray-700 px-8 py-6 rounded-2xl shadow-lg">
+            <p className="text-xl text-gray-700 dark:text-gray-200 font-medium">
               {t('continuingMessage')}
             </p>
             <div className="mt-4 w-16 h-1 bg-primary mx-auto rounded-full"></div>

@@ -107,39 +107,39 @@ export default function Contact() {
 
         <FAQ />
 
-        <section className="py-20 px-4 bg-white">
+        <section className="py-20 px-4 bg-white dark:bg-gray-900">
           <div className="max-w-7xl mx-auto">
             <div className="grid md:grid-cols-2 gap-12">
               {/* Contact Info */}
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
                   {t('infoTitle')}
                 </h2>
 
                 <div className="space-y-6">
                   {/* Adresse */}
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">{t('address')}</h3>
-                      <p className="text-gray-600">{t('addressLine1')}</p>
-                      <p className="text-gray-600">{t('addressLine2')}</p>
+                      <h3 className="font-semibold text-gray-800 dark:text-white mb-1">{t('address')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300">{t('addressLine1')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('addressLine2')}</p>
                     </div>
                   </div>
 
                   {/* Téléphone */}
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">{t('phone')}</h3>
+                      <h3 className="font-semibold text-gray-800 dark:text-white mb-1">{t('phone')}</h3>
                       <a href="tel:+33666284458" className="text-primary hover:text-primary-light text-lg">
                         06 66 28 44 58
                       </a>
@@ -148,13 +148,13 @@ export default function Contact() {
 
                   {/* Email */}
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">{t('email')}</h3>
+                      <h3 className="font-semibold text-gray-800 dark:text-white mb-1">{t('email')}</h3>
                       <a href="mailto:contact@haut-en-couleur.fr" className="text-primary hover:text-primary-light">
                           contact@haut-en-couleur.fr
                       </a>
@@ -163,15 +163,15 @@ export default function Contact() {
 
                   {/* Horaires */}
                   <div className="flex items-start gap-4">
-                    <div className="w-12 h-12 bg-orange-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <div className="w-12 h-12 bg-orange-100 dark:bg-orange-900/30 rounded-lg flex items-center justify-center flex-shrink-0">
                       <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
                         <path d="M11.99 2C6.47 2 2 6.48 2 12s4.47 10 9.99 10C17.52 22 22 17.52 22 12S17.52 2 11.99 2zM12 20c-4.42 0-8-3.58-8-8s3.58-8 8-8 8 3.58 8 8-3.58 8-8 8zm.5-13H11v6l5.25 3.15.75-1.23-4.5-2.67z"/>
                       </svg>
                     </div>
                     <div>
-                      <h3 className="font-semibold text-gray-800 mb-1">{t('hours')}</h3>
-                      <p className="text-gray-600">{t('hoursWeekday')}</p>
-                      <p className="text-gray-600">{t('hoursWeekend')}</p>
+                      <h3 className="font-semibold text-gray-800 dark:text-white mb-1">{t('hours')}</h3>
+                      <p className="text-gray-600 dark:text-gray-300">{t('hoursWeekday')}</p>
+                      <p className="text-gray-600 dark:text-gray-300">{t('hoursWeekend')}</p>
                     </div>
                   </div>
                 </div>
@@ -184,7 +184,7 @@ export default function Contact() {
 
               {/* Contact Form */}
               <div>
-                <h2 className="text-3xl font-bold text-gray-800 mb-8">
+                <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-8">
                   {t('formTitle')}
                 </h2>
 
@@ -217,7 +217,7 @@ export default function Contact() {
 
                   {/* Nom */}
                   <div>
-                    <label htmlFor="nom" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="nom" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       {t('nameLabel')}
                     </label>
                     <input
@@ -227,14 +227,14 @@ export default function Contact() {
                       required
                       value={formData.nom}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                       placeholder={t('namePlaceholder')}
                     />
                   </div>
 
                   {/* Email */}
                   <div>
-                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="email" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       {t('emailLabel')}
                     </label>
                     <input
@@ -244,14 +244,14 @@ export default function Contact() {
                       required
                       value={formData.email}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                       placeholder={t('emailPlaceholder')}
                     />
                   </div>
 
                   {/* Téléphone */}
                   <div>
-                    <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="telephone" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       {t('phoneLabel')}
                     </label>
                     <input
@@ -261,14 +261,14 @@ export default function Contact() {
                       required
                       value={formData.telephone}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                       placeholder={t('phonePlaceholder')}
                     />
                   </div>
 
                   {/* Sujet */}
                   <div>
-                    <label htmlFor="sujet" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="sujet" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       {t('subjectLabel')}
                     </label>
                     <select
@@ -277,7 +277,7 @@ export default function Contact() {
                       required
                       value={formData.sujet}
                       onChange={handleChange}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all"
                     >
                       <option value="">{t('subjectPlaceholder')}</option>
                       <option value="devis">{t('subject1')}</option>
@@ -292,7 +292,7 @@ export default function Contact() {
 
                   {/* Message */}
                   <div>
-                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-2">
+                    <label htmlFor="message" className="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2">
                       {t('messageLabel')}
                     </label>
                     <textarea
@@ -302,7 +302,7 @@ export default function Contact() {
                       value={formData.message}
                       onChange={handleChange}
                       rows={6}
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
+                      className="w-full px-4 py-3 border border-gray-300 dark:border-gray-600 dark:bg-gray-800 dark:text-white rounded-lg focus:ring-2 focus:ring-primary focus:border-transparent outline-none transition-all resize-none"
                       placeholder={t('messagePlaceholder')}
                     />
                   </div>

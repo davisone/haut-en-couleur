@@ -6,14 +6,14 @@ export default function SocialMedia() {
   const t = useTranslations('SocialMedia');
 
   return (
-    <section className="py-20 px-4 bg-white">
+    <section className="py-20 px-4 bg-white dark:bg-gray-900">
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <div className="text-center mb-12">
-          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-800 dark:text-white mb-4">
             {t('title')}
           </h2>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 dark:text-gray-300">
             {t('subtitle')}
           </p>
         </div>
@@ -46,7 +46,7 @@ export default function SocialMedia() {
           </div>
 
           {/* Bouton vers Facebook */}
-          <div className="p-6 bg-gray-50 text-center border-t">
+          <div className="p-6 bg-gray-50 dark:bg-gray-800 text-center border-t dark:border-gray-700">
             <a
               href="https://www.facebook.com/VotrePageEntreprise"
               target="_blank"
@@ -62,8 +62,8 @@ export default function SocialMedia() {
         </div>
 
         {/* Note de configuration */}
-        <div className="mt-8 bg-blue-50 border-l-4 border-blue-500 p-4 rounded">
-          <p className="text-sm text-gray-700">
+        <div className="mt-8 bg-blue-50 dark:bg-blue-900/30 border-l-4 border-blue-500 p-4 rounded">
+          <p className="text-sm text-gray-700 dark:text-gray-300">
             <strong>{t('configNote')}</strong> {t('configInstructions')}
           </p>
         </div>

@@ -1,5 +1,8 @@
 @import "tailwindcss";
 
+/* Configuration du dark mode avec next-themes */
+@variant dark (.dark &);
+
 /* Styles personnalisés pour la carte Leaflet */
 .custom-marker {
   background: transparent !important;
@@ -103,6 +106,34 @@
   --color-accent-red: var(--accent-red);
   --color-accent-yellow: var(--accent-yellow);
   --color-accent-blue: var(--accent-blue);
+
+  /* Couleurs Caméléon */
+  --color-cameleon-turquoise: var(--cameleon-turquoise);
+  --color-cameleon-emerald: var(--cameleon-emerald);
+  --color-cameleon-lime: var(--cameleon-lime);
+  --color-cameleon-cyan: var(--cameleon-cyan);
+  --color-cameleon-blue: var(--cameleon-blue);
+  --color-cameleon-blue-light: var(--cameleon-blue-light);
+  --color-cameleon-red: var(--cameleon-red);
+  --color-cameleon-orange: var(--cameleon-orange);
+  --color-cameleon-yellow: var(--cameleon-yellow);
+  --color-cameleon-yellow-light: var(--cameleon-yellow-light);
+
+  /* Couleurs turquoise et lime (alias) */
+  --color-turquoise: var(--secondary-turquoise);
+  --color-turquoise-light: var(--secondary-cyan);
+  --color-lime: var(--secondary-lime);
+  --color-lime-dark: var(--secondary-lime-dark);
+
+  /* Couleurs accent */
+  --color-accent-red-pink: var(--accent-red-pink);
+  --color-accent-yellow-light: var(--accent-yellow-light);
+  --color-accent-blue-light: var(--accent-blue-light);
+
+  /* Couleurs dark */
+  --color-dark: var(--background-dark);
+  --color-dark-elevated: var(--background-elevated);
+  --color-dark-elevated-2: var(--background-elevated-2);
 }
 
 body {

@@ -27,53 +27,53 @@ export default function MentionsLegales() {
           backgroundImage="/img/default-hero.jpg"
         />
 
-        <section className="py-20 px-4 bg-white">
-          <div className="max-w-4xl mx-auto prose prose-lg">
+        <section className="py-20 px-4 bg-white dark:bg-gray-900">
+          <div className="max-w-4xl mx-auto prose prose-lg dark:prose-invert">
 
             {/* Éditeur du site */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">{t('section1.title')}</h2>
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.companyName') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.legalForm') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.address') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.siret') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.email') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.phone') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.publisher') }} />
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('section1.title')}</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.companyName') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.legalForm') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.address') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.siret') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.email') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.phone') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section1.publisher') }} />
             </div>
 
             {/* Hébergeur */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">{t('section2.title')}</h2>
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.name') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.address') }} />
-              <p className="text-gray-600 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.website') }} />
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('section2.title')}</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.name') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.address') }} />
+              <p className="text-gray-600 dark:text-gray-300 mb-2" dangerouslySetInnerHTML={{ __html: t.raw('section2.website') }} />
             </div>
 
             {/* Propriété intellectuelle */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">{t('section3.title')}</h2>
-              <p className="text-gray-600 mb-4">
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('section3.title')}</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {t('section3.paragraph1')}
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {t('section3.paragraph2')}
               </p>
-              <p className="text-gray-600">
+              <p className="text-gray-600 dark:text-gray-300">
                 {t('section3.paragraph3')}
               </p>
             </div>
 
             {/* Protection des données */}
             <div className="mb-12">
-              <h2 className="text-3xl font-bold text-gray-800 mb-4">{t('section4.title')}</h2>
-              <p className="text-gray-600 mb-4">
+              <h2 className="text-3xl font-bold text-gray-800 dark:text-white mb-4">{t('section4.title')}</h2>
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {t('section4.paragraph1')}
               </p>
-              <p className="text-gray-600 mb-4">
+              <p className="text-gray-600 dark:text-gray-300 mb-4">
                 {t('section4.paragraph2')}
               </p>
-              <ul className="list-disc pl-6 text-gray-600 mb-4">
+              <ul className="list-disc pl-6 text-gray-600 dark:text-gray-300 mb-4">
                 <li>{t('section4.contactEmail')}</li>
                 <li>{t('section4.contactPhone')}</li>
                 <li>{t('section4.contactMail')}</li>

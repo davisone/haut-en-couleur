@@ -1058,5 +1058,9 @@
     "service2Desc": "Application of smoothing coating, filling and surface preparation for perfect finish before painting.",
     "service3Desc": "Professional installation of non-woven, vinyl and panoramic wallpaper. Wall preparation and perfect seams.",
     "service4Desc": "Installation of floor coverings: lino, PVC, carpet. Surface preparation and impeccable finishes."
+  },
+  "ThemeSwitcher": {
+    "switchToLight": "Switch to light theme",
+    "switchToDark": "Switch to dark theme"
   }
 }
