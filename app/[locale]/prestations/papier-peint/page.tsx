@@ -25,7 +25,7 @@ export default function PapierPeint() {
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="/img/papier-peint-hero.jpg"
+          backgroundImage="https://images.unsplash.com/photo-1513694203232-719a280e022f?q=80&w=2069"
         />
 
         {/* Services détaillés */}

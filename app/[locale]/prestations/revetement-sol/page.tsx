@@ -25,7 +25,7 @@ export default function RevetementSol() {
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="/img/revetement-sol-hero.jpg"
+          backgroundImage="https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070"
         />
 
         {/* Services détaillés */}

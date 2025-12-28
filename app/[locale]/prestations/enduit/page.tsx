@@ -25,7 +25,7 @@ export default function Enduit() {
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="/img/enduit-hero.jpg"
+          backgroundImage="https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?q=80&w=2000"
         />
 
         {/* Services détaillés */}
