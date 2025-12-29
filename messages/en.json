@@ -511,6 +511,22 @@
         "description": "Premium materials and quality finishes"
       }
     },
+    "serviceArea": {
+      "title": "Service Area",
+      "subtitle": "We serve Rennes, Mordelles and the entire Rennes region for your interior painting projects",
+      "location": {
+        "title": "Our base",
+        "description": "Based in Mordelles in Ille-et-Vilaine (35), we are ideally located to intervene quickly throughout the Rennes metropolitan area."
+      },
+      "coverage": {
+        "title": "Coverage area",
+        "description": "We operate within a 35 km radius around Rennes, covering a wide area in Ille-et-Vilaine for your interior painting projects."
+      },
+      "cities": {
+        "title": "Main service cities",
+        "more": "And many other towns within a 35 km radius around Rennes"
+      }
+    },
     "cta": {
       "title": "Ready to start your project?",
       "subtitle": "Contact us for a free, personalized quote.",
@@ -577,6 +593,22 @@
       "reason3": {
         "title": "Quality",
         "description": "Professional materials and impeccable finishes"
+      }
+    },
+    "serviceArea": {
+      "title": "Service Area",
+      "subtitle": "We serve Rennes, Mordelles and the entire Rennes region for your coating and plastering projects",
+      "location": {
+        "title": "Our base",
+        "description": "Based in Mordelles in Ille-et-Vilaine (35), we are ideally located to intervene quickly throughout the Rennes metropolitan area."
+      },
+      "coverage": {
+        "title": "Coverage area",
+        "description": "We operate within a 35 km radius around Rennes, covering a wide area in Ille-et-Vilaine for your coating and plastering projects."
+      },
+      "cities": {
+        "title": "Main service cities",
+        "more": "And many other towns within a 35 km radius around Rennes"
       }
     },
     "cta": {
@@ -909,6 +941,22 @@
         "description": "Help choosing suitable patterns and styles"
       }
     },
+    "serviceArea": {
+      "title": "Service Area",
+      "subtitle": "We serve Rennes, Mordelles and the entire Rennes region for your wallpaper installation projects",
+      "location": {
+        "title": "Our base",
+        "description": "Based in Mordelles in Ille-et-Vilaine (35), we are ideally located to intervene quickly throughout the Rennes metropolitan area."
+      },
+      "coverage": {
+        "title": "Coverage area",
+        "description": "We operate within a 35 km radius around Rennes, covering a wide area in Ille-et-Vilaine for your wallpaper installation projects."
+      },
+      "cities": {
+        "title": "Main service cities",
+        "more": "And many other towns within a 35 km radius around Rennes"
+      }
+    },
     "cta": {
       "title": "Want to transform your walls?",
       "subtitle": "Contact us for a free, personalized quote.",
@@ -975,6 +1023,22 @@
       "reason3": {
         "title": "Quality",
         "description": "Quality and durable finishes"
+      }
+    },
+    "serviceArea": {
+      "title": "Service Area",
+      "subtitle": "We serve Rennes, Mordelles and the entire Rennes region for your flooring installation projects",
+      "location": {
+        "title": "Our base",
+        "description": "Based in Mordelles in Ille-et-Vilaine (35), we are ideally located to intervene quickly throughout the Rennes metropolitan area."
+      },
+      "coverage": {
+        "title": "Coverage area",
+        "description": "We operate within a 35 km radius around Rennes, covering a wide area in Ille-et-Vilaine for your floor covering installation projects (lino, PVC, carpet)."
+      },
+      "cities": {
+        "title": "Main service cities",
+        "more": "And many other towns within a 35 km radius around Rennes"
       }
     },
     "cta": {

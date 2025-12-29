@@ -245,6 +245,77 @@ export default function PapierPeint() {
           </div>
         </section>
 
+        {/* Zone d'intervention */}
+        <section className="py-20 px-4 bg-gray-50 dark:bg-gray-800">
+          <div className="max-w-7xl mx-auto">
+            <div className="text-center mb-12">
+              <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-4">
+                {t('serviceArea.title')}
+              </h2>
+              <p className="text-xl text-gray-600 dark:text-gray-300 max-w-3xl mx-auto">
+                {t('serviceArea.subtitle')}
+              </p>
+            </div>
+
+            <div className="grid md:grid-cols-2 gap-8 mb-12">
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                      {t('serviceArea.location.title')}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      {t('serviceArea.location.description')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
+                <div className="flex items-start gap-4">
+                  <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center flex-shrink-0">
+                    <svg className="w-6 h-6 text-primary" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm-5.5-2.5l7.51-3.49L17.5 6.5 9.99 9.99 6.5 17.5zm5.5-6.6c.61 0 1.1.49 1.1 1.1s-.49 1.1-1.1 1.1-1.1-.49-1.1-1.1.49-1.1 1.1-1.1z"/>
+                    </svg>
+                  </div>
+                  <div>
+                    <h3 className="text-xl font-bold text-gray-800 dark:text-white mb-2">
+                      {t('serviceArea.coverage.title')}
+                    </h3>
+                    <p className="text-gray-600 dark:text-gray-300">
+                      {t('serviceArea.coverage.description')}
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-white dark:bg-gray-900 p-8 rounded-2xl shadow-lg">
+              <h3 className="text-2xl font-bold text-gray-800 dark:text-white mb-6 text-center">
+                {t('serviceArea.cities.title')}
+              </h3>
+              <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
+                {['Rennes', 'Mordelles', 'Saint-Grégoire', 'Betton', 'Cesson-Sévigné', 'Bruz', 'Pacé', 'Vezin-le-Coquet', 'L\'Hermitage', 'Noyal-Châtillon', 'Thorigné-Fouillard', 'Acigné'].map((city) => (
+                  <div key={city} className="flex items-center gap-2 text-gray-700 dark:text-gray-300">
+                    <svg className="w-4 h-4 text-primary flex-shrink-0" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+                    </svg>
+                    <span>{city}</span>
+                  </div>
+                ))}
+              </div>
+              <p className="text-center text-gray-500 dark:text-gray-400 mt-6 text-sm">
+                {t('serviceArea.cities.more')}
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* CTA Section */}
         <section className="py-20 px-4 bg-white dark:bg-gray-900">
           <div className="max-w-4xl mx-auto text-center">

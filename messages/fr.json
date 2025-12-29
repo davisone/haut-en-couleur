@@ -511,6 +511,22 @@
         "description": "Matériaux premium et finitions soignées"
       }
     },
+    "serviceArea": {
+      "title": "Zone d'intervention",
+      "subtitle": "Nous intervenons à Rennes, Mordelles et dans toute la région rennaise pour vos travaux de peinture intérieure",
+      "location": {
+        "title": "Notre base",
+        "description": "Basés à Mordelles en Ille-et-Vilaine (35), nous sommes idéalement situés pour intervenir rapidement dans toute l'agglomération rennaise."
+      },
+      "coverage": {
+        "title": "Zone de couverture",
+        "description": "Nous intervenons dans un rayon de 35 km autour de Rennes, couvrant une large zone en Ille-et-Vilaine pour vos travaux de peinture intérieure."
+      },
+      "cities": {
+        "title": "Principales villes d'intervention",
+        "more": "Et bien d'autres communes dans un rayon de 35 km autour de Rennes"
+      }
+    },
     "cta": {
       "title": "Prêt à démarrer votre projet ?",
       "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
@@ -577,6 +593,22 @@
       "reason3": {
         "title": "Qualité",
         "description": "Matériaux professionnels et finitions impeccables"
+      }
+    },
+    "serviceArea": {
+      "title": "Zone d'intervention",
+      "subtitle": "Nous intervenons à Rennes, Mordelles et dans toute la région rennaise pour vos travaux d'enduit et lissage",
+      "location": {
+        "title": "Notre base",
+        "description": "Basés à Mordelles en Ille-et-Vilaine (35), nous sommes idéalement situés pour intervenir rapidement dans toute l'agglomération rennaise."
+      },
+      "coverage": {
+        "title": "Zone de couverture",
+        "description": "Nous intervenons dans un rayon de 35 km autour de Rennes, couvrant une large zone en Ille-et-Vilaine pour vos travaux d'enduit et de lissage."
+      },
+      "cities": {
+        "title": "Principales villes d'intervention",
+        "more": "Et bien d'autres communes dans un rayon de 35 km autour de Rennes"
       }
     },
     "cta": {
@@ -909,6 +941,22 @@
         "description": "Aide au choix des motifs et styles adaptés"
       }
     },
+    "serviceArea": {
+      "title": "Zone d'intervention",
+      "subtitle": "Nous intervenons à Rennes, Mordelles et dans toute la région rennaise pour vos travaux de pose de papier peint",
+      "location": {
+        "title": "Notre base",
+        "description": "Basés à Mordelles en Ille-et-Vilaine (35), nous sommes idéalement situés pour intervenir rapidement dans toute l'agglomération rennaise."
+      },
+      "coverage": {
+        "title": "Zone de couverture",
+        "description": "Nous intervenons dans un rayon de 35 km autour de Rennes, couvrant une large zone en Ille-et-Vilaine pour vos travaux de pose de papier peint."
+      },
+      "cities": {
+        "title": "Principales villes d'intervention",
+        "more": "Et bien d'autres communes dans un rayon de 35 km autour de Rennes"
+      }
+    },
     "cta": {
       "title": "Envie de transformer vos murs ?",
       "subtitle": "Contactez-nous pour un devis gratuit et personnalisé.",
@@ -975,6 +1023,22 @@
       "reason3": {
         "title": "Qualité",
         "description": "Finitions soignées et durables"
+      }
+    },
+    "serviceArea": {
+      "title": "Zone d'intervention",
+      "subtitle": "Nous intervenons à Rennes, Mordelles et dans toute la région rennaise pour vos travaux de revêtement de sol",
+      "location": {
+        "title": "Notre base",
+        "description": "Basés à Mordelles en Ille-et-Vilaine (35), nous sommes idéalement situés pour intervenir rapidement dans toute l'agglomération rennaise."
+      },
+      "coverage": {
+        "title": "Zone de couverture",
+        "description": "Nous intervenons dans un rayon de 35 km autour de Rennes, couvrant une large zone en Ille-et-Vilaine pour vos travaux de revêtement de sol (lino, PVC, moquette)."
+      },
+      "cities": {
+        "title": "Principales villes d'intervention",
+        "more": "Et bien d'autres communes dans un rayon de 35 km autour de Rennes"
       }
     },
     "cta": {
