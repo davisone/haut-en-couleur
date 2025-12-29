@@ -1126,5 +1126,21 @@
   "ThemeSwitcher": {
     "switchToLight": "Passer au thème clair",
     "switchToDark": "Passer au thème sombre"
+  },
+  "Garanties": {
+    "title": "Vos Garanties",
+    "subtitle": "Votre tranquillité d'esprit, notre priorité",
+    "guarantee1Title": "Assurance Décennale",
+    "guarantee2Title": "Responsabilité Civile Professionnelle",
+    "guarantee2Desc": "Couverture intégrale en cas de dommages. Intervention en toute sérénité.",
+    "guarantee3Title": "Garantie Satisfaction 100%",
+    "guarantee3Desc": "Nous nous engageons à vous satisfaire pleinement ou nous reprenons les travaux.",
+    "guarantee4Title": "Matériaux Certifiés",
+    "guarantee4Desc": "Utilisation exclusive de peintures et matériaux de marques professionnelles reconnues.",
+    "guarantee5Title": "Entreprise Française Certifiée",
+    "guarantee5Desc": "SIRET validé (823 682 745 00026). Entreprise locale implantée à Mordelles depuis plusieurs années.",
+    "guarantee6Title": "Devis Gratuit & Sans Engagement",
+    "guarantee6Desc": "Visite et estimation détaillée sans frais. Aucune obligation de votre part.",
+    "certifiedBadge": "✓ Entreprise certifiée et assurée en Ille-et-Vilaine"
   }
 }

@@ -1126,5 +1126,21 @@
   "ThemeSwitcher": {
     "switchToLight": "Switch to light theme",
     "switchToDark": "Switch to dark theme"
+  },
+  "Garanties": {
+    "title": "Your Guarantees",
+    "subtitle": "Your peace of mind, our priority",
+    "guarantee1Title": "10-Year Liability Insurance",
+    "guarantee2Title": "Professional Liability Insurance",
+    "guarantee2Desc": "Comprehensive coverage in case of damage. Service with complete peace of mind.",
+    "guarantee3Title": "100% Satisfaction Guarantee",
+    "guarantee3Desc": "We are committed to your complete satisfaction or we will redo the work.",
+    "guarantee4Title": "Certified Materials",
+    "guarantee4Desc": "Exclusive use of paints and materials from recognized professional brands.",
+    "guarantee5Title": "Certified French Company",
+    "guarantee5Desc": "Validated SIRET (823 682 745 00026). Local company established in Mordelles for several years.",
+    "guarantee6Title": "Free Quote & No Obligation",
+    "guarantee6Desc": "Site visit and detailed estimate at no cost. No obligation on your part.",
+    "certifiedBadge": "✓ Certified and insured company in Ille-et-Vilaine"
   }
 }
