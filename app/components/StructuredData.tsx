@@ -99,17 +99,12 @@ export default async function StructuredData() {
     // Note: aggregateRating data will be automatically retrieved by Google
     // from your Google Business Profile reviews. No need to hardcode it here.
 
-    // ========================================
-    // SOCIAL MEDIA - TO ACTIVATE LATER
-    // ========================================
-    // Uncomment the section below when you've created your social pages
-    // and replace the URLs with your real pages:
-    /*
+    // Liens vers profils sociaux et Google Business
     "sameAs": [
-      "https://www.facebook.com/YOUR_FACEBOOK_PAGE",
-      // "https://www.instagram.com/YOUR_INSTAGRAM_ACCOUNT"  // If you create an Instagram account
+      "https://www.google.com/maps/place/?q=place_id:ChIJBeH-Y0YGoqkRTcKgtiuDuCI",
+      // "https://www.facebook.com/YOUR_FACEBOOK_PAGE",  // À activer quand la page sera créée
+      // "https://www.instagram.com/YOUR_INSTAGRAM_ACCOUNT"
     ]
-    */
   };
 
   return (
