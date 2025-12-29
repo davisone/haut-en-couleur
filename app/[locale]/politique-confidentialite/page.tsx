@@ -15,6 +15,14 @@ export async function generateMetadata({ params }: Props) {
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: {
+      canonical: `/${locale}/politique-confidentialite`,
+      languages: {
+        'fr': '/fr/politique-confidentialite',
+        'en': '/en/politique-confidentialite',
+        'x-default': '/fr/politique-confidentialite',
+      },
+    },
   };
 }
 

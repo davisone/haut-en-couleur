@@ -33,7 +33,7 @@ export default function Services() {
       id: 'revetement-sol',
       titleKey: 'flooring.title',
       descriptionKey: 'flooring.description',
-      image: 'https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070',
+      image: 'https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057',
       borderColor: 'border-top-cameleon-blue',
     },
   ];

@@ -13,6 +13,14 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
   return {
     title: `${t('heroTitle')} - Haut en Couleur`,
     description: t('heroSubtitle'),
+    alternates: {
+      canonical: `/${locale}/prestations`,
+      languages: {
+        'fr': '/fr/prestations',
+        'en': '/en/prestations',
+        'x-default': '/fr/prestations',
+      },
+    },
   };
 }
 

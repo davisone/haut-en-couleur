@@ -12,6 +12,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: {
+      canonical: `/${locale}/prestations/papier-peint`,
+      languages: {
+        'fr': '/fr/prestations/papier-peint',
+        'en': '/en/prestations/papier-peint',
+        'x-default': '/fr/prestations/papier-peint',
+      },
+    },
   };
 }
 

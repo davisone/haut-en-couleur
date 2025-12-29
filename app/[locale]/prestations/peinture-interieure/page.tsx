@@ -12,6 +12,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: {
+      canonical: `/${locale}/prestations/peinture-interieure`,
+      languages: {
+        'fr': '/fr/prestations/peinture-interieure',
+        'en': '/en/prestations/peinture-interieure',
+        'x-default': '/fr/prestations/peinture-interieure',
+      },
+    },
   };
 }
 

@@ -14,6 +14,14 @@ export async function generateMetadata({params}: {params: Promise<{locale: strin
   return {
     title: `${t('heroTitle')} - Haut en Couleur`,
     description: t('heroSubtitle'),
+    alternates: {
+      canonical: `/${locale}/qui-sommes-nous`,
+      languages: {
+        'fr': '/fr/qui-sommes-nous',
+        'en': '/en/qui-sommes-nous',
+        'x-default': '/fr/qui-sommes-nous',
+      },
+    },
   };
 }
 

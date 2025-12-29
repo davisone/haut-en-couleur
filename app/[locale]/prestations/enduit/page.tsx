@@ -12,6 +12,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: {
+      canonical: `/${locale}/prestations/enduit`,
+      languages: {
+        'fr': '/fr/prestations/enduit',
+        'en': '/en/prestations/enduit',
+        'x-default': '/fr/prestations/enduit',
+      },
+    },
   };
 }
 

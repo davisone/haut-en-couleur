@@ -30,33 +30,41 @@ const geistMono = Geist_Mono({
   preload: false,
 });
 
-export const metadata: Metadata = {
-  title: {
-    template: "%s - Haut en Couleur",
-    default: "Haut en Couleur - Peintre à Rennes"
-  },
-  description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure, enduit, papier peint et revêtement de sol. Intervention dans un rayon de 35 km.",
-  keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "intérieur", "enduit", "papier peint", "revêtement sol"],
-  authors: [{ name: "Haut en Couleur" }],
-  openGraph: {
-    title: "Haut en Couleur - Peintre à Rennes",
-    description: "Expertise et qualité pour vos projets de peinture à Mordelles et alentours",
-    type: "website",
-    locale: "fr_FR",
-    images: [
-      {
-        url: '/img/logo2.png',
-        width: 1200,
-        height: 630,
-        alt: 'Haut en Couleur - Logo',
-      },
-    ],
-  },
-  icons: {
-    icon: '/icon.png',
-    apple: '/apple-icon.png',
-  },
-};
+export async function generateMetadata(props: {
+  params: Promise<{locale: string}>;
+}): Promise<Metadata> {
+  const params = await props.params;
+  const {locale} = params;
+
+  return {
+    title: {
+      template: "%s - Haut en Couleur",
+      default: "Haut en Couleur - Peintre à Rennes"
+    },
+    description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure, enduit, papier peint et revêtement de sol. Intervention dans un rayon de 35 km.",
+    keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "intérieur", "enduit", "papier peint", "revêtement sol"],
+    authors: [{ name: "Haut en Couleur" }],
+    metadataBase: new URL('https://haut-en-couleur.fr'),
+    openGraph: {
+      title: "Haut en Couleur - Peintre à Rennes",
+      description: "Expertise et qualité pour vos projets de peinture à Mordelles et alentours",
+      type: "website",
+      locale: locale === 'fr' ? 'fr_FR' : 'en_US',
+      images: [
+        {
+          url: '/img/logo2.png',
+          width: 1200,
+          height: 630,
+          alt: 'Haut en Couleur - Logo',
+        },
+      ],
+    },
+    icons: {
+      icon: '/icon.png',
+      apple: '/apple-icon.png',
+    },
+  };
+}
 
 export default async function LocaleLayout(props: {
   children: React.ReactNode;

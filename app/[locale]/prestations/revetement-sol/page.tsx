@@ -12,6 +12,14 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   return {
     title: t('metaTitle'),
     description: t('metaDescription'),
+    alternates: {
+      canonical: `/${locale}/prestations/revetement-sol`,
+      languages: {
+        'fr': '/fr/prestations/revetement-sol',
+        'en': '/en/prestations/revetement-sol',
+        'x-default': '/fr/prestations/revetement-sol',
+      },
+    },
   };
 }
 
@@ -25,7 +33,7 @@ export default function RevetementSol() {
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="https://images.unsplash.com/photo-1556912167-f556f1f39faa?q=80&w=2070"
+          backgroundImage="https://images.unsplash.com/photo-1540518614846-7eded433c457?q=80&w=2057"
         />
 
         {/* Services détaillés */}

@@ -14,6 +14,14 @@ export async function generateMetadata({ params }: { params: Params }) {
     title: t('metaTitle'),
     description: t('metaDescription'),
     robots: 'index, follow',
+    alternates: {
+      canonical: `/${locale}/cookies`,
+      languages: {
+        'fr': '/fr/cookies',
+        'en': '/en/cookies',
+        'x-default': '/fr/cookies',
+      },
+    },
   };
 }
 
