@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
+import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -23,11 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function Enduit() {
+export default async function Enduit({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('Enduit');
 
   return (
     <>
+      <ServiceStructuredData
+        serviceName="Enduit & Lissage"
+        serviceDescription="Application professionnelle d'enduit de lissage, rebouchage et préparation de surfaces à Rennes pour une finition parfaite."
+        serviceUrl={`/${locale}/prestations/enduit`}
+        locale={locale}
+      />
       <Navigation />
       <main>
         <PageHero

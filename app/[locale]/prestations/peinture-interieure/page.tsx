@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
+import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -23,11 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function PeintureInterieure() {
+export default async function PeintureInterieure({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('PeintureInterieure');
 
   return (
     <>
+      <ServiceStructuredData
+        serviceName="Peinture Intérieure"
+        serviceDescription="Service professionnel de peinture intérieure à Rennes : murs, plafonds, menuiseries et finitions décoratives."
+        serviceUrl={`/${locale}/prestations/peinture-interieure`}
+        locale={locale}
+      />
       <Navigation />
       <main>
         <PageHero

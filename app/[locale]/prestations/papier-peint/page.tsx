@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
+import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -23,11 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function PapierPeint() {
+export default async function PapierPeint({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('PapierPeint');
 
   return (
     <>
+      <ServiceStructuredData
+        serviceName="Pose de Papier Peint"
+        serviceDescription="Pose professionnelle de papier peint à Rennes : intissé, vinyle, panoramique. Préparation des murs et raccords parfaits."
+        serviceUrl={`/${locale}/prestations/papier-peint`}
+        locale={locale}
+      />
       <Navigation />
       <main>
         <PageHero

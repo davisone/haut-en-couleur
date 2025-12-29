@@ -1,6 +1,7 @@
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
+import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
 import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
@@ -23,11 +24,18 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
   };
 }
 
-export default function RevetementSol() {
+export default async function RevetementSol({ params }: { params: Promise<{ locale: string }> }) {
+  const { locale } = await params;
   const t = useTranslations('RevetementSol');
 
   return (
     <>
+      <ServiceStructuredData
+        serviceName="Pose de Revêtement de Sol"
+        serviceDescription="Installation professionnelle de revêtement de sol à Rennes : parquet, stratifié, vinyle, moquette. Préparation et finitions soignées."
+        serviceUrl={`/${locale}/prestations/revetement-sol`}
+        locale={locale}
+      />
       <Navigation />
       <main>
         <PageHero
