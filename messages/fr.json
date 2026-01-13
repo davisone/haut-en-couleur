@@ -400,29 +400,29 @@
   "RealisationsData": {
     "beforeAfterProjects": {
       "project1": {
-        "title": "Rénovation intérieure appartement Rennes",
-        "category": "Peinture intérieure",
-        "description": "Rénovation complète d'un appartement de 90m² avec peinture des murs et plafonds."
+        "title": "Pose de parquet sur escalier",
+        "category": "Escalier",
+        "description": "Transformation complète d'un escalier avec retrait de l'ancienne moquette rouge et pose de parquet moderne. Finitions soignées sur les marches et contremarches."
       },
       "project2": {
-        "title": "Pose de papier peint salon",
-        "category": "Papier peint",
-        "description": "Pose de papier peint panoramique dans un salon moderne avec raccords parfaits."
+        "title": "Rénovation peinture escalier",
+        "category": "Escalier",
+        "description": "Rénovation complète d'un escalier en bois avec peinture gris anthracite et blanc. Décapage, préparation des surfaces et application de peinture spéciale boiseries."
       },
       "project3": {
-        "title": "Revêtement de sol PVC",
-        "category": "Revêtement de sol",
-        "description": "Pose de sol PVC imitation parquet dans une pièce de vie."
+        "title": "Pose de papier peint salle de bain",
+        "category": "Papier peint",
+        "description": "Pose de papier peint panoramique effet forêt dans une salle de bain. Préparation minutieuse des murs et raccords parfaits pour un rendu spectaculaire."
       }
     },
     "galleryImages": {
       "image1": {
         "title": "Peinture intérieure salon",
-        "category": "Peinture intérieure"
+        "category": "Papier peint"
       },
       "image2": {
         "title": "Peinture intérieure chambre",
-        "category": "Peinture intérieure"
+        "category": "Papier peint"
       },
       "image3": {
         "title": "Pose de papier peint",
@@ -434,23 +434,103 @@
       },
       "image5": {
         "title": "Enduit de lissage",
-        "category": "Enduit"
+        "category": "Papier peint"
       },
       "image6": {
         "title": "Peinture intérieure bureau",
-        "category": "Peinture intérieure"
+        "category": "Papier peint"
       },
       "image7": {
         "title": "Revêtement de sol lino",
-        "category": "Revêtement de sol"
+        "category": "Peinture intérieure"
       },
       "image8": {
         "title": "Pose papier peint chambre",
-        "category": "Papier peint"
+        "category": "Peinture intérieure"
       },
       "image9": {
         "title": "Peinture intérieure séjour",
         "category": "Peinture intérieure"
+      },
+      "image10": {
+        "title": "Peinture intérieure chambre",
+        "category": "Papier peint"
+      },
+      "image11": {
+        "title": "Peinture intérieure chambre",
+        "category": "Papier peint"
+      },
+      "image12": {
+        "title": "Peinture intérieure chambre",
+        "category": "Papier peint"
+      },
+      "image13": {
+        "title": "Peinture intérieure chambre",
+        "category": "Peinture intérieure"
+      },
+      "image14": {
+        "title": "Peinture intérieure chambre",
+        "category": "Papier peint"
+      },
+      "image15": {
+        "title": "Peinture intérieure chambre",
+        "category": "Peinture intérieure"
+      },
+      "image16": {
+        "title": "Peinture intérieure chambre",
+        "category": "Escalier"
+      },
+      "image17": {
+        "title": "Peinture intérieure escalier",
+        "category": "Papier peint"
+      },
+      "image18": {
+        "title": "Peinture intérieure escalier",
+        "category": "Escalier"
+      },
+      "image19": {
+        "title": "Peinture intérieure escalier",
+        "category": "Escalier"
+      },
+      "image20": {
+        "title": "Peinture intérieure escalier",
+        "category": "Escalier"
+      },
+      "image21": {
+        "title": "Peinture intérieure escalier",
+        "category": "Papier peint"
+      },
+      "image22": {
+        "title": "Peinture intérieure escalier",
+        "category": "Escalier"
+      },
+      "image23": {
+        "title": "Peinture intérieure escalier",
+        "category": "Papier peint"
+      },
+      "image24": {
+        "title": "Peinture intérieure escalier",
+        "category": "Papier peint"
+      },
+      "image25": {
+        "title": "Peinture intérieure escalier",
+        "category": "Peinture intérieure"
+      },
+      "image26": {
+        "title": "Peinture intérieure couloir",
+        "category": "Papier peint"
+      },
+      "image27": {
+        "title": "Peinture intérieure mur",
+        "category": "Papier peint"
+      },
+      "image28": {
+        "title": "Peinture intérieure mur",
+        "category": "Papier peint"
+      },
+      "image29": {
+        "title": "Peinture salle de bain",
+        "category": "Papier peint"
       }
     }
   },

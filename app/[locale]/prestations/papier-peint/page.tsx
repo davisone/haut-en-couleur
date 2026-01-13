@@ -3,7 +3,7 @@ import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
 import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
+
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function PapierPeint({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = useTranslations('PapierPeint');
+  const t = await getTranslations('PapierPeint');
 
   return (
     <>

@@ -3,7 +3,6 @@ import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
 import ServiceStructuredData from '@/app/components/ServiceStructuredData';
 import Link from 'next/link';
-import { useTranslations } from 'next-intl';
 import { getTranslations } from 'next-intl/server';
 
 export async function generateMetadata({ params }: { params: Promise<{ locale: string }> }) {
@@ -26,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ locale: s
 
 export default async function PeintureInterieure({ params }: { params: Promise<{ locale: string }> }) {
   const { locale } = await params;
-  const t = useTranslations('PeintureInterieure');
+  const t = await getTranslations('PeintureInterieure');
 
   return (
     <>
@@ -41,7 +40,7 @@ export default async function PeintureInterieure({ params }: { params: Promise<{
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="/img/peinture-interieure-hero.jpg"
+          backgroundImage="/img/couloir.jpeg"
         />
 
         {/* Services détaillés */}

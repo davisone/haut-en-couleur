@@ -171,9 +171,6 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
 
           {/* Image Info */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 text-center text-white">
-            <h3 className="text-xl font-semibold mb-2">
-              {filteredImages[selectedImageIndex].title}
-            </h3>
             <p className="text-sm text-gray-300">
               {selectedImageIndex + 1} / {filteredImages.length}
             </p>

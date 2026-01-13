@@ -38,7 +38,7 @@ export default function OurCompany() {
             <div
               className="absolute inset-0 bg-cover bg-center"
               style={{
-                backgroundImage: "url('/img/entreprise.jpg')",
+                backgroundImage: "url('/img/sallon.jpeg')",
               }}
             />
           </div>

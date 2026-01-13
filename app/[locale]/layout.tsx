@@ -91,6 +91,7 @@ export default async function LocaleLayout(props: {
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 transition-colors`}
+        suppressHydrationWarning
       >
         <ThemeProvider>
           <NextIntlClientProvider messages={messages} locale={locale}>

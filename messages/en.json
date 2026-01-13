@@ -400,29 +400,29 @@
   "RealisationsData": {
     "beforeAfterProjects": {
       "project1": {
-        "title": "Interior Renovation Apartment Rennes",
-        "category": "Interior Painting",
-        "description": "Complete renovation of a 90m² apartment with painting of walls and ceilings."
+        "title": "Parquet Installation on Staircase",
+        "category": "Staircase",
+        "description": "Complete transformation of a staircase with removal of old red carpet and installation of modern parquet. Neat finishes on steps and risers."
       },
       "project2": {
-        "title": "Living Room Wallpaper Installation",
-        "category": "Wallpaper Installation",
-        "description": "Installation of panoramic wallpaper in a modern living room with perfect seams."
+        "title": "Staircase Painting Renovation",
+        "category": "Staircase",
+        "description": "Complete renovation of a wooden staircase with anthracite gray and white paint. Stripping, surface preparation and application of special woodwork paint."
       },
       "project3": {
-        "title": "PVC Flooring",
-        "category": "Flooring",
-        "description": "Installation of PVC flooring imitating parquet in a living area."
+        "title": "Bathroom Wallpaper Installation",
+        "category": "Wallpaper Installation",
+        "description": "Installation of forest effect panoramic wallpaper in a bathroom. Meticulous wall preparation and perfect seams for a spectacular result."
       }
     },
     "galleryImages": {
       "image1": {
         "title": "Interior Painting Living Room",
-        "category": "Interior Painting"
+        "category": "Wallpaper Installation"
       },
       "image2": {
         "title": "Interior Painting Bedroom",
-        "category": "Interior Painting"
+        "category": "Wallpaper Installation"
       },
       "image3": {
         "title": "Wallpaper Installation",
@@ -434,23 +434,103 @@
       },
       "image5": {
         "title": "Smoothing Coating",
-        "category": "Coating"
+        "category": "Wallpaper Installation"
       },
       "image6": {
         "title": "Interior Painting Office",
-        "category": "Interior Painting"
+        "category": "Wallpaper Installation"
       },
       "image7": {
         "title": "Lino Flooring",
-        "category": "Flooring"
+        "category": "Interior Painting"
       },
       "image8": {
         "title": "Bedroom Wallpaper Installation",
-        "category": "Wallpaper Installation"
+        "category": "Interior Painting"
       },
       "image9": {
         "title": "Interior Painting Living Area",
         "category": "Interior Painting"
+      },
+      "image10": {
+        "title": "Interior Painting Bedroom",
+        "category": "Wallpaper Installation"
+      },
+      "image11": {
+        "title": "Interior Painting Bedroom",
+        "category": "Wallpaper Installation"
+      },
+      "image12": {
+        "title": "Interior Painting Bedroom",
+        "category": "Wallpaper Installation"
+      },
+      "image13": {
+        "title": "Interior Painting Bedroom",
+        "category": "Interior Painting"
+      },
+      "image14": {
+        "title": "Interior Painting Bedroom",
+        "category": "Wallpaper Installation"
+      },
+      "image15": {
+        "title": "Interior Painting Bedroom",
+        "category": "Interior Painting"
+      },
+      "image16": {
+        "title": "Interior Painting Bedroom",
+        "category": "Staircase"
+      },
+      "image17": {
+        "title": "Interior Painting Staircase",
+        "category": "Wallpaper Installation"
+      },
+      "image18": {
+        "title": "Interior Painting Staircase",
+        "category": "Staircase"
+      },
+      "image19": {
+        "title": "Interior Painting Staircase",
+        "category": "Staircase"
+      },
+      "image20": {
+        "title": "Interior Painting Staircase",
+        "category": "Staircase"
+      },
+      "image21": {
+        "title": "Interior Painting Staircase",
+        "category": "Wallpaper Installation"
+      },
+      "image22": {
+        "title": "Interior Painting Staircase",
+        "category": "Staircase"
+      },
+      "image23": {
+        "title": "Interior Painting Staircase",
+        "category": "Wallpaper Installation"
+      },
+      "image24": {
+        "title": "Interior Painting Staircase",
+        "category": "Wallpaper Installation"
+      },
+      "image25": {
+        "title": "Interior Painting Staircase",
+        "category": "Interior Painting"
+      },
+      "image26": {
+        "title": "Interior Painting Hallway",
+        "category": "Wallpaper Installation"
+      },
+      "image27": {
+        "title": "Interior Painting Wall",
+        "category": "Wallpaper Installation"
+      },
+      "image28": {
+        "title": "Interior Painting Wall",
+        "category": "Wallpaper Installation"
+      },
+      "image29": {
+        "title": "Bathroom Painting",
+        "category": "Wallpaper Installation"
       }
     }
   },
