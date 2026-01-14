@@ -35,7 +35,7 @@ export default function QuiSommesNous() {
         <PageHero
           title={t('heroTitle')}
           subtitle={t('heroSubtitle')}
-          backgroundImage="/img/qui-sommes-nous-hero.jpg"
+          backgroundImage="/img/prestations-hero.jpg"
         />
         <SectionEntreprise />
 

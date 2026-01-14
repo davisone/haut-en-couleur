@@ -28,7 +28,7 @@ export default function Hero() {
         <div
           className="absolute inset-0 bg-cover bg-center will-change-transform"
           style={{
-            backgroundImage: "url('/img/Page_acceuil.jpg')",
+            backgroundImage: "url('/img/hero.jpg')",
             transform: `translateY(${scrollY * 0.5}px) scale(1.1)`,
           }}
         />
