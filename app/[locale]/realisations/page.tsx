@@ -7,6 +7,7 @@ import BeforeAfterSection from '@/app/components/BeforeAfterSection';
 import ImageGalleryLightbox from '@/app/components/ImageGalleryLightbox';
 import SeoContentRealisations from '@/app/components/SeoContentRealisations';
 import GoogleReviews from '@/app/components/GoogleReviews';
+import CTASection from '@/app/components/CTASection';
 
 export async function generateMetadata({params}: {params: Promise<{locale: string}>}) {
   const {locale} = await params;
@@ -268,22 +269,7 @@ export default function Realisations() {
         <GoogleReviews placeId={process.env.NEXT_PUBLIC_GOOGLE_PLACE_ID} />
 
         {/* CTA Section */}
-        <section className="py-20 px-4 bg-gray-50 dark:bg-gray-900">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl font-bold text-gray-800 dark:text-white mb-6">
-              {t('ctaTitle')}
-            </h2>
-            <p className="text-xl text-gray-600 dark:text-gray-300 mb-8">
-              {t('ctaSubtitle')}
-            </p>
-            <a
-              href="/contact"
-              className="inline-block px-10 py-4 text-lg font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all duration-300 transform hover:scale-105"
-            >
-              {t('ctaButton')}
-            </a>
-          </div>
-        </section>
+        <CTASection />
 
         {/* Contenu SEO */}
         <SeoContentRealisations />

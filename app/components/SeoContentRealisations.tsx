@@ -1,13 +1,39 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import {useTranslations} from 'next-intl';
 
 export default function SeoContentRealisations() {
   const t = useTranslations('SeoContentRealisations');
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="py-16 px-4 bg-gray-50 dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-16 px-4 overflow-hidden">
+      {/* Background Image with Parallax */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center will-change-transform"
+          style={{
+            backgroundImage: "url('/img/couloir_2.jpeg')",
+            transform: `translateY(${(scrollY - 3500) * 0.25}px)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-gray-50/95 dark:bg-gray-900/95" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Bloc 1 */}
           <div>

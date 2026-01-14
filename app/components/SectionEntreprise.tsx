@@ -1,5 +1,6 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import {useTranslations, useLocale} from 'next-intl';
@@ -7,10 +8,35 @@ import {useTranslations, useLocale} from 'next-intl';
 export default function OurCompany() {
   const t = useTranslations('Company');
   const locale = useLocale();
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section id="qui-sommes-nous" className="py-20 px-4 bg-white dark:bg-gray-800 transition-colors">
-      <div className="max-w-7xl mx-auto">
+    <section id="qui-sommes-nous" className="relative py-20 px-4 overflow-hidden">
+      {/* Background Image with Parallax */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center will-change-transform"
+          style={{
+            backgroundImage: "url('/img/chambre.jpeg')",
+            transform: `translateY(${(scrollY - 800) * 0.3}px)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-white/85 dark:bg-gray-900/85" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div>

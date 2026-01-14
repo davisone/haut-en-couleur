@@ -1,13 +1,39 @@
 'use client';
 
+import { useEffect, useState } from 'react';
 import {useTranslations} from 'next-intl';
 
 export default function SeoContentQuiSommesNous() {
   const t = useTranslations('SeoContentQuiSommesNous');
+  const [scrollY, setScrollY] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrollY(window.scrollY);
+    };
+
+    window.addEventListener('scroll', handleScroll, { passive: true });
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   return (
-    <section className="py-16 px-4 bg-white dark:bg-gray-900">
-      <div className="max-w-7xl mx-auto">
+    <section className="relative py-16 px-4 overflow-hidden">
+      {/* Background Image with Parallax */}
+      <div className="absolute inset-0 z-0">
+        <div
+          className="absolute inset-0 bg-cover bg-center will-change-transform"
+          style={{
+            backgroundImage: "url('/img/mur_2.jpeg')",
+            transform: `translateY(${(scrollY - 2800) * 0.3}px)`,
+          }}
+        />
+        <div className="absolute inset-0 bg-white/90 dark:bg-gray-900/90" />
+      </div>
+
+      <div className="relative z-10 max-w-7xl mx-auto">
         <div className="grid md:grid-cols-2 gap-12">
           {/* Bloc 1 */}
           <div>
