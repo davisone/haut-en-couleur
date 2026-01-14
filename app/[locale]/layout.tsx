@@ -44,6 +44,7 @@ export async function generateMetadata(props: {
     description: "Entreprise de peinture à Mordelles, près de Rennes. Spécialiste en peinture intérieure, enduit, papier peint et revêtement de sol. Intervention dans un rayon de 35 km.",
     keywords: ["peintre", "peinture", "Rennes", "Mordelles", "Ille-et-Vilaine", "bâtiment", "intérieur", "enduit", "papier peint", "revêtement sol"],
     authors: [{ name: "Haut en Couleur" }],
+    creator: "Evan Davison",
     metadataBase: new URL('https://haut-en-couleur.fr'),
     openGraph: {
       title: "Haut en Couleur - Peintre à Rennes",
@@ -93,6 +94,10 @@ export default async function LocaleLayout(props: {
         className={`${geistSans.variable} ${geistMono.variable} antialiased bg-white dark:bg-gray-900 transition-colors`}
         suppressHydrationWarning
       >
+        {/*
+          Site web développé par Evan Davison
+          https://github.com/evandavison
+        */}
         <ThemeProvider>
           <NextIntlClientProvider messages={messages} locale={locale}>
             {/* Skip link pour l'accessibilité */}

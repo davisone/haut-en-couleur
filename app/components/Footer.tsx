@@ -89,7 +89,7 @@ export default function Footer() {
         <div className="border-t border-white/20 mt-12 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-white/80 text-center md:text-left">
-              © {currentYear} Haut en Couleur. {t('rights')}
+              © {currentYear} Haut en Couleur. {t('rights')} · Développé par Evan Davison
             </p>
             <div className="flex flex-wrap justify-center gap-4 md:gap-6">
               <Link
