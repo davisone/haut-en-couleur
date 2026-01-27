@@ -266,6 +266,10 @@ html {
   border-top: 4px solid var(--cameleon-yellow);
 }
 
+.border-top-cameleon-blue {
+  border-top: 4px solid var(--cameleon-blue);
+}
+
 /* Dégradé caméléon en fond */
 .bg-gradient-cameleon {
   background: linear-gradient(135deg,
