@@ -5,8 +5,8 @@ declare global {
   interface Window {
     gtag?: (
       command: 'consent' | 'config' | 'event' | 'js' | 'set',
-      ...args: any[]
+      ...args: unknown[]
     ) => void;
-    dataLayer?: any[];
+    dataLayer?: unknown[];
   }
 }

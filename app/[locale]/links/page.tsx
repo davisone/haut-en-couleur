@@ -138,7 +138,7 @@ export default function LinksPage() {
             Mordelles, Ille-et-Vilaine (35310)
           </p>
           <p className="mb-4">
-            Rayon d'intervention : 35 km autour de Rennes
+            Rayon d&apos;intervention : 35 km autour de Rennes
           </p>
           <div className="flex items-center justify-center gap-2 text-xs">
             <span>Propulsé par</span>

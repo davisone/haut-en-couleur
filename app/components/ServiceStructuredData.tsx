@@ -1,4 +1,3 @@
-import { getTranslations } from 'next-intl/server';
 
 interface ServiceStructuredDataProps {
   serviceName: string;
@@ -13,8 +12,6 @@ export default async function ServiceStructuredData({
   serviceUrl,
   locale
 }: ServiceStructuredDataProps) {
-  const t = await getTranslations('StructuredData');
-
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",

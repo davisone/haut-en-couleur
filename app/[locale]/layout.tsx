@@ -77,7 +77,7 @@ export default async function LocaleLayout(props: {
   const {children} = props;
 
   // Valider la locale
-  if (!locales.includes(locale as any)) {
+  if (!locales.includes(locale as typeof locales[number])) {
     notFound();
   }
 

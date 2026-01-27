@@ -11,7 +11,7 @@ export default function ThemeSwitcher() {
 
   // Avoid hydration mismatch
   useEffect(() => {
-    setMounted(true);
+    setMounted(true); // eslint-disable-line react-hooks/set-state-in-effect
   }, []);
 
   if (!mounted) {

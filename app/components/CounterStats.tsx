@@ -16,6 +16,7 @@ function Counter({ target, suffix = '', prefix = '', duration = 2000 }: { target
   const counterRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
+    const currentRef = counterRef.current;
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting) {
@@ -25,13 +26,13 @@ function Counter({ target, suffix = '', prefix = '', duration = 2000 }: { target
       { threshold: 0.3 }
     );
 
-    if (counterRef.current) {
-      observer.observe(counterRef.current);
+    if (currentRef) {
+      observer.observe(currentRef);
     }
 
     return () => {
-      if (counterRef.current) {
-        observer.unobserve(counterRef.current);
+      if (currentRef) {
+        observer.unobserve(currentRef);
       }
     };
   }, []);

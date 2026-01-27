@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef, useEffect, useCallback } from 'react';
 import {useTranslations} from 'next-intl';
 
 interface BeforeAfterSliderProps {
@@ -24,7 +24,7 @@ export default function BeforeAfterSlider({
   const [containerWidth, setContainerWidth] = useState(0);
   const containerRef = useRef<HTMLDivElement>(null);
 
-  const handleMove = (clientX: number) => {
+  const handleMove = useCallback((clientX: number) => {
     if (!containerRef.current) return;
 
     const rect = containerRef.current.getBoundingClientRect();
@@ -32,20 +32,20 @@ export default function BeforeAfterSlider({
     const percent = Math.max(0, Math.min((x / rect.width) * 100, 100));
 
     setSliderPosition(percent);
-  };
+  }, []);
 
   const handleMouseDown = () => setIsDragging(true);
-  const handleMouseUp = () => setIsDragging(false);
+  const handleMouseUp = useCallback(() => setIsDragging(false), []);
 
-  const handleMouseMove = (e: MouseEvent) => {
+  const handleMouseMove = useCallback((e: MouseEvent) => {
     if (!isDragging) return;
     handleMove(e.clientX);
-  };
+  }, [isDragging, handleMove]);
 
-  const handleTouchMove = (e: TouchEvent) => {
+  const handleTouchMove = useCallback((e: TouchEvent) => {
     if (!isDragging) return;
     handleMove(e.touches[0].clientX);
-  };
+  }, [isDragging, handleMove]);
 
   // Calculate container width on mount and resize
   useEffect(() => {
@@ -75,7 +75,7 @@ export default function BeforeAfterSlider({
       document.removeEventListener('touchmove', handleTouchMove);
       document.removeEventListener('touchend', handleMouseUp);
     };
-  }, [isDragging]);
+  }, [handleMouseMove, handleMouseUp, handleTouchMove]);
 
   return (
     <div

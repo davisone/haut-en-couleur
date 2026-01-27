@@ -4,10 +4,10 @@ import {locales} from '../i18n';
 
 export default getRequestConfig(async ({requestLocale}) => {
   // Wait for the locale to be resolved
-  let locale = await requestLocale;
+  const locale = await requestLocale;
 
   // Valider que la locale existe
-  if (!locale || !locales.includes(locale as any)) {
+  if (!locale || !locales.includes(locale as typeof locales[number])) {
     notFound();
   }
 

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from 'react';
 import { useTranslations } from 'next-intl';
+import Link from 'next/link';
 
 export default function CTASection() {
   const t = useTranslations('Realisations');
@@ -40,12 +41,12 @@ export default function CTASection() {
         <p className="text-xl text-gray-100 mb-8">
           {t('ctaSubtitle')}
         </p>
-        <a
+        <Link
           href="/contact"
           className="inline-block px-10 py-4 text-lg font-semibold text-white bg-primary rounded-full hover:bg-primary-light transition-all duration-300 transform hover:scale-105 shadow-xl"
         >
           {t('ctaButton')}
-        </a>
+        </Link>
       </div>
     </section>
   );

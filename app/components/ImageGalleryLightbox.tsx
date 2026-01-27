@@ -162,11 +162,14 @@ export default function ImageGalleryLightbox({ images }: ImageGalleryLightboxPro
             className="relative max-w-7xl max-h-[90vh] w-full h-full flex items-center justify-center px-16"
             onClick={(e) => e.stopPropagation()}
           >
-            <img
-              src={filteredImages[selectedImageIndex].url}
-              alt={filteredImages[selectedImageIndex].title}
-              className="max-w-full max-h-full object-contain rounded-lg"
-            />
+            <picture>
+              <img
+                src={filteredImages[selectedImageIndex].url}
+                alt={filteredImages[selectedImageIndex].title}
+                className="max-w-full max-h-full object-contain rounded-lg"
+                loading="eager"
+              />
+            </picture>
           </div>
 
           {/* Image Info */}

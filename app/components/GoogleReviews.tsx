@@ -52,7 +52,7 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
     };
 
     fetchGoogleReviews();
-  }, [placeId, apiKey]);
+  }, [placeId, apiKey, t]);
 
   const renderStars = (rating: number) => {
     return [...Array(5)].map((_, index) => (
@@ -135,11 +135,16 @@ export default function GoogleReviews({ placeId, apiKey }: GoogleReviewsProps) {
                 {/* En-tête de l'avis */}
                 <div className="flex items-start gap-4 mb-4">
                   {review.profile_photo_url ? (
-                    <img
-                      src={review.profile_photo_url}
-                      alt={review.author_name}
-                      className="w-12 h-12 rounded-full flex-shrink-0"
-                    />
+                    <picture>
+                      <img
+                        src={review.profile_photo_url}
+                        alt={review.author_name}
+                        className="w-12 h-12 rounded-full flex-shrink-0"
+                        width={48}
+                        height={48}
+                        loading="lazy"
+                      />
+                    </picture>
                   ) : (
                     <div className="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold text-xl flex-shrink-0">
                       {review.author_name.charAt(0)}
