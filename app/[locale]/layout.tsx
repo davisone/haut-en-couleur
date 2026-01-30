@@ -60,6 +60,9 @@ export async function generateMetadata(props: {
         },
       ],
     },
+    verification: {
+      google: 'Ltr5759Ned7iJMvcDeeBPnUYcF1G4-boQUei6_9Z8Lk',
+    },
     icons: {
       icon: '/icon.png',
       apple: '/apple-icon.png',
