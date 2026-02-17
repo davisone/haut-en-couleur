@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import {useTranslations, useLocale} from 'next-intl';
 
@@ -60,11 +61,12 @@ export default function OurCompany() {
 
           {/* Image */}
           <div className="relative h-[500px] rounded-2xl overflow-hidden shadow-2xl">
-            <div
-              className="absolute inset-0 bg-cover bg-center"
-              style={{
-                backgroundImage: "url('/img/sallon.jpeg')",
-              }}
+            <Image
+              src="/img/sallon.jpeg"
+              alt=""
+              fill
+              sizes="(max-width: 768px) 100vw, 50vw"
+              className="object-cover"
             />
           </div>
         </div>

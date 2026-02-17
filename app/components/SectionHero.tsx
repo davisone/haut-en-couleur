@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 import Link from 'next/link';
 import {useTranslations, useLocale} from 'next-intl';
 
@@ -26,12 +27,20 @@ export default function Hero() {
       {/* Background Image with Overlay - Effet Parallaxe */}
       <div className="absolute inset-0 z-0">
         <div
-          className="absolute inset-0 bg-cover bg-center will-change-transform"
+          className="absolute inset-0 overflow-hidden will-change-transform"
           style={{
-            backgroundImage: "url('/img/hero.jpg')",
             transform: `translateY(${scrollY * 0.5}px) scale(1.1)`,
           }}
-        />
+        >
+          <Image
+            src="/img/hero.jpg"
+            alt=""
+            fill
+            priority
+            sizes="100vw"
+            className="object-cover"
+          />
+        </div>
         <div
           className="absolute inset-0 bg-black/50"
           style={{

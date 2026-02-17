@@ -1,5 +1,6 @@
 'use client';
 
+import Image from 'next/image';
 import Link from 'next/link';
 import {useTranslations, useLocale} from 'next-intl';
 
@@ -66,9 +67,12 @@ export default function Services() {
 
               {/* Image */}
               <div className="relative h-64 overflow-hidden">
-                <div
-                  className="absolute inset-0 bg-cover bg-center transition-all duration-700 group-hover:scale-125 group-hover:rotate-2"
-                  style={{ backgroundImage: `url('${service.image}')` }}
+                <Image
+                  src={service.image}
+                  alt={t(service.titleKey)}
+                  fill
+                  sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                  className="object-cover transition-all duration-700 group-hover:scale-125 group-hover:rotate-2"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent group-hover:from-black/50 transition-all duration-500" />
 

@@ -1,5 +1,6 @@
 import {useTranslations} from 'next-intl';
 import {getTranslations} from 'next-intl/server';
+import Image from 'next/image';
 import Navigation from '@/app/components/Navigation';
 import Footer from '@/app/components/Footer';
 import PageHero from '@/app/components/PageHero';
@@ -121,9 +122,12 @@ export default function Prestations() {
               >
                 {/* Image */}
                 <div className={`relative h-96 rounded-2xl overflow-hidden shadow-2xl ${index % 2 === 1 ? 'md:order-2' : ''}`}>
-                  <div
-                    className="absolute inset-0 bg-cover bg-center"
-                    style={{ backgroundImage: `url('${prestation.image}')` }}
+                  <Image
+                    src={prestation.image}
+                    alt={prestation.title}
+                    fill
+                    sizes="(max-width: 768px) 100vw, 50vw"
+                    className="object-cover"
                   />
                 </div>
 

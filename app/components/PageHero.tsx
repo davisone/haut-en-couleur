@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface PageHeroProps {
   title: string;
   subtitle?: string;
@@ -15,11 +17,13 @@ export default function PageHero({
     <section className="relative h-[60vh] min-h-[400px] w-full flex items-center justify-center">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
-        <div
-          className="absolute inset-0 bg-cover bg-center"
-          style={{
-            backgroundImage: `url('${backgroundImage}')`,
-          }}
+        <Image
+          src={backgroundImage}
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
         />
         {overlay && <div className="absolute inset-0 bg-black/50" />}
       </div>

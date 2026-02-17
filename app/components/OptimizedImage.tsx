@@ -17,13 +17,17 @@ type ImageProps = ComponentProps<typeof Image> & {
  */
 export default function OptimizedImage({
   alt,
-  loading = 'lazy',
+  loading,
   quality = 85,
   placeholder = 'blur',
   blurDataURL = 'data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciPjxyZWN0IHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9IiNmM2Y0ZjYiLz48L3N2Zz4=',
+  priority,
   ...props
 }: ImageProps) {
-  // If no placeholder specified and it's an external image, don't use blur
+  // Ne pas forcer loading="lazy" quand priority est actif (LCP)
+  const finalLoading = priority ? undefined : (loading ?? 'lazy');
+
+  // Si pas de placeholder spécifié et image externe, pas de blur
   const finalPlaceholder = props.src?.toString().startsWith('http') && placeholder === 'blur'
     ? 'empty'
     : placeholder;
@@ -31,10 +35,11 @@ export default function OptimizedImage({
   return (
     <Image
       alt={alt}
-      loading={loading}
+      loading={finalLoading}
       quality={quality}
       placeholder={finalPlaceholder}
       blurDataURL={finalPlaceholder === 'blur' ? blurDataURL : undefined}
+      priority={priority}
       {...props}
     />
   );
