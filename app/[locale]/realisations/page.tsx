@@ -152,12 +152,6 @@ export default function Realisations() {
       url: "/img/chambre_8.jpeg",
     },
     {
-      id: 16,
-      title: tData('galleryImages.image16.title'),
-      category: tData('galleryImages.image16.category'),
-      url: "/img/cchambre_9.jpeg",
-    },
-    {
       id: 17,
       title: tData('galleryImages.image17.title'),
       category: tData('galleryImages.image17.category'),

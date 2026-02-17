@@ -5,6 +5,16 @@ import { checkRateLimit } from '@/app/lib/rateLimit';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
+// Échappement HTML pour prévenir les injections XSS dans les emails
+function escapeHtml(str: string): string {
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
 // Schéma de validation avec Zod
 const contactSchema = z.object({
   nom: z.string().min(2, 'Le nom doit contenir au moins 2 caractères'),
@@ -74,6 +84,12 @@ export async function POST(request: Request) {
         { status: 400 }
       );
     }
+
+    // Échapper les données utilisateur pour le HTML des emails
+    const safeNom = escapeHtml(validatedData.nom);
+    const safeEmail = escapeHtml(validatedData.email);
+    const safeTelephone = escapeHtml(validatedData.telephone);
+    const safeMessage = escapeHtml(validatedData.message);
 
     // Mapping des sujets
     const sujetLabels: Record<string, string> = {
@@ -160,22 +176,22 @@ export async function POST(request: Request) {
 
                   <div class="field">
                     <div class="label">Nom :</div>
-                    <div class="value">${validatedData.nom}</div>
+                    <div class="value">${safeNom}</div>
                   </div>
 
                   <div class="field">
                     <div class="label">Email :</div>
-                    <div class="value"><a href="mailto:${validatedData.email}">${validatedData.email}</a></div>
+                    <div class="value"><a href="mailto:${safeEmail}">${safeEmail}</a></div>
                   </div>
 
                   <div class="field">
                     <div class="label">Téléphone :</div>
-                    <div class="value"><a href="tel:${validatedData.telephone.replace(/\s/g, '')}">${validatedData.telephone}</a></div>
+                    <div class="value"><a href="tel:${safeTelephone.replace(/\s/g, '')}">${safeTelephone}</a></div>
                   </div>
 
                   <div class="field">
                     <div class="label">Message :</div>
-                    <div class="value" style="white-space: pre-wrap;">${validatedData.message}</div>
+                    <div class="value" style="white-space: pre-wrap;">${safeMessage}</div>
                   </div>
 
                   <div class="footer">
@@ -273,7 +289,7 @@ export async function POST(request: Request) {
                 </div>
                 <div class="content">
                   <p style="font-size: 16px; color: #374151;">
-                    Bonjour <strong>${validatedData.nom}</strong>,
+                    Bonjour <strong>${safeNom}</strong>,
                   </p>
 
                   <p style="color: #374151;">
@@ -297,22 +313,22 @@ export async function POST(request: Request) {
 
                     <div class="field">
                       <div class="label">Nom :</div>
-                      <div class="value">${validatedData.nom}</div>
+                      <div class="value">${safeNom}</div>
                     </div>
 
                     <div class="field">
                       <div class="label">Email :</div>
-                      <div class="value">${validatedData.email}</div>
+                      <div class="value">${safeEmail}</div>
                     </div>
 
                     <div class="field">
                       <div class="label">Téléphone :</div>
-                      <div class="value">${validatedData.telephone}</div>
+                      <div class="value">${safeTelephone}</div>
                     </div>
 
                     <div class="field">
                       <div class="label">Votre message :</div>
-                      <div class="value" style="white-space: pre-wrap; font-style: italic; color: #6b7280;">${validatedData.message}</div>
+                      <div class="value" style="white-space: pre-wrap; font-style: italic; color: #6b7280;">${safeMessage}</div>
                     </div>
                   </div>
 
